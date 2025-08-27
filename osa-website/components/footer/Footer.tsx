@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 mt-5 text-gray-300 w-full">
       {/* Ligne des icônes des réseaux sociaux */}
-      <div className="flex justify-center py-4 sm:py-6 border-b border-gray-600 px-4">
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 max-w-full">
+      <div className="flex justify-center py-4 sm:py-6 border-b border-gray-600 px-4 bg-[#2F2F2F]">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 max-w-full ">
           {/* Facebook */}
           <Link
             href="#"

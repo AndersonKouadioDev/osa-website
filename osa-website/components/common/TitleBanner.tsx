@@ -19,7 +19,7 @@ const TitleBanner = ({ title }: { title: string }) => {
 
       {/* Bouton qui rentre légèrement dans la bordure */}
       <button
-        className="absolute bottom-2 left-30 border cursor-pointer  border-white text-white px-6 py-2 rounded-xl translate-y-1/3"
+        className="absolute bottom-2 left-30 border cursor-pointer  border-white text-white px-6 py-2 rounded-md translate-y-1/3"
         onClick={() => router.back()} // ✅ ajoute les parenthèses
       >
         Retour
