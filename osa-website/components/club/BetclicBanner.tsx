@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BetclicBanner = () => {
   return (
-    <div className="relative w-full   overflow-hidden h-64 md:h-44 flex items-center justify-center">
+    <div className="relative w-full   mt-5 overflow-hidden h-64 md:h-44 flex items-center justify-center">
       {/* Image en fond */}
       <Image
         src="/Assets/Images/all-img/betclic.jpg"

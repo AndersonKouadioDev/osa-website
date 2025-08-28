@@ -10,9 +10,10 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 max-w-full ">
           {/* Facebook */}
           <Link
-            href="#"
+            href="https://www.facebook.com/fcosaofficiel/?locale=fr_FR"
             className="w-20 h-10 sm:w-24 sm:h-10 md:w-32 md:h-12 flex items-center justify-center rounded-full bg-[#1877F2] text-white hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Facebook"
+             target="_blank"
           >
             <Facebook size={18} className="sm:size-5 md:size-6" />
           </Link>
@@ -37,7 +38,7 @@ export default function Footer() {
           
           {/* LinkedIn */}
           <Link
-            href="#"
+            href="https://ci.linkedin.com/in/amza-gamal-fc-osa-62119385"
             className="w-20 h-10 sm:w-24 sm:h-10 md:w-32 md:h-12 flex items-center justify-center rounded-full bg-[#0A66C2] text-white hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="LinkedIn"
           >
@@ -46,7 +47,7 @@ export default function Footer() {
           
           {/* Instagram */}
           <Link
-            href="#"
+            href="https://www.instagram.com/fcosaofficiel/"
             className="w-20 h-10 sm:w-24 sm:h-10 md:w-32 md:h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFD319] via-[#FF2A6A] to-[#D302EB] text-white hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Instagram"
           >
@@ -55,7 +56,7 @@ export default function Footer() {
           
           {/* Twitter */}
           <Link
-            href="#"
+            href="https://x.com/fcosaofficiel"
             className="w-20 h-10 sm:w-24 sm:h-10 md:w-32 md:h-12 flex items-center justify-center rounded-full bg-[#1DA1F2] text-white hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Twitter"
           >
@@ -64,7 +65,7 @@ export default function Footer() {
           
           {/* YouTube */}
           <Link
-            href="#"
+            href="https://www.youtube.com/@fcosaofficiel"
             className="w-20 h-10 sm:w-24 sm:h-10 md:w-32 md:h-12 flex items-center justify-center rounded-full bg-[#FF0000] text-white hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="YouTube"
           >
@@ -127,6 +128,7 @@ export default function Footer() {
             <Link 
               href="#" 
               className="hover:text-white transition-colors px-2 py-1 whitespace-nowrap"
+             
             >
               F.A.Q
             </Link>
