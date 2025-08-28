@@ -66,7 +66,7 @@ export default function MatchResult() {
         </div>
 
         {/* Broadcast Info */}
-        <div className="flex justify-center items-center gap-3 sm:gap-4 text-white text-sm sm:text-base md:text-lg border-2 border-amber-300 p-2 sm:p-3 rounded-lg">
+        <div className="flex justify-center items-center gap-3 sm:gap-4 text-white text-sm sm:text-base md:text-lg  p-2 sm:p-3 rounded-lg">
           Diffusé sur
           <span>
             <div className="w-16 h-10 sm:w-20 sm:h-14 relative">

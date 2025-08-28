@@ -20,7 +20,7 @@ export default function Footer() {
           
           {/* TikTok */}
           <Link
-            href="#"
+            href="https://www.tiktok.com/@fcosaofficiel"
             className="w-20 h-10 sm:w-24 sm:h-10 md:w-32 md:h-12 flex items-center justify-center rounded-full bg-black text-white hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="TikTok"
           >
