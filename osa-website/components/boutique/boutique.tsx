@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { useRouter } from "next/navigation";
 
 
-export default function BoutiqueSection() {
-  const router=useRouter()
+export default function Boutique() {
   const produits = [
     {
       id: 1,
@@ -26,10 +24,68 @@ export default function BoutiqueSection() {
       prix: "30.000 CFA",
      image: "/Assets/Images/all-img/maillot3.png",
     },
+    {
+      id: 4,
+      nom: "CALPIN",
+      prix: "5000 CFA",
+     image: "/Assets/Images/boutique/calpin.png",
+    },
+    {
+      id: 5,
+      nom: "CASQUETTE",
+      prix: "3000 CFA",
+     image: "/Assets/Images/boutique/Casquette1.png",
+    },
+     {
+      id: 6,
+      nom: "ECHARPE",
+      prix: "4000 CFA",
+     image: "/Assets/Images/boutique/Echarpe1.png",
+    },
+    {
+      id: 7,
+      nom: "GOURDE",
+      prix: "5000 CFA",
+     image: "/Assets/Images/boutique/Gourde.png",
+    },
+    {
+      id: 8,
+      nom: "IMPERMEABLE",
+      prix: "7000 CFA",
+     image: "/Assets/Images/boutique/Impermeable1.png",
+    },
+    {
+      id: 9,
+      nom: "ECHARPE",
+      prix: "4000 CFA",
+     image: "/Assets/Images/boutique/Echarpe1.png",
+    },
+    {
+      id: 10,
+      nom: "TASSE",
+      prix: "4000 CFA",
+     image: "/Assets/Images/boutique/Tasse1.png",
+    },
+    {
+      id: 11,
+      nom: "PORTE CLE",
+      prix: "1000 CFA",
+     image: "/Assets/Images/boutique/PorteCle.png",
+    },
+    {
+      id: 12,
+      nom: "PARAPLUIE",
+      prix: "5000 CFA",
+     image: "/Assets/Images/boutique/Parapluie1.png",
+    },
+    
   ];
 
   return (
    <div className="px">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-[#5B21B6] uppercase tracking-wide text-center mb-10 mt-4">
+          Notre Équipe
+        </h2>
      <section className=" text-white py-12 bg-center bg-cover px-4 mt-5" 
     style={{ backgroundImage: "url('/Assets/images/all-img/BackgroundMaillot.png')" }} >
       <div className="max-w-6xl mx-auto text-center">
@@ -74,11 +130,7 @@ export default function BoutiqueSection() {
         </div>
 
         {/* Bouton visiter boutique */}
-        <div className="mt-10 cursor-pointer">
-          <Button className="bg-yellow-400  hover:bg-yellow-500 text-black cursor-pointer font-semibold rounded-full px-6" onClick={()=>router.push("/boutique")} >
-            Visiter la boutique
-          </Button>
-        </div>
+       
       </div>
     </section> 
    </div>

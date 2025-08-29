@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function LastConfrontations() {
   const confrontations = [
-    { result: 'Défaite', score: '0' },
-    { result: 'Nul', score: '0' },
-    { result: 'Victoire', score: '2' }
+    { result: "Défaite", score: "0" },
+    { result: "Nul", score: "0" },
+    { result: "Victoire", score: "2" },
   ];
 
   return (
@@ -36,11 +36,11 @@ export default function LastConfrontations() {
               <div key={index} className="text-center">
                 <div
                   className={`py-2 sm:py-3 px-4 sm:px-6 rounded-full text-white font-semibold text-base sm:text-lg md:text-xl ${
-                    match.result === 'Victoire'
-                      ? 'bg-primary'
-                      : match.result === 'Nul'
-                      ? 'bg-yellow-500'
-                      : 'bg-red-500'
+                    match.result === "Victoire"
+                      ? "bg-primary"
+                      : match.result === "Nul"
+                      ? "bg-yellow-500"
+                      : "bg-red-500"
                   }`}
                 >
                   {match.result}

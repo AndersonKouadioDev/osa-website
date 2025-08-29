@@ -1,27 +1,104 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 export default function TeamComposition() {
   const players = [
-    { position: 'GARDIENS', name: 'Koffi Jean Yves', isStarter: true, number: 1, x: 50, y: 85 },
-    { position: 'DÉFENSEURS', name: 'Cheick Oumar', isStarter: true, number: 2, x: 15, y: 65 },
-    { position: 'DÉFENSEURS', name: 'Bakayoko Yaya', isStarter: true, number: 3, x: 35, y: 70 },
-    { position: 'DÉFENSEURS', name: 'Hinde Thierry', isStarter: true, number: 4, x: 65, y: 70 },
-    { position: 'DÉFENSEURS', name: '', isStarter: true, number: 13, x: 85, y: 65 },
-    { position: 'MILIEUX', name: 'Kone Ali Djinan', isStarter: true, number: 7, x: 25, y: 45 },
-    { position: 'MILIEUX', name: 'Dia Dylan', isStarter: true, number: 12, x: 50, y: 35 },
-    { position: 'MILIEUX', name: 'Soro Inza', isStarter: true, number: 11, x: 75, y: 45 },
-    { position: 'ATTAQUANTS', name: 'Conde Ali', isStarter: true, number: 21, x: 35, y: 15 },
-    { position: 'ATTAQUANTS', name: 'Touré Abakar', isStarter: true, number: 9, x: 50, y: 25 },
-    { position: 'ATTAQUANTS', name: 'Fofana Inza', isStarter: true, number: 10, x: 65, y: 15 }
+    {
+      position: "GARDIENS",
+      name: "Koffi Jean Yves",
+      isStarter: true,
+      number: 1,
+      x: 50,
+      y: 85,
+    },
+    {
+      position: "DÉFENSEURS",
+      name: "Cheick Oumar",
+      isStarter: true,
+      number: 2,
+      x: 15,
+      y: 65,
+    },
+    {
+      position: "DÉFENSEURS",
+      name: "Bakayoko Yaya",
+      isStarter: true,
+      number: 3,
+      x: 35,
+      y: 70,
+    },
+    {
+      position: "DÉFENSEURS",
+      name: "Hinde Thierry",
+      isStarter: true,
+      number: 4,
+      x: 65,
+      y: 70,
+    },
+    {
+      position: "DÉFENSEURS",
+      name: "",
+      isStarter: true,
+      number: 13,
+      x: 85,
+      y: 65,
+    },
+    {
+      position: "MILIEUX",
+      name: "Kone Ali Djinan",
+      isStarter: true,
+      number: 7,
+      x: 25,
+      y: 45,
+    },
+    {
+      position: "MILIEUX",
+      name: "Dia Dylan",
+      isStarter: true,
+      number: 12,
+      x: 50,
+      y: 35,
+    },
+    {
+      position: "MILIEUX",
+      name: "Soro Inza",
+      isStarter: true,
+      number: 11,
+      x: 75,
+      y: 45,
+    },
+    {
+      position: "ATTAQUANTS",
+      name: "Conde Ali",
+      isStarter: true,
+      number: 21,
+      x: 35,
+      y: 15,
+    },
+    {
+      position: "ATTAQUANTS",
+      name: "Touré Abakar",
+      isStarter: true,
+      number: 9,
+      x: 50,
+      y: 25,
+    },
+    {
+      position: "ATTAQUANTS",
+      name: "Fofana Inza",
+      isStarter: true,
+      number: 10,
+      x: 65,
+      y: 15,
+    },
   ];
 
   const substitutes = [
-    'Kone Ali Djinan',
-    'Dia Dylan',
-    'Soro Inza',
-    'Sacko Yvan',
-    'Tapé Ange'
+    "Kone Ali Djinan",
+    "Dia Dylan",
+    "Soro Inza",
+    "Sacko Yvan",
+    "Tapé Ange",
   ];
 
   return (
@@ -41,15 +118,21 @@ export default function TeamComposition() {
               <div>
                 {/* Gardiens */}
                 <div>
-                  <h3 className="text-primary font-bold text-sm uppercase mb-3">GARDIENS</h3>
+                  <h3 className="text-primary font-bold text-sm uppercase mb-3">
+                    GARDIENS
+                  </h3>
                   <div className="space-y-2">
-                    <div className="text-black font-medium">Koffi Jean Yves</div>
+                    <div className="text-black font-medium">
+                      Koffi Jean Yves
+                    </div>
                   </div>
                 </div>
 
                 {/* Défenseurs */}
                 <div>
-                  <h3 className="text-primary font-bold text-sm uppercase mb-3">DÉFENSEURS</h3>
+                  <h3 className="text-primary font-bold text-sm uppercase mb-3">
+                    DÉFENSEURS
+                  </h3>
                   <div className="space-y-2">
                     <div className="text-black font-medium">Cheick Oumar</div>
                     <div className="text-black font-medium">Bakayoko Yaya</div>
@@ -59,9 +142,13 @@ export default function TeamComposition() {
 
                 {/* Milieux */}
                 <div>
-                  <h3 className="text-primary font-bold text-sm uppercase mb-3">Milieux</h3>
+                  <h3 className="text-primary font-bold text-sm uppercase mb-3">
+                    Milieux
+                  </h3>
                   <div className="space-y-2">
-                    <div className="text-black font-medium">Kone Ali Djinan</div>
+                    <div className="text-black font-medium">
+                      Kone Ali Djinan
+                    </div>
                     <div className="text-black font-medium">Dia Dylan</div>
                     <div className="text-black font-medium">Soro Inza</div>
                     <div className="text-black font-medium">Sacko Yvan</div>
@@ -71,7 +158,9 @@ export default function TeamComposition() {
 
                 {/* Attaquants */}
                 <div>
-                  <h3 className="text-primary font-bold text-sm uppercase mb-3">Attaquants</h3>
+                  <h3 className="text-primary font-bold text-sm uppercase mb-3">
+                    Attaquants
+                  </h3>
                   <div className="space-y-2">
                     <div className="text-black font-medium">Conde Ali</div>
                     <div className="text-black font-medium">Touré Abakar</div>
@@ -82,7 +171,9 @@ export default function TeamComposition() {
 
               {/* Remplaçants */}
               <div className="border-t pt-4">
-                <h3 className="text-primary font-bold text-sm uppercase mb-3">Remplaçants</h3>
+                <h3 className="text-primary font-bold text-sm uppercase mb-3">
+                  Remplaçants
+                </h3>
                 <div className="grid grid-cols-1 gap-4">
                   <div className="space-y-2">
                     <div className="text-gray-600">Kone Ali Djinan</div>
@@ -140,45 +231,42 @@ export default function TeamComposition() {
 
               {/* Bottom Section */}
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-8">
-  {/* Joueurs */}
- <div className="text-center flex flex-col items-center border rounded-lg overflow-hidden">
-  <div className="bg-primary text-white w-full mb-2 border-b text-center">
-    <span className="text-sm sm:text-base font-semibold block">
-      Joueurs
-    </span>
-  </div>
-  <Image
-    src="/Assets/images/all-img/maillot2.png"
-    alt="Joueur"
-    width={48}
-    height={48}
-    className="object-contain"
-  />
-</div>
+                {/* Joueurs */}
+                <div className="text-center flex flex-col items-center border rounded-lg overflow-hidden">
+                  <div className="bg-primary text-white w-full mb-2 border-b text-center">
+                    <span className="text-sm sm:text-base font-semibold block">
+                      Joueurs
+                    </span>
+                  </div>
+                  <Image
+                    src="/Assets/images/all-img/maillot2.png"
+                    alt="Joueur"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
 
-
-  {/* Coach */}
-  <div className="text-center flex flex-col items-center border rounded-lg overflow-hidden">
-  <div className="bg-primary text-white w-full mb-2 border-b text-center">
-    <span className="text-sm sm:text-base font-semibold block">
-      Coach
-    </span>
-  </div>
-  <Image
-    src="/Assets/images/all-img/coach.png"
-    alt="Coach"
-    width={60}
-    height={60}
-    className="object-contain"
-  />
-</div>
-
-</div>
-
+                {/* Coach */}
+                <div className="text-center flex flex-col items-center border rounded-lg overflow-hidden">
+                  <div className="bg-primary text-white w-full mb-2 border-b text-center">
+                    <span className="text-sm sm:text-base font-semibold block">
+                      Coach
+                    </span>
+                  </div>
+                  <Image
+                    src="/Assets/images/all-img/coach.png"
+                    alt="Coach"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 }

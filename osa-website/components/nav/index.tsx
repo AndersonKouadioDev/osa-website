@@ -54,7 +54,7 @@ export default function Nav() {
                                 <ul className="flex items-center gap-4 lg:gap-6 list-none m-0 p-0">
                                     <li>
                                         <Link
-                                            href="/"
+                                            href="/boutique"
                                             className="text-base lg:text-[18px] font-[var(--font-exo)] font-semibold uppercase text-gray-700 hover:text-amber-400 transition-colors"
                                         >
                                             Boutique
