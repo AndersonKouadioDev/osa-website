@@ -32,7 +32,7 @@ const PhilosophySection = () => {
           <div className="bg-white rounded-xl p-6 text-center border-2">
             <div className="relative flex items-center justify-center mb-4">
               <PiTrafficConeThin className="w-16 h-16 text-[#5d0b9e]" />
-              <FaFutbol className="w-12 h-12 text-[#5d0b9e] absolute left-1/2 -translate-x-1/2 z-10" />
+              <FaFutbol className="w-12 h-12 text-[#5d0b9e] absolute left-15 -translate-x-1/2 z-10" />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-[#5D0B9E] uppercase">Nom Complet</h3>
             <p className="text-gray-600">Football Club Olympique Sport d'Abobo</p>

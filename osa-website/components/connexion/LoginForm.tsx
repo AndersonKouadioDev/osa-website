@@ -86,7 +86,7 @@ export default function LoginForm() {
   }
 
   return (
-    <div className=" bg-gray-50 flex items-center justify-center px-4">
+    <div className=" bg-gray-50 flex items-center justify-center px-4 mt-10">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md border border-gray-200 p-6 sm:p-8">
         {/* Titre */}
         <div className="text-center mb-6">

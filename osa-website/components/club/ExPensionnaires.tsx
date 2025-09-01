@@ -27,6 +27,12 @@ const ExPensionnaires = () => {
       number: 9,
       imageSrc: '/assets/images/players/ya_konan_didier.jpg',
     },
+     {
+      name: 'Ya Konan Didier',
+      age: '21 ANS',
+      number: 9,
+      imageSrc: '/assets/images/players/ya_konan_didier.jpg',
+    },
   ];
 
   return (

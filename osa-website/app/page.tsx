@@ -12,6 +12,7 @@ import AdBanner from "@/components/home/AdBanner";
 import OSAExperienceBanner from "@/components/home/OSAExperienceBanner";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer/Footer";
+import Pension from "@/components/club/Pension";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
    
     <FoundationSection />
     <Footer />
+   
     
     
    </div>

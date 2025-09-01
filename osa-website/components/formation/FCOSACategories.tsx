@@ -90,7 +90,9 @@ export default function FCOSACategories() {
     Nos Catégories
   </h2>
   
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto px-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto px-6"  
+   
+    >
     {categories.map((category, index) => (
       <div key={index} className="group hover:transform hover:scale-105 transition-all duration-300">
         <div 
@@ -125,7 +127,9 @@ export default function FCOSACategories() {
 
 
       {/* Section inscription */}
-      <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+      <div className="bg-white rounded-xl  shadow-lg border border-gray-200 overflow-hidden"  
+       
+      >
         <div className="bg-primary to-red-500 flex justify-center text-white p-6">
           <h2 className="text-4xl font-bold flex items-center">
             <GraduationCap className="h-10 w-10 mr-3" />
