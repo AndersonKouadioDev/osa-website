@@ -1,7 +1,11 @@
+"use client"
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
+
 export default function MatchResult() {
+  const router=useRouter()
   return (
    <div className='px-7'>
      <div
@@ -82,7 +86,7 @@ export default function MatchResult() {
       </div>
 
       {/* Retour button en bas à gauche */}
-      <button className="absolute bottom-0 left-20 border text-white px-6 py-1 rounded-t-lg hover:opacity-90 transition-colors">
+      <button className="absolute bottom-0 left-20 border text-white px-6 py-1 rounded-t-lg hover:opacity-90 transition-colors cursor-pointer" onClick={()=>router.back()}>
         Retour
       </button>
     </div>

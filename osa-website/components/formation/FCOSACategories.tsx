@@ -40,15 +40,7 @@ const categories = [
     bgLight: "bg-purple-50",
      image: "/Assets/images/categorie/LES-JUNIORS-U20-2-500x334.jpeg"
   },
-  {
-    name: "Senior",
-    age: "18+ ans",
-    description: "Formation professionnelle, préparation aux clubs européens",
-    color: "bg-red-500",
-    textColor: "text-red-600",
-    bgLight: "bg-red-50",
-    image: "/assets/images/baniere/home_hero.png"
-  }
+ 
 ]
 
 const documents = [
@@ -96,30 +88,20 @@ export default function FCOSACategories() {
     {categories.map((category, index) => (
       <div key={index} className="group hover:transform hover:scale-105 transition-all duration-300">
         <div 
-          className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-[#ffb900] h-96 w-full"
+          className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border-2 border-transparent  h-96 w-full"
           style={{
             backgroundImage: `url(${category.image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/40 to-transparent"></div>
-          
-          {/* Content overlay */}
-          <div className="relative h-full flex flex-col justify-end p-8 text-white">
-            <div className={`${category.color} text-white rounded-lg p-3 w-fit mb-4 shadow-lg`}>
-              <Users className="h-8 w-8" />
-            </div>
-            
-            <h3 className="text-2xl font-bold mb-2">{category.name}</h3>
-            <p className="text-orange-300 font-semibold text-lg mb-3">{category.age}</p>
-            <p className="text-gray-200 leading-relaxed text-sm">{category.description}</p>
-          </div>
+         
+         
 
           {/* Hover effect overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      
         </div>
+        <h1 className='text-center font-bold  text-2xl py-4'> Nos {category.name}s </h1>
       </div>
     ))}
   </div>
@@ -127,85 +109,10 @@ export default function FCOSACategories() {
 
 
       {/* Section inscription */}
-      <div className="bg-white rounded-xl  shadow-lg border border-gray-200 overflow-hidden"  
-       
-      >
-        <div className="bg-primary to-red-500 flex justify-center text-white p-6">
-          <h2 className="text-4xl font-bold flex items-center">
-            <GraduationCap className="h-10 w-10 mr-3" />
-            Comment intégrer l'académie
-          </h2>
-        </div>
-        
-        <div className="p-8 space-y-8">
-          {/* Gratuité */}
-          <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-            <h3 className="text-xl font-bold text-green-800 mb-3">
-              Formation 100% GRATUITE
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Le FC OSA a fait le choix de la <strong>gratuité</strong> afin de faciliter l'accès du plus grand nombre à ce centre de formation qui s'est imposé comme l'un des meilleurs, assurant non seulement la formation sportive, mais également une formation scolaire.
-            </p>
-          </div>
-
-          {/* Documents */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <FileText className="h-6 w-6 text-primary mr-2" />
-                Documents à fournir
-              </h3>
-              <div className="space-y-3">
-                {documents.map((doc, index) => (
-                  <div key={index} className="flex items-start space-x-3 bg-gray-50 p-3 rounded-lg">
-                    <div className="bg-primary text-orange-600 rounded-full p-1 mt-0.5">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    </div>
-                    <span className="text-gray-700 text-sm">{doc}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Avertissement */}
-            <div>
-              <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-                <div className="flex items-start space-x-3">
-                  <AlertTriangle className="h-6 w-6 text-red-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-red-800 mb-2">Attention aux arnaques</h4>
-                    <p className="text-red-700 text-sm leading-relaxed mb-3">
-                      Nous vous invitons à signaler tous abus en nous communiquant les noms et contacts des potentiels démarcheurs qui voudraient vous prendre de l'argent.
-                    </p>
-                    <div className="flex items-center space-x-2 bg-red-100 p-2 rounded">
-                      <Phone className="h-4 w-4 text-red-600" />
-                      <span className="font-mono text-red-800 text-sm">
-                        (+225) 07 09 538 834
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       {/* Call to action */}
-      <div className="text-center bg-primary to-red-500 text-white rounded-xl p-8">
-        <h3 className="text-2xl font-bold mb-4">Rejoignez la famille FC OSA</h3>
-        <p className="mb-6 opacity-90">
-          Donnez une chance à votre enfant de développer son talent dans un environnement professionnel et bienveillant
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Nous contacter
-          </button>
-          <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors">
-            En savoir plus
-          </button>
-        </div>
-      </div>
+      
     </div>
   )
 }

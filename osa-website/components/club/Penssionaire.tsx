@@ -6,7 +6,12 @@ const TEAM_MEMBERS = [
   { name: "Ousmane Diomande", age: "21", number: 16, image: "/Assets/Images/pensionnaire/pensionnaire1.png" },
   { name: "Traoré Lacina", age: "21", number: 1, image: "/Assets/Images/pensionnaire/pensionnaire2.png" },
   { name: "Diarrassouba Viera", age: "21", number: 30, image: "/Assets/Images/pensionnaire/pensionnaire3.png"  },
-  { name: "Ya Konan Didier", age: "21", number: 41,image: "/Assets/Images/pensionnaire/pensionnaire4.png"  },
+  { 
+    name: "Ya Konan Didier",
+     age: "21", number: 41,
+     image: "/Assets/Images/pensionnaire/pensionnaire4.png"
+      },
+      
 ];
 
 const Penssionaire = () => {

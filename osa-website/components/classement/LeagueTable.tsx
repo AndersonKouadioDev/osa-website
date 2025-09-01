@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 
 interface Team {
@@ -36,7 +36,6 @@ const LeagueTable: React.FC = () => {
   const [editingTeam, setEditingTeam] = useState<number | null>(null);
   const [sortedTeams, setSortedTeams] = useState<Team[]>([]);
 
-  // Fonction de tri selon les règles du football
   const sortTeams = (teamsArray: Team[]): Team[] => {
     return [...teamsArray].sort((a, b) => {
       if (a.pts !== b.pts) return b.pts - a.pts;
@@ -49,8 +48,7 @@ const LeagueTable: React.FC = () => {
   };
 
   useEffect(() => {
-    const sorted = sortTeams(teams);
-    setSortedTeams(sorted);
+    setSortedTeams(sortTeams(teams));
   }, [teams]);
 
   const calculatePoints = (v: number, n: number): number => v * 3 + n;
@@ -66,6 +64,12 @@ const LeagueTable: React.FC = () => {
             updatedTeam.pts = calculatePoints(updatedTeam.v, updatedTeam.n);
             updatedTeam.d = updatedTeam.mj - updatedTeam.v - updatedTeam.n;
           }
+
+          // 🔥 Permet aussi de modifier directement les points
+          if (field === "pts") {
+            updatedTeam.pts = parsedValue;
+          }
+
           return updatedTeam;
         }
         return team;
@@ -118,40 +122,37 @@ const LeagueTable: React.FC = () => {
           const position = index + 1;
           const ga = team.bp - team.bc;
           const isRelegated = position >= 14;
-          
+
           return (
             <div
               key={team.id}
               className={`flex items-center px-6 py-3 hover:bg-gray-50 transition-colors ${
-                isRelegated ? 'bg-yellow-100' : ''
-              } ${position <= 3 ? 'bg-green-50' : ''}`}
+                isRelegated ? "bg-yellow-100" : ""
+              } ${position <= 3 ? "bg-green-50" : ""}`}
             >
-              {/* Position */}
               <div className="w-8 text-center font-bold text-gray-700">
                 {position}
               </div>
 
-              {/* Team Logo Placeholder */}
               <div className="w-8 h-8 mx-4 flex items-center justify-center">
                 <div className="w-6 h-6 bg-gray-300 rounded-full flex items-center justify-center">
                   <div className="w-4 h-4 bg-gray-500 rounded-full"></div>
                 </div>
               </div>
 
-              {/* Team Name */}
               <div className="flex-1 font-medium text-gray-900">
                 {editingTeam === team.id ? (
                   <input
                     type="text"
                     value={team.name}
-                    onChange={(e) => updateTeam(team.id, 'name', e.target.value)}
+                    onChange={(e) => updateTeam(team.id, "name", e.target.value)}
                     onBlur={() => setEditingTeam(null)}
-                    onKeyPress={(e) => e.key === 'Enter' && setEditingTeam(null)}
+                    onKeyDown={(e) => e.key === "Enter" && setEditingTeam(null)}
                     className="w-full px-2 py-1 border rounded"
                     autoFocus
                   />
                 ) : (
-                  <span 
+                  <span
                     onClick={() => setEditingTeam(team.id)}
                     className="cursor-pointer hover:text-purple-600"
                   >
@@ -160,71 +161,75 @@ const LeagueTable: React.FC = () => {
                 )}
               </div>
 
-              {/* Stats - Editables */}
+              {/* Champs éditables */}
               <div className="flex space-x-6 text-sm text-gray-700 font-medium">
-                {/* MJ */}
                 <input
                   type="number"
                   value={team.mj}
-                  onChange={(e) => updateTeam(team.id, 'mj', e.target.value)}
-                  className="w-8 text-center bg-transparent border-b border-transparent hover:border-gray-300 focus:border-purple-500 focus:outline-none"
+                  onChange={(e) => updateTeam(team.id, "mj", e.target.value)}
+                  className="w-8 text-center bg-transparent border-b hover:border-gray-300 focus:border-purple-500 focus:outline-none"
                   min="0"
                 />
-                
-                {/* V */}
+
                 <input
                   type="number"
                   value={team.v}
-                  onChange={(e) => updateTeam(team.id, 'v', e.target.value)}
-                  className="w-8 text-center bg-transparent border-b border-transparent hover:border-gray-300 focus:border-purple-500 focus:outline-none"
+                  onChange={(e) => updateTeam(team.id, "v", e.target.value)}
+                  className="w-8 text-center bg-transparent border-b hover:border-gray-300 focus:border-purple-500 focus:outline-none"
                   min="0"
                   max={team.mj}
                 />
-                
-                {/* N */}
+
                 <input
                   type="number"
                   value={team.n}
-                  onChange={(e) => updateTeam(team.id, 'n', e.target.value)}
-                  className="w-8 text-center bg-transparent border-b border-transparent hover:border-gray-300 focus:border-purple-500 focus:outline-none"
+                  onChange={(e) => updateTeam(team.id, "n", e.target.value)}
+                  className="w-8 text-center bg-transparent border-b hover:border-gray-300 focus:border-purple-500 focus:outline-none"
                   min="0"
                   max={team.mj}
                 />
-                
-                {/* D - Calculé automatiquement */}
+
                 <div className="w-8 text-center text-gray-600 bg-gray-50 rounded px-1">
                   {team.d}
                 </div>
-                
-                {/* BP */}
+
                 <input
                   type="number"
                   value={team.bp}
-                  onChange={(e) => updateTeam(team.id, 'bp', e.target.value)}
-                  className="w-8 text-center bg-transparent border-b border-transparent hover:border-gray-300 focus:border-purple-500 focus:outline-none"
+                  onChange={(e) => updateTeam(team.id, "bp", e.target.value)}
+                  className="w-8 text-center bg-transparent border-b hover:border-gray-300 focus:border-purple-500 focus:outline-none"
                   min="0"
                 />
-                
-                {/* BC */}
+
                 <input
                   type="number"
                   value={team.bc}
-                  onChange={(e) => updateTeam(team.id, 'bc', e.target.value)}
-                  className="w-8 text-center bg-transparent border-b border-transparent hover:border-gray-300 focus:border-purple-500 focus:outline-none"
+                  onChange={(e) => updateTeam(team.id, "bc", e.target.value)}
+                  className="w-8 text-center bg-transparent border-b hover:border-gray-300 focus:border-purple-500 focus:outline-none"
                   min="0"
                 />
-                
-                {/* GA - Calculé automatiquement */}
-                <div className={`w-8 text-center font-medium ${ga > 0 ? 'text-green-600' : ga < 0 ? 'text-red-600' : 'text-gray-600'}`}>
+
+                <div
+                  className={`w-8 text-center font-medium ${
+                    ga > 0
+                      ? "text-green-600"
+                      : ga < 0
+                      ? "text-red-600"
+                      : "text-gray-600"
+                  }`}
+                >
                   {ga > 0 ? `+${ga}` : ga}
                 </div>
-                
-                {/* PTS - Calculé automatiquement */}
-                <div className="w-8 text-center font-bold text-purple-600 bg-purple-50 rounded px-1">
-                  {team.pts}
-                </div>
 
-                {/* Actions */}
+                {/* 🔥 PTS devient éditable */}
+                <input
+                  type="number"
+                  value={team.pts}
+                  onChange={(e) => updateTeam(team.id, "pts", e.target.value)}
+                  className="w-10 text-center font-bold text-purple-600 bg-purple-50 rounded px-1"
+                  min="0"
+                />
+
                 <div className="w-16 text-center">
                   <button
                     onClick={() => deleteTeam(team.id)}
@@ -239,7 +244,6 @@ const LeagueTable: React.FC = () => {
         })}
       </div>
 
-      {/* Add Team Button */}
       <div className="px-6 py-4 bg-gray-50 border-t">
         <button
           onClick={addTeam}
@@ -247,20 +251,6 @@ const LeagueTable: React.FC = () => {
         >
           + Ajouter une équipe
         </button>
-      </div>
-
-      {/* Legend */}
-      <div className="px-6 py-3 bg-gray-50 border-t text-xs text-gray-600">
-        <div className="flex space-x-6">
-          <div className="flex items-center space-x-2">
-            <div className="w-4 h-4 bg-green-50 border border-green-200 rounded"></div>
-            <span>Top 3 (Qualification européenne)</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-4 h-4 bg-yellow-100 border border-yellow-200 rounded"></div>
-            <span>Zone de relégation (14e-16e)</span>
-          </div>
-        </div>
       </div>
     </div>
   );

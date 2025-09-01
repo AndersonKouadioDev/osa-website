@@ -1,16 +1,14 @@
-
-import SportsNewsPage from '@/components/actualite/SportsNewsPage';
 import Sponsors from '@/components/common/Sponsors';
 import TitleBanner from '@/components/common/TitleBanner';
+import Fierte from '@/components/fierte/Fierte';
 import React from 'react';
 
 const Page = () => {
     return (
         <div>
-             <TitleBanner title='Actualité' />
-             <SportsNewsPage/>
-             {/* <CommentForm/> */}
-             <Sponsors />
+            <TitleBanner title='Ex Pensionnaires' />
+            <Fierte />
+            <Sponsors />
         </div>
     );
 }

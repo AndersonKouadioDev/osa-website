@@ -216,7 +216,7 @@ export default function TeamComposition() {
                   >
                     <div className="relative w-10 h-12">
                       <Image
-                        src="/Assets/images/all-img/maillot2.png"
+                        src="/Assets/images/all-img/maillot1.png"
                         alt={`Maillot ${player.name}`}
                         layout="fill"
                         objectFit="contain"
