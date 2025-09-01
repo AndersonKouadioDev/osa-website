@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Effectif() {
     const gardiens = [
@@ -256,7 +258,11 @@ export default function Effectif() {
                 {/* Grid responsive */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-2 sm:px-4 md:px-24 lg:px-48 gap-y-6 sm:gap-y-8 gap-x-2 sm:gap-x-3 justify-items-center py-6">
                     {gardiens.map((joueur) => (
-                        <div key={joueur.name} className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all">
+                        <Link 
+                          key={joueur.name} 
+                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
+                        >
 
                             {/* Image avec background */}
                             <div
@@ -291,7 +297,7 @@ export default function Effectif() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
@@ -304,7 +310,11 @@ export default function Effectif() {
                 {/* Grid responsive */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-2 sm:px-4 md:px-24 lg:px-48 gap-y-6 sm:gap-y-8 gap-x-2 sm:gap-x-3 justify-items-center py-6">
                     {defenders.map((joueur) => (
-                        <div key={joueur.name} className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all">
+                        <Link 
+                          key={joueur.name} 
+                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
+                        >
 
                             {/* Image avec background */}
                             <div
@@ -339,7 +349,7 @@ export default function Effectif() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
@@ -350,7 +360,11 @@ export default function Effectif() {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-2 sm:px-4 md:px-24 lg:px-48 gap-y-6 sm:gap-y-8 gap-x-2 sm:gap-x-3 justify-items-center py-6">
                     {midfielders.map((joueur) => (
-                        <div key={joueur.name} className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all">
+                        <Link 
+                          key={joueur.name} 
+                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
+                        >
 
                             {/* Image avec background */}
                             <div
@@ -385,7 +399,7 @@ export default function Effectif() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
@@ -395,7 +409,11 @@ export default function Effectif() {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-2 sm:px-4 md:px-24 lg:px-48 gap-y-6 sm:gap-y-8 gap-x-2 sm:gap-x-3 justify-items-center py-6">   
                     {forwards.map((joueur) => (
-                        <div key={joueur.name} className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all">
+                        <Link 
+                          key={joueur.name} 
+                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
+                        >
                             <div
                                 className="relative w-full aspect-[4/5] rounded-md shadow-lg bg-cover bg-center flex items-center justify-center"
                                 style={{ backgroundImage: "url('/assets/images/all-img/link.png')" }}
@@ -428,7 +446,7 @@ export default function Effectif() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
