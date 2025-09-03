@@ -9,6 +9,7 @@
   --font-sans: var(--font-exo);
   --font-mono: var(--font-geist-mono);
   --font-roboto: var(--font-roboto);
+  --font-exo2: var(--font-exo2);
 
   /* Sidebar */
   --color-sidebar-ring: var(--sidebar-ring);
