@@ -337,7 +337,7 @@ export default function Effectif() {
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">
                                         {joueur.name}
                                     </p>
-                                    <p className="text-[10px] sm:text-xs text-white font-bold uppercase bg-blue-400 px-2 py-0.5 rounded mt-1 w-fit">
+                                    <p className="text-[10px] sm:text-xs text-white font-bold uppercase bg-green-400 px-2 py-0.5 rounded mt-1 w-fit">
                                         {joueur.position}
                                     </p>
                                 </div>
@@ -387,7 +387,7 @@ export default function Effectif() {
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">
                                         {joueur.name}
                                     </p>
-                                    <p className="text-[10px] sm:text-xs text-white font-bold uppercase bg-blue-400 px-2 py-0.5 rounded mt-1 w-fit">
+                                    <p className="text-[10px] sm:text-xs text-white font-bold uppercase bg-yellow-300 px-2 py-0.5 rounded mt-1 w-fit">
                                         {joueur.position}
                                     </p>
                                 </div>
@@ -434,7 +434,7 @@ export default function Effectif() {
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">
                                         {joueur.name}
                                     </p>
-                                    <p className="text-[10px] sm:text-xs text-white font-bold uppercase bg-blue-400 px-2 py-0.5 rounded mt-1 w-fit">
+                                    <p className="text-[10px] sm:text-xs text-white font-bold uppercase bg-red-500 px-2 py-0.5 rounded mt-1 w-fit">
                                         {joueur.position}
                                     </p>
                                 </div>
