@@ -243,7 +243,7 @@ export default function Effectif() {
     return (
         <>
             {/* Header */}
-            <div className="w-full bg-red-500 py-2 md:py-4 flex items-center justify-center">
+            <div className="w-full bg-red-500 py-2 md:py-6 mt-6 flex items-center justify-center">
                 <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-light">
                     Publicité
                 </h1>
@@ -260,7 +260,7 @@ export default function Effectif() {
                     {gardiens.map((joueur) => (
                         <Link 
                           key={joueur.name} 
-                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          href={`/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
                           className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
                         >
 

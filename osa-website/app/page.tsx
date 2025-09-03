@@ -10,10 +10,14 @@ import OurTeamSection from "@/components/home/OurTeamSection";
 import ClubNewsSection from "@/components/home/ClubNewsSection";
 import AdBanner from "@/components/home/AdBanner";
 import OSAExperienceBanner from "@/components/home/OSAExperienceBanner";
+import Nav from "@/components/nav";
+import Footer from "@/components/footer/Footer";
+import Pension from "@/components/club/Pension";
 
 export default function Home() {
   return (
    <div>
+    <Nav />
     <Hero />
     <Banner/>
     <ClubNewsSection/>
@@ -27,6 +31,8 @@ export default function Home() {
     <AppPromoBanner />
    
     <FoundationSection />
+    <Footer />
+   
     
     
    </div>

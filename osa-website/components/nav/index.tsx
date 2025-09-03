@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { CircleUserRound, LayoutGrid, ShoppingCart, Menu, X } from "lucide-react";
-import { IoBusiness, IoCashSharp, IoHome, IoNewspaper, IoPeopleOutline, IoPeopleSharp, IoPhonePortraitOutline, IoPlayCircle } from "react-icons/io5";
+import { IoBusiness, IoCashSharp, IoFootball, IoHome, IoNewspaper, IoPeopleOutline, IoPeopleSharp, IoPhonePortraitOutline, IoPlayCircle } from "react-icons/io5";
 
 export default function Nav() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -57,7 +57,7 @@ export default function Nav() {
                             {/* Logo */}
                             <Link href="/" className="flex items-center flex-shrink-0">
                                 <Image
-                                    src="/assets/images/nav/logo.png"
+                                    src="/assets/images/all-img/logoOSA.png"
                                     alt="Logo OSA"
                                     width={44}
                                     height={44}
@@ -112,7 +112,7 @@ export default function Nav() {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/acceder"
+                                            href="/connexion"
                                             className="flex items-center gap-2 text-base font-medium text-white bg-amber-400 hover:bg-amber-500 px-3 py-1.5 rounded-lg transition-colors justify-center font-[var(--font-exo)] uppercase font-semibold"
                                         >
                                             Accéder
@@ -157,7 +157,7 @@ export default function Nav() {
                         <div className="px-4 py-5 space-y-6">
                             <div className="flex flex-col space-y-4">
                                 <Link
-                                    href="/"
+                                    href="/boutique"
                                     className="text-md font-[var(--font-exo)] font-semibold uppercase text-gray-700 hover:text-amber-400 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
@@ -209,6 +209,24 @@ export default function Nav() {
                                     <ShoppingCart className="mr-2" size={18} />
                                     Panier
                                 </Link>
+                                <div className="flex items-center justify-center gap-6 text-lg font-medium text-white px-4 py-2 rounded-lg transition-colors font-[var(--font-exo)] uppercase font-semibold">
+                                    <Image
+                                        src="/assets/images/nav/osatv.png"
+                                        alt="OSA TV"
+                                        width={44}
+                                        height={44}
+                                        priority
+                                        className="w-12 h-12 md:w-11 md:h-11"
+                                    />
+                                    <Image
+                                        src="/assets/images/nav/sport.png"
+                                        alt="Partenaire Sport"
+                                        width={44}
+                                        height={44}
+                                        priority
+                                        className="w-12 h-12 md:w-11 md:h-11"
+                                    />
+                                </div>
                                 <Link
                                     href="/acceder"
                                     className="flex items-center justify-center gap-2 text-lg font-medium text-white bg-amber-400 hover:bg-amber-500 px-4 py-2 rounded-lg transition-colors font-[var(--font-exo)] uppercase font-semibold"
@@ -244,7 +262,7 @@ export default function Nav() {
                         {isSubMenuOpen && (
                             <div className="absolute top-full left-0 mt-2 w-[300px] bg-white rounded-md shadow-lg py-1">
                                 <Link
-                                    href="/club/effectif"
+                                    href="/effectif"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
@@ -255,7 +273,7 @@ export default function Nav() {
 
                                 </Link>
                                 <Link
-                                    href="#"
+                                    href="/fondation"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
@@ -266,17 +284,17 @@ export default function Nav() {
 
                                 </Link>
                                 <Link
-                                    href="#"
+                                    href="/fierte"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
                                     <div className="flex items-center gap-2">
                                         <IoPeopleOutline size={18} />
-                                        devenir membre
+                                        Ex pensionnaires
                                     </div>
                                 </Link>
-                                <Link
-                                    href="#"
+                                {/* <Link
+                                    href="/media"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
@@ -284,9 +302,9 @@ export default function Nav() {
                                         <IoPlayCircle size={18} />
                                         media
                                     </div>
-                                </Link>
+                                </Link> */}
                                 <Link
-                                    href="#"
+                                    href="/soutien"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
@@ -296,7 +314,7 @@ export default function Nav() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="#"
+                                    href="/formation"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
@@ -305,8 +323,8 @@ export default function Nav() {
                                         centre de formation
                                     </div>
                                 </Link>
-                                <Link
-                                    href="#"
+                                {/* <Link
+                                    href="/application-mobile"
                                     className="block px-4 py-4 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
@@ -314,15 +332,25 @@ export default function Nav() {
                                         <IoPhonePortraitOutline size={18} />
                                         application mobile
                                     </div>
-                                </Link>
-                                <Link
-                                    href="#"
+                                </Link> */}
+                                {/* <Link
+                                    href="/newsletter"
                                     className="block px-4 py-2 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
                                     onClick={() => setIsSubMenuOpen(false)}
                                 >
                                     <div className="flex items-center gap-2">
                                         <IoNewspaper size={18} />
                                         newsletter
+                                    </div>
+                                </Link> */}
+                                <Link
+                                    href="/match"
+                                    className="block px-4 py-2 text-[14px] font-[var(--font-exo)] font-semibold text-[#5B00A5] hover:bg-amber-100 border-b border-gray-200"
+                                    onClick={() => setIsSubMenuOpen(false)}
+                                >
+                                    <div className="flex items-center gap-2">
+                                        <IoFootball size={18} />
+                                        match en direct
                                     </div>
                                 </Link>
                             </div>

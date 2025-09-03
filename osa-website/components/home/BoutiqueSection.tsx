@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 
 export default function BoutiqueSection() {
+  const router=useRouter()
   const produits = [
     {
       id: 1,
@@ -72,8 +74,8 @@ export default function BoutiqueSection() {
         </div>
 
         {/* Bouton visiter boutique */}
-        <div className="mt-10">
-          <Button className="bg-yellow-400 cursor-pointer hover:bg-yellow-500 text-black font-semibold rounded-full px-6">
+        <div className="mt-10 cursor-pointer">
+          <Button className="bg-yellow-400  hover:bg-yellow-500 text-black cursor-pointer font-semibold rounded-full px-6" onClick={()=>router.push("/boutique")} >
             Visiter la boutique
           </Button>
         </div>
