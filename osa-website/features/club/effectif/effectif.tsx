@@ -266,20 +266,20 @@ export default function Effectif() {
 
                             {/* Image avec background */}
                             <div
-                                className="relative w-full aspect-[4/5] rounded-md shadow-lg bg-cover bg-center flex items-center justify-center"
+                                className="relative w-full aspect-[3/4] rounded-md shadow-lg bg-cover bg-center flex items-center justify-center"
                                 style={{ backgroundImage: "url('/assets/images/all-img/link.png')" }}
                             >
                                 <Image
                                     src={joueur.image}
                                     alt={joueur.name}
-                                    width={120}
+                                    width={200}
                                     height={160}
                                     className="object-contain"
                                 />
                             </div>
 
                             {/* Carte infos joueur chevauchante */}
-                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[80%] items-center absolute -bottom-4">
+                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[100%] items-center absolute -bottom-4">
                                 {/* Nom + position */}
                                 <div className="flex flex-col w-2/3 pl-1">
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">
@@ -324,14 +324,14 @@ export default function Effectif() {
                                 <Image
                                     src={joueur.image}
                                     alt={joueur.name}
-                                    width={120}
+                                    width={200}
                                     height={160}
                                     className="object-contain"
                                 />
                             </div>
 
                             {/* Carte infos joueur chevauchante */}
-                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[80%] items-center absolute -bottom-4">
+                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[100%] items-center absolute -bottom-4">
                                 {/* Nom + position */}
                                 <div className="flex flex-col w-2/3 pl-1">
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">
@@ -374,14 +374,14 @@ export default function Effectif() {
                                 <Image
                                     src={joueur.image}
                                     alt={joueur.name}
-                                    width={120}
+                                    width={200}
                                     height={160}
                                     className="object-contain"
                                 />
                             </div>
 
                             {/* Carte infos joueur chevauchante */}
-                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[80%] items-center absolute -bottom-4">
+                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[100%] items-center absolute -bottom-4">
                                 {/* Nom + position */}
                                 <div className="flex flex-col w-2/3 pl-1">
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">
@@ -403,7 +403,7 @@ export default function Effectif() {
                     ))}
                 </div>
             </div>
-            <div className="w-[95%] min-h-[30vh] mx-auto bg-[#F3E8FF] mt-4 px-4 rounded-lg">    
+            <div className="w-[90%] min-h-[30vh] mx-auto bg-[#F3E8FF] mt-4 px-4 rounded-lg">    
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold px-4 py-2 border-b-2 text-center text-[#5D0B9E] uppercase">
                     attaquants
                 </h2>
@@ -421,14 +421,14 @@ export default function Effectif() {
                                 <Image
                                     src={joueur.image}
                                     alt={joueur.name}
-                                    width={120}
+                                    width={200}
                                     height={160}
                                     className="object-contain"
                                 />
                             </div>
 
                             {/* Carte infos joueur chevauchante */}
-                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[80%] items-center absolute -bottom-4">
+                            <div className="flex flex-row bg-amber-400 rounded-md shadow-lg px-3 sm:px-8 py-2 sm:mt-4 w-[100%] items-center absolute -bottom-4">
                                 {/* Nom + position */}
                                 <div className="flex flex-col w-2/3 pl-1">
                                     <p className="text-xs sm:text-sm font-semibold text-black capitalize">

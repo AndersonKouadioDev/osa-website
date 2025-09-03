@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeftIcon } from "lucide-react";
 import { findPlayerByName, findPlayersByPosition } from "@/features/club/effectif/playersData";
+import { Props } from "next/script";
 
 type Player = {
   name: string;
@@ -59,7 +60,15 @@ const getPositionLabel = (position: string): string => {
   };
   return positions[position] || 'Joueurs';
 };
-export default function PlayerDetails({ params }: { params: { name: string } }) {
+
+//props
+interface playerProps {
+  params: {
+    name: string;
+  };
+}
+
+export default function PlayerDetails({ params }: playerProps) {
   const playerName = decodeURIComponent(params.name);
 
   // fonction pour obtenir les statistiques aleatoire
@@ -160,7 +169,7 @@ export default function PlayerDetails({ params }: { params: { name: string } }) 
             <div className="ml-[100px]">
               <div className="flex items-center">
                 <h3 className="text-[220px] font-bold text-amber-400">{player.number}</h3>
-                <div className="flex items-center ml-[-55px]">
+                <div className="flex items-center ml-[-85px]">
                   <Image
                     src={player.image}
                     alt={player.name}
