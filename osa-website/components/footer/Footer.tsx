@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="relative z-10 flex flex-col items-center justify-center text-center mx-auto">
           <div className="mb-4 sm:mb-6"  >
             <Image
-              src="/Assets/images/all-img/logo.png"
+              src="/Assets/images/all-img/logoOSA.png"
               alt="FC OSA Logo"
               width={80}
               height={80}

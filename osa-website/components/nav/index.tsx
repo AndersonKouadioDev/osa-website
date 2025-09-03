@@ -40,7 +40,7 @@ export default function Nav() {
                             {/* Logo */}
                             <Link href="/" className="flex items-center flex-shrink-0">
                                 <Image
-                                    src="/assets/images/nav/logo.png"
+                                    src="/assets/images/all-img/logoOSA.png"
                                     alt="Logo OSA"
                                     width={44}
                                     height={44}
