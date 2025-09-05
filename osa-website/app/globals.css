@@ -8,6 +8,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-exo);
   --font-mono: var(--font-geist-mono);
+  --font-exo2: var(--font-exo2);
   --font-roboto: var(--font-roboto);
 
   /* Sidebar */

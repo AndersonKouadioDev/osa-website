@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
+import DoubleTrait from '../common/doubleTrait';
 
 export default function FondationOSAMission() {
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-[#5D0B9E] p-8 shadow-lg">
+    <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-[#5D0B9E] shadow-lg">
       {/* Header */}
-      <div className="text-center mb-8">
-        <h1 className="text-5xl font-bold text-[#5D0B9E] mb-4">NOTRE MISSION</h1>
-        <div className="w-full h-0.5 bg-gray-300 mb-6"></div>
+      <div className="text-center mb-8 pt-6">
+        <h1 className="text-5xl font-bold text-[#5D0B9E] mb-2 font-exo2 border-b border-gray-300 pb-2">NOTRE MISSION</h1>
       </div>
 
       {/* Mission Statement */}
-      <div className="mb-8">
+      <div className="mb-4 px-4">
         <p className="text-gray-700 leading-relaxed text-justify">
           La Fondation OSA a pour principales missions de former, éduquer et aider les jeunes ivoiriens et africains à se 
           détourner des vices et maux qui minent les sociétés africaines, d'apporter une assistance aux établissements 
@@ -21,7 +21,7 @@ export default function FondationOSAMission() {
       </div>
 
       {/* Mission Points */}
-      <div className="space-y-6 mb-8">
+      <div className="space-y-6 mb-4 px-4">
         {/* Équiper les établissements scolaires */}
         <div>
           <h2 className="text-[#5D0B9E] font-bold text-lg mb-2">Équiper les établissements scolaires</h2>
@@ -62,10 +62,7 @@ export default function FondationOSAMission() {
       </div>
 
       {/* Bottom Decorative Elements */}
-      <div className="flex justify-center mt-8 space-x-2">
-        <div className="w-16 h-2 bg-[#5D0B9E] rounded-full"></div>
-        <div className="w-16 h-2 bg-yellow-400 rounded-full"></div>
-      </div>
+      <DoubleTrait className="flex justify-center items-center space-x-2 mt-6"/>
     </div>
   );
 }

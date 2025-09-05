@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import MatchCard from './MatchCard';
 import NoMatchCard from './NoMatchCard';
+import DoubleTrait from '../common/doubleTrait';
 
 interface Match {
   id: number;
@@ -79,11 +80,12 @@ export default function UpcomingMatchesPage() {
   const currentMatches: Match[] = matchesData[selectedMonth] || [];
 
   return (
-    <div className="px-4 sm:px-7 mt-10">
-      <div className="min-h-screen bg-gray-100 border-2 border-primary rounded-2xl p-6 sm:p-10 font-poppins">
+    <div className="px-6 py-6 sm:px-6 sm:py-6 md:px-8 lg:px-12">
+    <div className="bg-gray-100 px-0 mt-10 sm:px-6  min-h-screen border-2 border-primary rounded-2xl">
+      <div className="">
         <div className="container mx-auto">
           {/* Header */}
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4 py-6">
             <h1 className="text-3xl sm:text-4xl font-extrabold text-[#7E22CE] uppercase tracking-wider text-center md:text-left">
               Prochaines Rencontres
             </h1>
@@ -100,7 +102,7 @@ export default function UpcomingMatchesPage() {
                   </option>
                 ))}
               </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-white">
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-white ml-2">
                 <svg
                   className="fill-current h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +125,10 @@ export default function UpcomingMatchesPage() {
             <NoMatchCard />
           )}
         </div>
+        
       </div>
+      <DoubleTrait className="flex justify-center items-center space-x-2 mt-6"/>
+    </div>
     </div>
   );
 }

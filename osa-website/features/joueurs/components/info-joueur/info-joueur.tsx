@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { findPlayerByName, findPlayersByPosition } from "@/features/club/effectif/playersData";
 import { useRouter } from "next/navigation";
+import DoubleTrait from "@/components/common/doubleTrait";
 type Player = {
     name: string;
     number: string;
@@ -139,7 +140,7 @@ export default function PlayerDetails({ params }: playerProps) {
                                 alt={player.name}
                                 width={300}
                                 height={300}
-                                className="object-cover z-10"
+                                className="object-cover"
                             />
                         </div>
                     </div>
@@ -235,8 +236,9 @@ export default function PlayerDetails({ params }: playerProps) {
                 </div>
                 {/* Galerie */}
                 {player.galleryImages && player.galleryImages.length > 0 && (
-                    <div className="bg-white rounded-lg p-6 mb-8 border border-purple-800 border-2 rounded-lg">
-                        <h2 className="text-[40px] font-bold mb-6 text-purple-800 uppercase text-center py-4 border-b">Quelques images de notre osalaire</h2>
+                    <div className="bg-white rounded-lg mb-8 px-6 border border-purple-800 border-2 rounded-lg">
+                    <div className="">
+                        <h2 className="text-[40px] font-bold mb-6 text-purple-800 uppercase text-center py-2 border-b">Quelques images de notre osalaire</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {player.galleryImages.map((img, index) => (
                                 <div key={index} className="rounded-lg">
@@ -251,6 +253,8 @@ export default function PlayerDetails({ params }: playerProps) {
                             ))}
                         </div>
                     </div>
+                    <DoubleTrait className="flex justify-center items-center space-x-2 pt-20"/>
+                </div>
                 )}
 
                 {/* Joueurs au même poste */}

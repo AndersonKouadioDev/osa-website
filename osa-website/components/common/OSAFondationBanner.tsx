@@ -4,7 +4,7 @@ import React from 'react';
 
 const OSAFondationBanner = () => {
   return (
-    <div className="w-full lg:w-96 bg-yellow-400 mt-6 sm:mt-8 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl">
+    <div className="w-full bg-yellow-400 mt-6 sm:mt-8 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl">
       
       {/* Contenu principal */}
       <div className="flex flex-col gap-4">

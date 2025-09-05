@@ -9,7 +9,7 @@ import React from 'react';
 const Page = () => {
     return (
         <div>
-             <TitleBanner title='Calendrier' />
+            <TitleBanner title='Calendrier' />
             <TeamCelebration/>
             <UpcomingMatchesPage />
              <AppPromoBanner />

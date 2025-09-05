@@ -16,7 +16,7 @@ const TEAM_MEMBERS = [
 
 const Penssionaire = () => {
   return (
-    <div className="bg-gray-100 py-12 px-4 md:px-8 relative overflow-hidden bg-center">
+    <div className=" py-12 px-4 md:px-8 relative overflow-hidden bg-center">
       {/* Background Shapes */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-10">
         <div className="w-1/2 h-full bg-white rounded-full -rotate-[25deg] shadow-2xl scale-150"></div>

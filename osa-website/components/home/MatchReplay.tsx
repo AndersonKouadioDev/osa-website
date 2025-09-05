@@ -5,7 +5,7 @@ import React from 'react';
 
 const MatchReplay = () => (
  <div className='px-7 mt-20'> 
-    <h1 className='text-center text-4xl uppercase text-[#5D0B9E] my-3 font-bold mb-10'> Replay les temps forts </h1>
+    <h1 className='text-center text-4xl uppercase text-[#5D0B9E] my-3 font-bold mb-10 font-exo2'> Replay les temps forts </h1>
      <div className="flex flex-col items-center py-3 px-2 sm:py-4 sm:px-3 md:px-6 rounded-2xl mb-5 w-full mx-auto"  
         style={{ backgroundImage: 'url("/Assets/Images/all-img/BackgroundMaillot.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} >
  

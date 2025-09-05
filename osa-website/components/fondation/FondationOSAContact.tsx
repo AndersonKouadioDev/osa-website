@@ -7,7 +7,7 @@ export default function FondationOSAContact() {
       <div className="py-6 px-2 space-y-6 flex flex-col">
 
         {/* Téléphone */}
-        <div className="text-center shadow-md rounded-xl p-6 w-96">
+        <div className="text-center shadow-sm rounded-xl p-6 bg-[#F7F7F7]">
           <div className="w-14 h-14 bg-purple-700 rounded-full flex items-center justify-center mx-auto mb-3">
             <Phone className="w-7 h-7 text-white" />
           </div>
@@ -17,7 +17,7 @@ export default function FondationOSAContact() {
         </div>
 
         {/* Email */}
-        <div className="text-center shadow-md rounded-xl p-6">
+        <div className="text-center shadow-sm rounded-xl p-6 bg-[#F7F7F7]">
           <div className="w-14 h-14 bg-purple-700 rounded-full flex items-center justify-center mx-auto mb-3">
             <Mail className="w-7 h-7 text-white" />
           </div>
@@ -29,7 +29,7 @@ export default function FondationOSAContact() {
         </div>
 
         {/* Adresse */}
-        <div className="text-center shadow-md rounded-xl p-6">
+        <div className="text-center shadow-sm rounded-xl p-6 bg-[#F7F7F7]">
           <div className="w-14 h-14 bg-purple-700 rounded-full flex items-center justify-center mx-auto mb-3">
             <MapPin className="w-7 h-7 text-white" />
           </div>
@@ -39,7 +39,7 @@ export default function FondationOSAContact() {
         </div>
 
         {/* Horaires */}
-        <div className="text-center shadow-md rounded-xl p-6">
+        <div className="text-center shadow-sm rounded-xl p-6 bg-[#F7F7F7]">
           <div className="w-14 h-14 bg-purple-700 rounded-full flex items-center justify-center mx-auto mb-3">
             <Clock className="w-7 h-7 text-white" />
           </div>
