@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -210,7 +209,7 @@ const Fierte = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl  font-extrabold text-primary uppercase tracking-wide text-center mb-10 mt-4">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide text-center mb-10 mt-4">
           Notre Fierté
         </h2>
 

@@ -1,6 +1,5 @@
 import BetclicBanner from '@/components/club/BetclicBanner';
 import ClubAmbitions from '@/components/club/ClubAmbitions';
-import ExPensionnaires from '@/components/club/ExPensionnaires';
 import HistorySection from '@/components/club/HistorySection';
 import PalmaresSection from '@/components/club/PalmaresSection';
 import Penssionaire from '@/components/club/Penssionaire';

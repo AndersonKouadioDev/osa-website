@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { newsData } from "./newsData";
 import { useRouter } from "next/navigation";
-import { Play, ArrowLeft, Share2, MessageCircle, Eye } from "lucide-react";
+import { Play, MessageCircle, Eye } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import Link from "next/link";
 
@@ -153,8 +153,8 @@ export default function DetailNews({ params }: DetailNewsProps) {
                     }}
                 >
                     <div className="max-w-4xl w-full px-4 sm:px-6 md:px-8 mx-auto text-center">
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-6 sm:mb-8 md:mb-10 uppercase font-exo2">
-                            LAISSER UN COMMENTAIRE
+                        <h2 className="text-xl sm:text-2xl md:text-3xl uppercase font-bold text-white mb-6 sm:mb-8 md:mb-10 uppercase font-exo2">
+                            Laisser un commentaire
                         </h2>
 
                         <form className="space-y-4 sm:space-y-6">

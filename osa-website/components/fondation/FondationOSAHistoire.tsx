@@ -24,14 +24,14 @@ export default function FondationOSAHistoire() {
       {/* Text Content */}
       <div className="space-y-4 md:space-y-6 text-gray-700 leading-relaxed">
         <p className="text-justify">
-          Le football est un sport collectif, comme dans tous les autres « sport collectif », l'esprit d'équipe tient un rôle 
-          majeur dans la réussite sportive. Le ciment de cet esprit d'équipe, c'est la convivialité, l'envie d'être ensemble 
+          Le football est un sport collectif, comme dans tous les autres « sport collectif », l&apos;esprit d&apos;équipe tient un rôle 
+          majeur dans la réussite sportive. Le ciment de cet esprit d&apos;équipe, c&apos;est la convivialité, l&apos;envie d&apos;être ensemble 
           et le plaisir de partager. Tout ceci se résume en une bonne éducation et une vie sociale épanouie.
         </p>
         
         <p className="text-justify">
-          Pour concrétiser ses actions sociales en faveur de l'éducation et du bien-être des populations ivoiriennes 
-          singulièrement celles d'Abobo, le président fondateur Monsieur <strong>SYLLA HAMOUDJATA</strong> dit <strong>AMZA GAMAL</strong> a 
+          Pour concrétiser ses actions sociales en faveur de l&apos;éducation et du bien-être des populations ivoiriennes 
+          singulièrement celles d&apos;Abobo, le président fondateur Monsieur <strong>SYLLA HAMOUDJATA</strong> dit <strong>AMZA GAMAL</strong> a 
           décidé de mettre sur pieds la <strong>FONDATION OSA</strong>.
         </p>
       </div>

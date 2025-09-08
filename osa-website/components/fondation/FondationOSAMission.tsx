@@ -14,8 +14,8 @@ export default function FondationOSAMission() {
       <div className="mb-4 px-4">
         <p className="text-gray-700 leading-relaxed text-justify">
           La Fondation OSA a pour principales missions de former, éduquer et aider les jeunes ivoiriens et africains à se 
-          détourner des vices et maux qui minent les sociétés africaines, d'apporter une assistance aux établissements 
-          scolaires et centre de formation de football moins nantis de la Commune d'Abobo et partout en Côte d'Ivoire à 
+          détourner des vices et maux qui minent les sociétés africaines, d&apos;apporter une assistance aux établissements 
+          scolaires et centre de formation de football moins nantis de la Commune d&apos;Abobo et partout en Côte d&apos;Ivoire à 
           travers des actions sociales :
         </p>
       </div>
@@ -25,14 +25,14 @@ export default function FondationOSAMission() {
         {/* Équiper les établissements scolaires */}
         <div>
           <h2 className="text-[#5D0B9E] font-bold text-lg mb-2">Équiper les établissements scolaires</h2>
-          <p className="text-gray-700">Dons en matériels didactiques, rénovation d'écoles</p>
+          <p className="text-gray-700">Dons en matériels didactiques, rénovation d&apos;écoles</p>
         </div>
 
         {/* Équiper les centres de formation de football */}
         <div>
           <h2 className="text-[#5D0B9E] font-bold text-lg mb-2">Équiper les centres de formation de football</h2>
           <p className="text-gray-700">
-            Dons d'équipements sportifs, projet de partage d'expérience afin de promouvoir une réinsertion des jeunes 
+            Dons d&apos;équipements sportifs, projet de partage d&apos;expérience afin de promouvoir une réinsertion des jeunes 
             par le sport en les formants à la pratique professionnelle du football
           </p>
         </div>
@@ -41,8 +41,8 @@ export default function FondationOSAMission() {
         <div>
           <h2 className="text-[#5D0B9E] font-bold text-lg mb-2">Scolariser les jeunes</h2>
           <p className="text-gray-700">
-            Pour le président, instruire un enfant, c'est lui donner les clés de l'avenir. Le football d'accord mais l'école 
-            d'abord.
+            Pour le président, instruire un enfant, c&apos;est lui donner les clés de l&apos;avenir. Le football d&apos;accord mais l&apos;école 
+            d&apos;abord.
           </p>
         </div>
 

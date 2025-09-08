@@ -56,7 +56,7 @@ export default function MatchWithHighlights() {
               <div className="flex items-center">
                 <div className="bg-purple-100 border-2 border-purple-300 rounded-lg px-3 py-2 mr-4 min-w-[50px] sm:min-w-[60px] text-center">
                   <span className="text-purple-600 font-bold text-sm sm:text-base">
-                    19'
+                    19&apos;
                   </span>
                 </div>
                 <span className="text-gray-800 font-medium text-sm sm:text-base">
@@ -68,7 +68,7 @@ export default function MatchWithHighlights() {
               <div className="flex items-center">
                 <div className="bg-purple-100 border-2 border-purple-300 rounded-lg px-3 py-2 mr-4 min-w-[50px] sm:min-w-[60px] text-center">
                   <span className="text-purple-600 font-bold text-sm sm:text-base">
-                    41'
+                    41&apos;
                   </span>
                 </div>
                 <span className="text-gray-800 font-medium text-sm sm:text-base">
@@ -80,7 +80,7 @@ export default function MatchWithHighlights() {
               <div className="flex items-center">
                 <div className="bg-purple-100 border-2 border-purple-300 rounded-lg px-3 py-2 mr-4 min-w-[50px] sm:min-w-[60px] text-center">
                   <span className="text-purple-600 font-bold text-sm sm:text-base">
-                    79'
+                    79&apos;
                   </span>
                 </div>
                 <span className="text-gray-800 font-medium text-sm sm:text-base">
@@ -132,7 +132,7 @@ export default function MatchWithHighlights() {
                 </span>
                 <div className="bg-purple-100 border-2 border-purple-300 rounded-lg px-3 py-2 min-w-[50px] sm:min-w-[60px] text-center">
                   <span className="text-purple-600 font-bold text-sm sm:text-base">
-                    76'
+                    76&apos;
                   </span>
                 </div>
               </div>

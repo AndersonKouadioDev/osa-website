@@ -38,21 +38,21 @@ const Condition = () => {
         <div className="relative max-w-6xl mx-auto px-6 py-10 lg:py-12 lg:px-8">
           <div className="max-w-4xl ml-15 sm:mr-32 md:ml-48 lg:mr-0  ">
             {/* Titre principal */}
-            <h1 className="text-3xl lg:text-4xl text-center font-bold mb-6 text-yellow-400">
-              COMMENT INTÉGRER L'ACADÉMIE
+            <h1 className="text-3xl lg:text-4xl text-center uppercase font-bold mb-6 text-yellow-400">
+             comment intégrer l&apos;académie ?
             </h1>
 
             {/* Description */}
             <p className="text-base lg:text-lg text-gray-300    mb-8 leading-relaxed text-center max-w-3xl">
-              Le FC OSA a fait le choix de la gratuité afin de faciliter l'accès du plus grand nombre à ce
-              centre de formation qui s'est imposé comme l'un des meilleurs, assurant non
+              Le FC OSA a fait le choix de la gratuité afin de faciliter l&apos;accès du plus grand nombre à ce
+              centre de formation qui s&apos;est imposé comme l&apos;un des meilleurs, assurant non
               seulement la formation sportive, mais également une formation scolaire.
             </p>
 
             {/* Section Inscription */}
             <div className="mb-6">
-              <h2 className="text-2xl lg:text-3xl text-center font-bold mb-4 text-yellow-400">
-                INSCRIPTION GRATUITE
+              <h2 className="text-2xl lg:text-3xl text-center font-bold uppercase mb-4 text-yellow-400">
+                inscription gratuite
               </h2>
 
               <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center text-white">

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { CircleUserRound, LayoutGrid, ShoppingCart, Menu, X } from "lucide-react";
-import { IoBusiness, IoCashSharp, IoFootball, IoHome, IoNewspaper, IoPeopleOutline, IoPeopleSharp, IoPhonePortraitOutline, IoPlayCircle } from "react-icons/io5";
+import { IoBusiness, IoCashSharp, IoFootball, IoHome, IoPeopleOutline, IoPeopleSharp } from "react-icons/io5";
 
 export default function Nav() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -13,7 +13,7 @@ const NextMatches = () => {
 
           <div className="w-full sm:max-w-xl md:max-w-2xl border border-white rounded-lg p-4 sm:p-6 md:p-12 flex flex-col items-center justify-center min-h-[200px] sm:min-h-[250px] md:min-h-[300px] mx-auto">
             <p className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-300">
-              Il n'y a aucun match prévu
+              Il n&apos;y a aucun match prévu
             </p>
           </div>
 

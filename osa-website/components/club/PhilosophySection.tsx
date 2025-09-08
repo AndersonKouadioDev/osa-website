@@ -21,7 +21,7 @@ const PhilosophySection = () => {
             Le FC OSA est resté ﬁdèle à sa philosophie depuis toutes ces années qui est de former, éduquer et aider les jeunes ivoiriens et africains à se détourner des vices et maux qui minent les sociétés africaines à travers la pratique du football.
           </p>
           <p className="text-lg mt-4 text-start">
-            Comme l'indique notre slogan <span className='font-bold'>« FC OSA, toujours en avant !!! »</span>
+            Comme l&apos;indique notre slogan <span className='font-bold'>« FC OSA, toujours en avant !!! »</span>
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const PhilosophySection = () => {
              />
            </div>
             <h3 className="text-xl font-semibold mb-2 text-[#5D0B9E] uppercase">Nom Complet</h3>
-            <p className="text-gray-600">Football Club Olympique Sport d'Abobo</p>
+            <p className="text-gray-600">Football Club Olympique Sport d&apos;Abobo</p>
           </div>
 
           {/* Card 2: Siège Administratif */}

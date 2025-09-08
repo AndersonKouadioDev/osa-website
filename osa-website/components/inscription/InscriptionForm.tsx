@@ -219,7 +219,7 @@ export default function InscriptionForm() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Côte d'Ivoire">Côte d'Ivoire</SelectItem>
+                          <SelectItem value="Côte d'Ivoire">Côte d&apos;Ivoire</SelectItem>
                           <SelectItem value="Ghana">Ghana</SelectItem>
                           <SelectItem value="Mali">Mali</SelectItem>
                           <SelectItem value="Burkina Faso">Burkina Faso</SelectItem>
@@ -242,7 +242,7 @@ export default function InscriptionForm() {
                       <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                     </FormControl>
                     <FormLabel className="text-sm text-gray-600">
-                      Je souhaite recevoir l'actualité du club
+                      Je souhaite recevoir l&apos;actualité du club
                     </FormLabel>
                   </FormItem>
                 )}
@@ -255,7 +255,7 @@ export default function InscriptionForm() {
                 type="submit"
                 className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg cursor-pointer"
               >
-                S'inscrire
+                S&apos;inscrire
               </Button>
 
               <Link href="/connexion" className="text-sm text-gray-600 hover:text-gray-800">

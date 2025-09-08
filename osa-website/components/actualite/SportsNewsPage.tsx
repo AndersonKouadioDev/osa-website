@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import {
   Eye,
   MessageCircle,
-  Play,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 type NewsType =
   | "interview"
@@ -187,7 +187,7 @@ const SportsNewsPage: React.FC = () => {
             Actualités Sportives
           </h1>
           <p className="text-gray-600 text-sm sm:text-base">
-            Suivez toute l'actualité du football ivoirien
+            Suivez toute l&apos;actualité du football ivoirien
           </p>
         </div>
 
@@ -223,7 +223,7 @@ const SportsNewsPage: React.FC = () => {
                       />
                     )
                   ) : (
-                    <img
+                    <Image
                       src={article.image}
                       alt={article.title}
                       className="w-full h-full object-cover"

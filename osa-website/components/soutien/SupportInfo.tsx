@@ -9,13 +9,13 @@ export default function SupportInfo() {
           </h1>
           <div className="text-gray-700 text-base leading-relaxed space-y-4">
             <p>
-              Lorsqu'on s'appelle le FC OSA, qu'on est un club engagé, source de rêve, de motivation et d'espoir pour toute une jeunesse, notre action 
-              compte. Le FC OSA, enraciné dans la commune d'Abobo, porte une responsabilité sociale forte envers les populations locales et en particulier 
+              Lorsqu&apos;on s&apos;appelle le FC OSA, qu&apos;on est un club engagé, source de rêve, de motivation et d&apos;espoir pour toute une jeunesse, notre action 
+              compte. Le FC OSA, enraciné dans la commune d&apos;Abobo, porte une responsabilité sociale forte envers les populations locales et en particulier 
               les enfants.
             </p>
             
             <p>
-              C'est pourquoi nous avons fait le choix de concevoir et mettre en œuvre nos propres projets sociaux et éducatifs, d'agir directement sur le 
+              C&apos;est pourquoi nous avons fait le choix de concevoir et mettre en œuvre nos propres projets sociaux et éducatifs, d&apos;agir directement sur le 
               terrain, et de faire appel à votre générosité pour amplifier notre impact et aider encore plus de jeunes.
             </p>
             
@@ -24,7 +24,7 @@ export default function SupportInfo() {
             </p>
             
             <p>
-              L'intégralité des dons collectés sera directement reversée au Fonds de développement du FC OSA, qui finance nos initiatives en faveur des 
+              L&apos;intégralité des dons collectés sera directement reversée au Fonds de développement du FC OSA, qui finance nos initiatives en faveur des 
               enfants et jeunes en difficulté sociale, éducative ou sanitaire.
             </p>
           </div>
@@ -37,8 +37,8 @@ export default function SupportInfo() {
           </h2>
           <div className="text-gray-700 text-base leading-relaxed space-y-4">
             <p>
-              Offrir aux jeunes qui n'ont pas les mêmes chances de départ l'opportunité de croire en eux, de se construire et de s'épanouir à travers le 
-              sport, l'éducation et l'engagement communautaire.
+              Offrir aux jeunes qui n&apos;ont pas les mêmes chances de départ l&apos;opportunité de croire en eux, de se construire et de s&apos;épanouir à travers le 
+              sport, l&apos;éducation et l&apos;engagement communautaire.
             </p>
             <p>
               Chaque année, nous menons des dizaines de projets qui touchent directement des centaines de jeunes à Abobo et dans ses environs.
@@ -53,8 +53,8 @@ export default function SupportInfo() {
           </h2>
           <div className="text-gray-700 text-base leading-relaxed space-y-4">
             <p>
-              Au-delà d'un don annuel supérieur à 1 500 000 FCFA, des vérifications complémentaires seront effectuées pour respecter les exigences en 
-              matière de transparence. N'hésitez pas à nous contacter pour faciliter le processus.
+              Au-delà d&apos;un don annuel supérieur à 1 500 000 FCFA, des vérifications complémentaires seront effectuées pour respecter les exigences en 
+              matière de transparence. N&apos;hésitez pas à nous contacter pour faciliter le processus.
             </p>
           </div>
         </section>
@@ -66,8 +66,8 @@ export default function SupportInfo() {
           </h2>
           <div className="text-gray-700 text-base leading-relaxed space-y-4">
             <p>
-              Vos coordonnées sont nécessaires à l'émission de votre reçu et pour vous informer des actions concrètes rendues possibles grâce à vous. Le 
-              Fonds de développement du FC OSA s'engage à ne jamais partager vos informations personnelles avec des tiers sans votre accord.
+              Vos coordonnées sont nécessaires à l&apos;émission de votre reçu et pour vous informer des actions concrètes rendues possibles grâce à vous. Le 
+              Fonds de développement du FC OSA s&apos;engage à ne jamais partager vos informations personnelles avec des tiers sans votre accord.
             </p>
             <p>
               En conformité avec la législation ivoirienne sur la protection des données, vous pouvez exercer vos droits à tout moment en écrivant à : 
@@ -82,7 +82,7 @@ export default function SupportInfo() {
         {/* Message de remerciement final */}
         <section className="bg-purple-100 rounded-lg p-6 text-center">
           <p className="text-gray-800 text-lg font-semibold">
-            Merci infiniment pour votre soutien. Ensemble, faisons grandir les talents d'Abobo !
+            Merci infiniment pour votre soutien. Ensemble, faisons grandir les talents d&apos;Abobo !
           </p>
         </section>
       </div>

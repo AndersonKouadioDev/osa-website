@@ -153,7 +153,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-2">Nos Coordonnées</h2>
               <p className="text-gray-600">
-                N'hésitez pas à nous contacter pour toute information concernant notre centre de formation.
+                N&apos;hésitez pas à nous contacter pour toute information concernant notre centre de formation.
               </p>
             </div>
 
@@ -266,7 +266,7 @@ export default function ContactPage() {
                     >
                       <option value="">Sélectionnez un sujet</option>
                       <option value="inscription">Inscription nouvelle</option>
-                      <option value="information">Demande d'information</option>
+                      <option value="information">Demande d&apos;information</option>
                       <option value="visite">Organiser une visite</option>
                       <option value="partenariat">Partenariat</option>
                       <option value="autre">Autre</option>
@@ -290,8 +290,8 @@ export default function ContactPage() {
 
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <p className="text-blue-800 text-sm">
-                    <strong>Rappel :</strong> L'inscription au FC OSA est entièrement gratuite. 
-                    Méfiez-vous des personnes qui demandent de l'argent en notre nom.
+                    <strong>Rappel :</strong> L&apos;inscription au FC OSA est entièrement gratuite. 
+                    Méfiez-vous des personnes qui demandent de l&apos;argent en notre nom.
                   </p>
                 </div>
 
@@ -327,16 +327,16 @@ export default function ContactPage() {
           <div className="p-8 grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div>
-                <h4 className="font-bold text-gray-900 mb-2">L'inscription est-elle vraiment gratuite ?</h4>
+                <h4 className="font-bold text-gray-900 mb-2">L&apos;inscription est-elle vraiment gratuite ?</h4>
                 <p className="text-gray-600 text-sm">
-                  Oui, absolument ! Le FC OSA a fait le choix de la gratuité pour permettre l'accès au plus grand nombre.
+                  Oui, absolument ! Le FC OSA a fait le choix de la gratuité pour permettre l&apos;accès au plus grand nombre.
                 </p>
               </div>
               
               <div>
                 <h4 className="font-bold text-gray-900 mb-2">Quels documents sont nécessaires ?</h4>
                 <p className="text-gray-600 text-sm">
-                  Photocopie extrait de naissance, 2 photos d'identité, photo pièce d'identité du parent.
+                  Photocopie extrait de naissance, 2 photos d&apos;identité, photo pièce d&apos;identité du parent.
                 </p>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function ContactPage() {
         {/* Call to action final */}
         <div className="mt-16 text-center bg-[#ffb900] to-red-500 text-white rounded-xl p-12">
           <Trophy className="h-16 w-16 mx-auto mb-4" />
-          <h3 className="text-3xl font-bold mb-4">Prêt à rejoindre l'excellence ?</h3>
+          <h3 className="text-3xl font-bold mb-4">Prêt à rejoindre l&apos;excellence ?</h3>
           <p className="text-xl opacity-90 mb-6 max-w-2xl mx-auto">
             Depuis 2001, nous formons les champions de demain. Votre enfant a-t-il le potentiel pour intégrer nos équipes ?
           </p>

@@ -93,20 +93,13 @@ export default function TeamComposition() {
     },
   ];
 
-  const substitutes = [
-    "Kone Ali Djinan",
-    "Dia Dylan",
-    "Soro Inza",
-    "Sacko Yvan",
-    "Tapé Ange",
-  ];
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
         <div className="bg-primary text-white flex justify-between items-center py-4 px-8 rounded-t-lg">
-          <h1 className="text-2xl font-semibold">Composition de l'équipe</h1>
+          <h1 className="text-2xl font-semibold">Composition de l&apos;équipe</h1>
           <h1 className="text-2xl font-semibold">Formation du jeu</h1>
         </div>
 
@@ -119,7 +112,7 @@ export default function TeamComposition() {
                 {/* Gardiens */}
                 <div>
                   <h3 className="text-primary font-bold text-sm uppercase mb-3">
-                    GARDIENS
+                    Gardiens
                   </h3>
                   <div className="space-y-2">
                     <div className="text-black font-medium">
@@ -131,7 +124,7 @@ export default function TeamComposition() {
                 {/* Défenseurs */}
                 <div>
                   <h3 className="text-primary font-bold text-sm uppercase mb-3">
-                    DÉFENSEURS
+                    Défenseurs
                   </h3>
                   <div className="space-y-2">
                     <div className="text-black font-medium">Cheick Oumar</div>
