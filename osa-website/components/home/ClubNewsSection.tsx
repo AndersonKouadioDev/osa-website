@@ -48,7 +48,7 @@ const ClubNewsSection = () => {
   return (
     <div className="w-full bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#5D0B9E] mb-8 uppercase tracking-wide">
+        <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#5D0B9E] mb-8 uppercase tracking-wide font-exo2">
           Les actus du club
         </h2>
 

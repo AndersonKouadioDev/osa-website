@@ -312,7 +312,7 @@ export default function Effectif() {
                     {defenders.map((joueur) => (
                         <Link 
                           key={joueur.name} 
-                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          href={`/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
                           className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
                         >
 
@@ -362,7 +362,7 @@ export default function Effectif() {
                     {midfielders.map((joueur) => (
                         <Link 
                           key={joueur.name} 
-                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          href={`/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
                           className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
                         >
 
@@ -411,7 +411,7 @@ export default function Effectif() {
                     {forwards.map((joueur) => (
                         <Link 
                           key={joueur.name} 
-                          href={`/club/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
+                          href={`/effectif/joueur/${encodeURIComponent(joueur.name)}`} 
                           className="flex flex-col items-center relative w-full max-w-[250px] cursor-pointer hover:scale-105 transition-all"
                         >
                             <div

@@ -5,7 +5,7 @@ export default function FoundationSection() {
   return (
     <div className="flex flex-col items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-white">
       {/* Titre */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#5B21B6] mb-6 sm:mb-8 uppercase tracking-wide text-center">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#5B21B6] mb-6 sm:mb-8 uppercase tracking-wide text-center font-exo2">
         Fondation
       </h2>
 

@@ -47,6 +47,7 @@ export default function Nav() {
     };
 
     return (
+        
         <header className="w-full">
             {/* Navbar principale */}
             <nav className={`w-full bg-white/80 backdrop-blur top-0 left-0 z-1 transition-all ${isScrolled ? 'py-1' : 'py-2'}`}>
@@ -70,16 +71,12 @@ export default function Nav() {
                             <div className="hidden md:flex items-center gap-6">
                                 <ul className="flex items-center gap-4 lg:gap-6 list-none m-0 p-0">
                                     <li>
-                                        <Link
-                                            href="/boutique"
-                                            className="text-base lg:text-[18px] font-[var(--font-exo)] font-semibold uppercase text-gray-700 hover:text-amber-400 transition-colors"
-                                        >
-                                            Boutique
-                                        </Link>
+                                        <Link href="/boutique" className="text-base lg:text-[18px] font-[var(--font-exo)] font-semibold uppercase text-gray-700 hover:text-amber-400 transition-colors">Boutique</Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/billetterie"
+                                            href="https://www.billetweb.fr/championnat-national-de-football-fif-cote-divoire"
+                                            target="_blank"
                                             className="text-base lg:text-[18px] font-[var(--font-exo)] font-semibold uppercase text-gray-700 hover:text-amber-400 transition-colors"
                                         >
                                             Billetterie
@@ -153,7 +150,7 @@ export default function Nav() {
 
                 {/* Menu mobile */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden bg-white border-gray-200 pt-6">
+                    <div className="md:hidden bg-white border-gray-200 pt-6 ">
                         <div className="px-4 py-5 space-y-6">
                             <div className="flex flex-col space-y-4">
                                 <Link

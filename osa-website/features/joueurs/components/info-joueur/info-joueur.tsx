@@ -133,14 +133,14 @@ export default function PlayerDetails({ params }: playerProps) {
                     backgroundPosition: "center",
                   }}>
                     <div className="absolute inset-0 opacity-80 flex flex-col items-center justify-center p-4">
-                        <h1 className="text-[70px] sm:text-[70px] md:text-[105px] font-bold mb-2 uppercase text-center font-exo2 px-6 leading-[1.2] text-transparent stroked-text">{player.name}</h1>
-                        <div className="flex items-center gap-4 absolute ">
+                        <h1 className="text-[55px] sm:text-[55px] md:text-[105px] font-bold mb-2 uppercase text-center font-exo2 px-6 leading-[1.2] text-transparent stroked-text">{player.name}</h1>
+                        <div className="flex items-center gap-4 absolute top-[50%] sm:top-[50%] md:top-[50%] lg:top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
                             <Image
                                 src={player.image}
                                 alt={player.name}
                                 width={300}
                                 height={300}
-                                className="object-cover"
+                                className="object-cover w-[600px] sm:w-[800px] md:w-[800px] lg:w-[300px] h-[440px] sm:h-[440px] md:h-[700px] lg:h-[405px]"
                             />
                         </div>
                     </div>
@@ -161,13 +161,13 @@ export default function PlayerDetails({ params }: playerProps) {
                         <div className="ml-[100px]">
                             <div className="flex items-center">
                                 <h3 className="text-[220px] font-bold text-amber-400">{player.number}</h3>
-                                <div className="flex items-center ml-[-85px]">
+                                <div className="flex items-center ml-[-100px] sm:ml-[-100px] md:ml-[-85px] lg:ml-[-85px]">
                                     <Image
                                         src={player.image}
                                         alt={player.name}
                                         width={300}
                                         height={300}
-                                        className="object-cover z-10 sm:w-[400px]"
+                                        className="object-cover z-10 w-[150px] h-[300px] sm:w-[150px]  sm:h-[300px] md:w-[300px] md:h-[300px] lg:w-[200px] lg:h-[300px]"
                                     />
                                 </div>
                             </div>
@@ -263,12 +263,12 @@ export default function PlayerDetails({ params }: playerProps) {
                         <h2 className="text-[40px] font-bold mb-6 text-purple-800 uppercase text-center py-4 border-b-2">
                             Autres {getPositionLabel(player.position)}
                         </h2>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 py-4 justify-items-center">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 gap-y-4 py-4 justify-items-center">
                             {player.samePositionPlayers.map((p) => (
 
                                 <Link
                                     key={p.name}
-                                    href={`/club/effectif/joueur/${encodeURIComponent(p.name)}`}
+                                    href={`/effectif/joueur/${encodeURIComponent(p.name)}`}
                                     className="group block transition-transform"
                                 >
                                     <div
