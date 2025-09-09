@@ -9,7 +9,6 @@ import OurTeamSection from "@/components/home/OurTeamSection";
 import ClubNewsSection from "@/components/home/ClubNewsSection";
 import AdBanner from "@/components/home/AdBanner";
 import OSAExperienceBanner from "@/components/home/OSAExperienceBanner";
-import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -27,7 +26,6 @@ export default function Home() {
       <AppPromoBanner />
 
       <FoundationSection />
-      <Footer />
     </div>
   );
 }
