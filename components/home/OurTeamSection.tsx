@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const TEAM_MEMBERS = [
   // Gardiens de but (GB)
@@ -11,48 +12,49 @@ const TEAM_MEMBERS = [
   { name: "Diarrassouba Mohamed", position: "GB", number: 41, image: "/assets/Images/joueurs/gardiens/gardien_41.png" },
 
   // Défenseurs (DEF)
-  { name: "Cheick Oumar", position: "DEF", number: 17, image: "/assets/Images/cheick-oumar.png" },
-  { name: "Sylla Aboubacar", position: "DEF", number: 18, image: "/assets/Images/sylla-aboubacar.png" },
-  { name: "Bakayoko Yaya", position: "DEF", number: 2, image: "/assets/Images/bakayoko-yaya.png" },
-  { name: "Hinde Thierry", position: "DEF", number: 25, image: "/assets/Images/hinde-thierry-def.png" },
-  { name: "Seydou Traoré", position: "DEF", number: 4, image: "/assets/Images/seydou-traore.png" },
-  { name: "Koné Ismaël", position: "DEF", number: 23, image: "/assets/Images/kone-ismael.png" },
-  { name: "Lago Christ", position: "DEF", number: 5, image: "/assets/Images/lago-christ.png" },
-  { name: "Guede Abraham", position: "DEF", number: 29, image: "/assets/Images/guede-abraham.png" },
-  { name: "Keita Tidiane", position: "DEF", number: 24, image: "/assets/Images/keita-tidiane.png" },
-  { name: "Yeboue Francis", position: "DEF", number: 14, image: "/assets/Images/yeboue-francis.png" },
+  { name: "Cheick Oumar", position: "DEF", number: 17, image: "/Assets/Images/joueurs/defenseurs/def_17.png" },
+  { name: "Sylla Aboubacar", position: "DEF", number: 18, image: "/Assets/Images/joueurs/defenseurs/def_18.png"  },
+  { name: "Bakayoko Yaya", position: "DEF", number: 2, image: "/Assets/Images/joueurs/defenseurs/def_2.png"  },
+  { name: "Hinde Thierry", position: "DEF", number: 25, image: "/Assets/Images/joueurs/defenseurs/def_25.png" },
+  { name: "Seydou Traoré", position: "DEF", number: 4, image: "/Assets/Images/joueurs/defenseurs/def_4.png" },
+  { name: "Koné Ismaël", position: "DEF", number: 23, image: "/Assets/Images/joueurs/defenseurs/def_23.png"  },
+  { name: "Lago Christ", position: "DEF", number: 5, image: "/Assets/Images/joueurs/defenseurs/def_5.png"  },
+  { name: "Guede Abraham", position: "DEF", number: 29, image: "/Assets/Images/joueurs/defenseurs/def_29.png" },
+  { name: "Keita Tidiane", position: "DEF", number: 24, image: "/Assets/Images/joueurs/defenseurs/def_24.png"  },
+  { name: "Yeboue Francis", position: "DEF", number: 14, image: "/Assets/Images/joueurs/defenseurs/def_14.png" },
   
   // Milieux de terrain (MIL, M.D, M.O, MC)
-  { name: "Koné Ali Djinan", position: "MIL", number: 15, image: "/assets/Images/kone-ali-djinan.png" },
-  { name: "Hinde Thierry", position: "M.D", number: 6, image: "/assets/Images/hinde-thierry.png" },
-  { name: "Dia Dylan", position: "MIL", number: 15, image: "/assets/Images/dia-dylan.png" },
-  { name: "Nombre Olivier", position: "M.O", number: 8, image: "/assets/Images/nombre-olivier.png" },
-  { name: "Pateliy Mohamed", position: "M.D", number: 28, image: "/assets/Images/pateliy-mohamed.png" },
-  { name: "Tapé Ange", position: "M.D", number: 35, image: "/assets/Images/tape-ange.png" },
-  { name: "Sacko Yvan", position: "M.O", number: 10, image: "/assets/Images/sacko-yvan.png" },
-  { name: "Soro Inza", position: "MC", number: 7, image: "/assets/Images/soro-inza.png" },
-  { name: "Koffi Dylane", position: "MIL", number: 22, image: "/assets/Images/koffi-dylane.png" },
-  { name: "Soumahoro Abroulaye", position: "MIL", number: 21, image: "/assets/Images/soumahoro-abroulaye.png" },
-  { name: "Onogo Yaya", position: "MIL", number: 32, image: "/assets/Images/onogo-yaya.png" },
-  { name: "Soumahoro Abroulaye", position: "MIL", number: 39, image: "/assets/Images/soumahoro-abroulaye-39.png" },
-  { name: "Dianassouba Aguib", position: "MIL", number: 38, image: "/assets/Images/dianassouba-aguib.png" },
+  { name: "Koné Ali Djinan", position: "MIL", number: 15, image: "/Assets/Images/joueurs/milieux/mil_15.png" },
+  { name: "Hinde Thierry", position: "M.D", number: 6, image: "/Assets/Images/joueurs/milieux/mil_6.png"},
+  { name: "Dia Dylan", position: "MIL", number: 15, image: "/Assets/Images/joueurs/milieux/mil_8.png" },
+  { name: "Nombre Olivier", position: "M.O", number: 8, image: "/Assets/Images/joueurs/milieux/mil_8.png" },
+  { name: "Pateliy Mohamed", position: "M.D", number: 28, image: "/Assets/Images/joueurs/milieux/mil_28.png" },
+  { name: "Tapé Ange", position: "M.D", number: 35, image: "/Assets/Images/joueurs/milieux/mil_35.png" },
+  { name: "Sacko Yvan", position: "M.O", number: 10, image: "/Assets/Images/joueurs/milieux/mil_10.png" },
+  { name: "Soro Inza", position: "MC", number: 7, image: "/Assets/Images/joueurs/milieux/mil_7.png" },
+  { name: "Koffi Dylane", position: "MIL", number: 22, image: "/Assets/Images/joueurs/milieux/mil_22.png" },
+  { name: "Soumahoro Abroulaye", position: "MIL", number: 21, image: "/Assets/Images/joueurs/milieux/mil_21.png"},
+  { name: "Onogo Yaya", position: "MIL", number: 32, image:"/Assets/Images/joueurs/milieux/mil_32.png" },
+  { name: "Soumahoro Abroulaye", position: "MIL", number: 39, image: "/Assets/Images/joueurs/milieux/mil_39.png" },
+  { name: "Dianassouba Aguib", position: "MIL", number: 38, image: "/Assets/Images/joueurs/milieux/mil_38.png"},
 
   // Attaquants (ATT, AD)
-  { name: "Guei Asse Alain", position: "AD", number: 9, image: "/assets/Images/guei-asse-alain.png" },
-  { name: "Zouhoule Elvis Mohamed", position: "AD", number: 13, image: "/assets/Images/zouhoule-elvis-mohamed.png" },
-  { name: "Lasme Gnagne", position: "ATT", number: 11, image: "/assets/Images/lasme-gnagne.png" },
-  { name: "Bamba Aboubacar", position: "AD", number: 33, image: "/assets/Images/bamba-aboubacar.png" },
-  { name: "Alassane Traoré", position: "ATT", number: 3, image: "/assets/Images/alassane-traore.png" },
-  { name: "Touré Abakar", position: "ATT", number: 19, image: "/assets/Images/toure-abakar.png" },
-  { name: "Condé Ali", position: "ATT", number: 36, image: "/assets/Images/conde-ali.png" },
-  { name: "Spiecker Thierry", position: "ATT", number: 20, image: "/assets/Images/spiecker-thierry.png" },
-  { name: "Fofana Inza", position: "ATT", number: 34, image: "/assets/Images/fofana-inza.png" },
-  { name: "Tra Bi Prince", position: "ATT", number: 37, image: "/assets/Images/tra-bi-prince.png" },
+  { name: "Guei Asse Alain", position: "AD", number: 9, image: "/Assets/Images/joueurs/attaquants/att_9.png" },
+  { name: "Zouhoule Elvis Mohamed", position: "AD", number: 13, image: "/Assets/Images/joueurs/attaquants/att_13.png" },
+  { name: "Lasme Gnagne", position: "ATT", number: 11, image: "/Assets/Images/joueurs/attaquants/att_11.png" },
+  { name: "Bamba Aboubacar", position: "AD", number: 33, image: "/Assets/Images/joueurs/attaquants/att_33.png" },
+  { name: "Alassane Traoré", position: "ATT", number: 3, image: "/Assets/Images/joueurs/attaquants/att_3.png" },
+  { name: "Touré Abakar", position: "ATT", number: 19, image: "/Assets/Images/joueurs/attaquants/att_19.png" },
+  { name: "Condé Ali", position: "ATT", number: 36, image: "/Assets/Images/joueurs/attaquants/att_36.png" },
+  { name: "Spiecker Thierry", position: "ATT", number: 20, image: "/Assets/Images/joueurs/attaquants/att_20.png" },
+  { name: "Fofana Inza", position: "ATT", number: 34, image: "/Assets/Images/joueurs/attaquants/att_34.png" },
+  { name: "Tra Bi Prince", position: "ATT", number: 37, image: "/Assets/Images/joueurs/attaquants/att_37.png" },
 ];
 
 export default function OurTeamSection() {
   const birthdayPlayer = "Zouhoule Elvis M.";
   const birthdayAge = 22;
+  const router = useRouter();
 
   return (
     <div className="bg-gray-100 py-12 px-4 md:px-8 relative overflow-hidden bg-center">
@@ -65,18 +67,19 @@ export default function OurTeamSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Titre */}
+
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#5B21B6] uppercase tracking-wide text-center mb-10 mt-4">
           Notre Équipe
         </h2>
 
         {/* Scroll horizontal libre */}
-        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover " style={{ backgroundImage: "url('/assets/images/all-img/BackgroundEquipe.png')" }}
+        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover border-red-400 border-2 " style={{ backgroundImage: "url('/Assets/images/all-img/BackgroundEquipe.png')" }}
         >
           {TEAM_MEMBERS.map((member, index) => (
             <div
               key={index}
               className="snap-start flex-shrink-0 w-64 bg-center bg-cover"
-              style={{ backgroundImage: "url('/assets/images/all-img/Link.png')" }}
+              style={{ backgroundImage: "url('/Assets/images/all-img/Link.pg')" }}
               
             >
               <div className="group relative w-64 h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer  "  >
@@ -132,7 +135,7 @@ export default function OurTeamSection() {
 
         {/* Bouton "Voir toute l'équipe" */}
         <div className="flex justify-center mt-6">
-          <button className="flex items-center px-6 py-3 bg-white text-[#5B21B6] rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+          <button className="flex items-center px-6 py-3 bg-white text-[#5B21B6] rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg cursor-pointer"  onClick={()=>router.push('/effectif') } >
             Voir toute l&apos;équipe <ChevronRight size={18} className="ml-2" />
           </button>
         </div>
