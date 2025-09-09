@@ -17,7 +17,7 @@ export default function MatchWithHighlights() {
             {/* FC OSA Logo */}
             <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative">
               <Image
-                src={"/Assets/images/all-img/logoOSA.png"}
+                src={"/assets/images/all-img/logoOSA.png"}
                 alt="logo"
                 fill
                 className="object-contain"
@@ -40,7 +40,7 @@ export default function MatchWithHighlights() {
             {/* SOL FC Logo */}
             <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative">
               <Image
-                src={"/Assets/images/all-img/sol.png"}
+                src={"/assets/images/all-img/sol.png"}
                 alt="logo"
                 fill
                 className="object-contain"

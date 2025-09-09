@@ -45,7 +45,7 @@ export default function MatchCard({ match }: MatchCardProps) {
         <div className="flex items-center gap-1.5 px-1 py-0.5 rounded-lg   ">
           <div className="w-5 h-5 relative">
             <Image
-              src="/Assets/images/all-img/LogoL1.jpg"
+              src="/assets/images/all-img/LogoL1.jpg"
               alt="Ligue 1 Logo"
               fill
               className="object-contain"
@@ -64,7 +64,7 @@ export default function MatchCard({ match }: MatchCardProps) {
         <div className="hidden lg:flex absolute top-2 left-4 items-center gap-1.5 px-2 py-4 rounded-lg  ">
           <div className="w-10 h-10 relative">
             <Image
-              src="/Assets/images/all-img/LogoL1.jpg"
+              src="/assets/images/all-img/LogoL1.jpg"
               alt="Ligue 1 Logo"
               fill
               className="object-contain"

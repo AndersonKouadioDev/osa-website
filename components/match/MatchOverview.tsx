@@ -74,7 +74,7 @@ export default function MatchOverview() {
                 <div className="w-12 h-8 flex items-center justify-center rounded-2xl">
                   <div className="w-12 h-10 sm:w-14 sm:h-8 md:w-16 md:h-10 relative overflow-hidden rounded-md border border-black">
                     <Image
-                      src={"/Assets/images/all-img/lieu.png"}
+                      src={"/assets/images/all-img/lieu.png"}
                       alt="logo"
                       fill
                       className="object-cover"
@@ -91,7 +91,7 @@ export default function MatchOverview() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-3">
                 <div className="w-12 h-10 sm:w-14 sm:h-8 md:w-16 md:h-10 relative overflow-hidden rounded-md border border-black">
                   <Image
-                    src={"/Assets/images/nav/osatv.png"}
+                    src={"/assets/images/nav/osatv.png"}
                     alt="logo"
                     fill
                     className="object-contain"

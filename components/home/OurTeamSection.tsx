@@ -5,49 +5,49 @@ import { ChevronRight } from "lucide-react";
 
 const TEAM_MEMBERS = [
   // Gardiens de but (GB)
-  { name: "Diamoutene Mahamadou", position: "GB", number: 16, image: "/Assets/images/joueurs/gardiens/gardien_16.png" },
-  { name: "Kanté Zié Aboubacar", position: "GB", number: 1, image: "/Assets/Images/joueurs/gardiens/gardien_1.png" },
-  { name: "Koffi Jean Yves", position: "GB", number: 30, image: "/Assets/Images/joueurs/gardiens/gardien_30.png" },
-  { name: "Diarrassouba Mohamed", position: "GB", number: 41, image: "/Assets/Images/joueurs/gardiens/gardien_41.png" },
+  { name: "Diamoutene Mahamadou", position: "GB", number: 16, image: "/assets/images/joueurs/gardiens/gardien_16.png" },
+  { name: "Kanté Zié Aboubacar", position: "GB", number: 1, image: "/assets/Images/joueurs/gardiens/gardien_1.png" },
+  { name: "Koffi Jean Yves", position: "GB", number: 30, image: "/assets/Images/joueurs/gardiens/gardien_30.png" },
+  { name: "Diarrassouba Mohamed", position: "GB", number: 41, image: "/assets/Images/joueurs/gardiens/gardien_41.png" },
 
   // Défenseurs (DEF)
-  { name: "Cheick Oumar", position: "DEF", number: 17, image: "/Assets/Images/cheick-oumar.png" },
-  { name: "Sylla Aboubacar", position: "DEF", number: 18, image: "/Assets/Images/sylla-aboubacar.png" },
-  { name: "Bakayoko Yaya", position: "DEF", number: 2, image: "/Assets/Images/bakayoko-yaya.png" },
-  { name: "Hinde Thierry", position: "DEF", number: 25, image: "/Assets/Images/hinde-thierry-def.png" },
-  { name: "Seydou Traoré", position: "DEF", number: 4, image: "/Assets/Images/seydou-traore.png" },
-  { name: "Koné Ismaël", position: "DEF", number: 23, image: "/Assets/Images/kone-ismael.png" },
-  { name: "Lago Christ", position: "DEF", number: 5, image: "/Assets/Images/lago-christ.png" },
-  { name: "Guede Abraham", position: "DEF", number: 29, image: "/Assets/Images/guede-abraham.png" },
-  { name: "Keita Tidiane", position: "DEF", number: 24, image: "/Assets/Images/keita-tidiane.png" },
-  { name: "Yeboue Francis", position: "DEF", number: 14, image: "/Assets/Images/yeboue-francis.png" },
+  { name: "Cheick Oumar", position: "DEF", number: 17, image: "/assets/Images/cheick-oumar.png" },
+  { name: "Sylla Aboubacar", position: "DEF", number: 18, image: "/assets/Images/sylla-aboubacar.png" },
+  { name: "Bakayoko Yaya", position: "DEF", number: 2, image: "/assets/Images/bakayoko-yaya.png" },
+  { name: "Hinde Thierry", position: "DEF", number: 25, image: "/assets/Images/hinde-thierry-def.png" },
+  { name: "Seydou Traoré", position: "DEF", number: 4, image: "/assets/Images/seydou-traore.png" },
+  { name: "Koné Ismaël", position: "DEF", number: 23, image: "/assets/Images/kone-ismael.png" },
+  { name: "Lago Christ", position: "DEF", number: 5, image: "/assets/Images/lago-christ.png" },
+  { name: "Guede Abraham", position: "DEF", number: 29, image: "/assets/Images/guede-abraham.png" },
+  { name: "Keita Tidiane", position: "DEF", number: 24, image: "/assets/Images/keita-tidiane.png" },
+  { name: "Yeboue Francis", position: "DEF", number: 14, image: "/assets/Images/yeboue-francis.png" },
   
   // Milieux de terrain (MIL, M.D, M.O, MC)
-  { name: "Koné Ali Djinan", position: "MIL", number: 15, image: "/Assets/Images/kone-ali-djinan.png" },
-  { name: "Hinde Thierry", position: "M.D", number: 6, image: "/Assets/Images/hinde-thierry.png" },
-  { name: "Dia Dylan", position: "MIL", number: 15, image: "/Assets/Images/dia-dylan.png" },
-  { name: "Nombre Olivier", position: "M.O", number: 8, image: "/Assets/Images/nombre-olivier.png" },
-  { name: "Pateliy Mohamed", position: "M.D", number: 28, image: "/Assets/Images/pateliy-mohamed.png" },
-  { name: "Tapé Ange", position: "M.D", number: 35, image: "/Assets/Images/tape-ange.png" },
-  { name: "Sacko Yvan", position: "M.O", number: 10, image: "/Assets/Images/sacko-yvan.png" },
-  { name: "Soro Inza", position: "MC", number: 7, image: "/Assets/Images/soro-inza.png" },
-  { name: "Koffi Dylane", position: "MIL", number: 22, image: "/Assets/Images/koffi-dylane.png" },
-  { name: "Soumahoro Abroulaye", position: "MIL", number: 21, image: "/Assets/Images/soumahoro-abroulaye.png" },
-  { name: "Onogo Yaya", position: "MIL", number: 32, image: "/Assets/Images/onogo-yaya.png" },
-  { name: "Soumahoro Abroulaye", position: "MIL", number: 39, image: "/Assets/Images/soumahoro-abroulaye-39.png" },
-  { name: "Dianassouba Aguib", position: "MIL", number: 38, image: "/Assets/Images/dianassouba-aguib.png" },
+  { name: "Koné Ali Djinan", position: "MIL", number: 15, image: "/assets/Images/kone-ali-djinan.png" },
+  { name: "Hinde Thierry", position: "M.D", number: 6, image: "/assets/Images/hinde-thierry.png" },
+  { name: "Dia Dylan", position: "MIL", number: 15, image: "/assets/Images/dia-dylan.png" },
+  { name: "Nombre Olivier", position: "M.O", number: 8, image: "/assets/Images/nombre-olivier.png" },
+  { name: "Pateliy Mohamed", position: "M.D", number: 28, image: "/assets/Images/pateliy-mohamed.png" },
+  { name: "Tapé Ange", position: "M.D", number: 35, image: "/assets/Images/tape-ange.png" },
+  { name: "Sacko Yvan", position: "M.O", number: 10, image: "/assets/Images/sacko-yvan.png" },
+  { name: "Soro Inza", position: "MC", number: 7, image: "/assets/Images/soro-inza.png" },
+  { name: "Koffi Dylane", position: "MIL", number: 22, image: "/assets/Images/koffi-dylane.png" },
+  { name: "Soumahoro Abroulaye", position: "MIL", number: 21, image: "/assets/Images/soumahoro-abroulaye.png" },
+  { name: "Onogo Yaya", position: "MIL", number: 32, image: "/assets/Images/onogo-yaya.png" },
+  { name: "Soumahoro Abroulaye", position: "MIL", number: 39, image: "/assets/Images/soumahoro-abroulaye-39.png" },
+  { name: "Dianassouba Aguib", position: "MIL", number: 38, image: "/assets/Images/dianassouba-aguib.png" },
 
   // Attaquants (ATT, AD)
-  { name: "Guei Asse Alain", position: "AD", number: 9, image: "/Assets/Images/guei-asse-alain.png" },
-  { name: "Zouhoule Elvis Mohamed", position: "AD", number: 13, image: "/Assets/Images/zouhoule-elvis-mohamed.png" },
-  { name: "Lasme Gnagne", position: "ATT", number: 11, image: "/Assets/Images/lasme-gnagne.png" },
-  { name: "Bamba Aboubacar", position: "AD", number: 33, image: "/Assets/Images/bamba-aboubacar.png" },
-  { name: "Alassane Traoré", position: "ATT", number: 3, image: "/Assets/Images/alassane-traore.png" },
-  { name: "Touré Abakar", position: "ATT", number: 19, image: "/Assets/Images/toure-abakar.png" },
-  { name: "Condé Ali", position: "ATT", number: 36, image: "/Assets/Images/conde-ali.png" },
-  { name: "Spiecker Thierry", position: "ATT", number: 20, image: "/Assets/Images/spiecker-thierry.png" },
-  { name: "Fofana Inza", position: "ATT", number: 34, image: "/Assets/Images/fofana-inza.png" },
-  { name: "Tra Bi Prince", position: "ATT", number: 37, image: "/Assets/Images/tra-bi-prince.png" },
+  { name: "Guei Asse Alain", position: "AD", number: 9, image: "/assets/Images/guei-asse-alain.png" },
+  { name: "Zouhoule Elvis Mohamed", position: "AD", number: 13, image: "/assets/Images/zouhoule-elvis-mohamed.png" },
+  { name: "Lasme Gnagne", position: "ATT", number: 11, image: "/assets/Images/lasme-gnagne.png" },
+  { name: "Bamba Aboubacar", position: "AD", number: 33, image: "/assets/Images/bamba-aboubacar.png" },
+  { name: "Alassane Traoré", position: "ATT", number: 3, image: "/assets/Images/alassane-traore.png" },
+  { name: "Touré Abakar", position: "ATT", number: 19, image: "/assets/Images/toure-abakar.png" },
+  { name: "Condé Ali", position: "ATT", number: 36, image: "/assets/Images/conde-ali.png" },
+  { name: "Spiecker Thierry", position: "ATT", number: 20, image: "/assets/Images/spiecker-thierry.png" },
+  { name: "Fofana Inza", position: "ATT", number: 34, image: "/assets/Images/fofana-inza.png" },
+  { name: "Tra Bi Prince", position: "ATT", number: 37, image: "/assets/Images/tra-bi-prince.png" },
 ];
 
 export default function OurTeamSection() {
@@ -70,13 +70,13 @@ export default function OurTeamSection() {
         </h2>
 
         {/* Scroll horizontal libre */}
-        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover " style={{ backgroundImage: "url('/Assets/images/all-img/BackgroundEquipe.png')" }}
+        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover " style={{ backgroundImage: "url('/assets/images/all-img/BackgroundEquipe.png')" }}
         >
           {TEAM_MEMBERS.map((member, index) => (
             <div
               key={index}
               className="snap-start flex-shrink-0 w-64 bg-center bg-cover"
-              style={{ backgroundImage: "url('/Assets/images/all-img/Link.png')" }}
+              style={{ backgroundImage: "url('/assets/images/all-img/Link.png')" }}
               
             >
               <div className="group relative w-64 h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer  "  >
@@ -122,7 +122,7 @@ export default function OurTeamSection() {
               {birthdayAge} ANS
             </span>
             <Image
-              src="/Assets/Images/all-img/cake.png"
+              src="/assets/Images/all-img/cake.png"
               alt="Cake"
               width={30}
               height={30}

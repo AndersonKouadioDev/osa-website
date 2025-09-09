@@ -16,7 +16,7 @@ export default function FoundationSection() {
         <div className="flex justify-center w-full lg:w-auto">
           <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[290px]">
             <Image
-              src="/Assets/images/all-img/fondation1.png"
+              src="/assets/images/all-img/fondation1.png"
               alt="Distribution d'aide"
               width={290}
               height={200}
@@ -41,7 +41,7 @@ export default function FoundationSection() {
         <div className="flex justify-center w-full lg:w-auto">
           <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[290px]">
             <Image
-              src="/Assets/images/all-img/fondation2.png"
+              src="/assets/images/all-img/fondation2.png"
               alt="Groupe de jeunes"
               width={290}
               height={200}
@@ -59,7 +59,7 @@ export default function FoundationSection() {
           <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4 text-center sm:text-left">
             <div className="flex-shrink-0">
               <Image
-                src="/Assets/images/all-img/logo.png"
+                src="/assets/images/all-img/logo.png"
                 alt="Logo FC OSA"
                 width={50}
                 height={50}

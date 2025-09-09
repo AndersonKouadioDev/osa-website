@@ -10,73 +10,73 @@ export default function Boutique() {
       id: 1,
       nom: "MAILLOT DOMICILE 24/25 VIP",
       prix: "30.000 CFA",
-      image: "/Assets/images/all-img/maillot1.png", // Mets le vrai chemin de ton image
+      image: "/assets/images/all-img/maillot1.png", // Mets le vrai chemin de ton image
     },
     {
       id: 2,
       nom: "MAILLOT EXTÉRIEUR 24/25 VIP",
       prix: "30.000 CFA",
-      image: "/Assets/Images/all-img/maillot2.png",
+      image: "/assets/Images/all-img/maillot2.png",
     },
     {
       id: 3,
       nom: "MAILLOT THIRD 24/25 VIP",
       prix: "30.000 CFA",
-     image: "/Assets/Images/all-img/maillot3.png",
+     image: "/assets/Images/all-img/maillot3.png",
     },
     {
       id: 4,
       nom: "CALPIN",
       prix: "5000 CFA",
-     image: "/Assets/Images/boutique/calpin.png",
+     image: "/assets/Images/boutique/calpin.png",
     },
     {
       id: 5,
       nom: "CASQUETTE",
       prix: "3000 CFA",
-     image: "/Assets/Images/boutique/Casquette1.png",
+     image: "/assets/Images/boutique/Casquette1.png",
     },
      {
       id: 6,
       nom: "ECHARPE",
       prix: "4000 CFA",
-     image: "/Assets/Images/boutique/Echarpe1.png",
+     image: "/assets/Images/boutique/Echarpe1.png",
     },
     {
       id: 7,
       nom: "GOURDE",
       prix: "5000 CFA",
-     image: "/Assets/Images/boutique/Gourde.png",
+     image: "/assets/Images/boutique/Gourde.png",
     },
     {
       id: 8,
       nom: "IMPERMEABLE",
       prix: "7000 CFA",
-     image: "/Assets/Images/boutique/Impermeable1.png",
+     image: "/assets/Images/boutique/Impermeable1.png",
     },
     {
       id: 9,
       nom: "ECHARPE",
       prix: "4000 CFA",
-     image: "/Assets/Images/boutique/Echarpe1.png",
+     image: "/assets/Images/boutique/Echarpe1.png",
     },
     {
       id: 10,
       nom: "TASSE",
       prix: "4000 CFA",
-     image: "/Assets/Images/boutique/Tasse1.png",
+     image: "/assets/Images/boutique/Tasse1.png",
     },
     {
       id: 11,
       nom: "PORTE CLE",
       prix: "1000 CFA",
-     image: "/Assets/Images/boutique/PorteCle.png",
+     image: "/assets/Images/boutique/PorteCle.png",
     },
     {
       id: 12,
       nom: "PARAPLUIE",
       prix: "5000 CFA",
-     image: "/Assets/Images/boutique/Parapluie1.png",
+     image: "/assets/Images/boutique/Parapluie1.png",
     },
     
   ];
@@ -87,7 +87,7 @@ export default function Boutique() {
           Notre Équipe
         </h2>
      <section className=" text-white py-12 bg-center bg-cover px-4 mt-5" 
-    style={{ backgroundImage: "url('/Assets/images/all-img/BackgroundMaillot.png')" }} >
+    style={{ backgroundImage: "url('/assets/images/all-img/BackgroundMaillot.png')" }} >
       <div className="max-w-6xl mx-auto text-center">
         {/* Titre */}
         <h2 className="text-2xl md:text-3xl font-bold mb-10">

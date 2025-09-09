@@ -14,7 +14,7 @@ export default function FondationOSAHistoire() {
       {/* Photo Section */}
       <div className="relative w-full mb-6 md:mb-8 h-52 md:h-96">
         <Image 
-          src="/Assets/images/all-img/fondation3.jpg" 
+          src="/assets/images/all-img/fondation3.jpg" 
           alt="logo" 
           fill
           className="object-cover rounded-2xl"

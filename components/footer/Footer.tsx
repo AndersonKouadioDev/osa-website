@@ -80,14 +80,14 @@ export default function Footer() {
           className="absolute inset-0 bg-center bg-cover opacity-30"
           style={{
             backgroundImage:
-              "url('/Assets/images/all-img/BackgroundFooter.png')",
+              "url('/assets/images/all-img/BackgroundFooter.png')",
           }}
         />
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center mx-auto">
           <div className="mb-4 sm:mb-6"  >
             <Image
-              src="/Assets/images/all-img/logoOSA.png"
+              src="/assets/images/all-img/logoOSA.png"
               alt="FC OSA Logo"
               width={80}
               height={80}

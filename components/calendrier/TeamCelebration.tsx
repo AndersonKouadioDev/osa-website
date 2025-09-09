@@ -7,7 +7,7 @@ export default function TeamCelebration() {
         <div
           className="absolute inset-0 bg-cover bg-no-repeat bg-center"
           style={{
-            backgroundImage: `url("/Assets/images/all-img/victoire.jpg")`,
+            backgroundImage: `url("/assets/images/all-img/victoire.jpg")`,
           }}
         />
 

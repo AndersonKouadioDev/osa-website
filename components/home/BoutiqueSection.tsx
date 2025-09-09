@@ -12,26 +12,26 @@ export default function BoutiqueSection() {
       id: 1,
       nom: "MAILLOT DOMICILE 24/25 VIP",
       prix: "30.000 CFA",
-      image: "/Assets/images/all-img/maillot1.png", // Mets le vrai chemin de ton image
+      image: "/assets/images/all-img/maillot1.png", // Mets le vrai chemin de ton image
     },
     {
       id: 2,
       nom: "MAILLOT EXTÉRIEUR 24/25 VIP",
       prix: "30.000 CFA",
-      image: "/Assets/Images/all-img/maillot2.png",
+      image: "/assets/Images/all-img/maillot2.png",
     },
     {
       id: 3,
       nom: "MAILLOT THIRD 24/25 VIP",
       prix: "30.000 CFA",
-      image: "/Assets/Images/all-img/maillot3.png",
+      image: "/assets/Images/all-img/maillot3.png",
     },
   ];
 
   return (
     <div className="px">
       <section className=" text-white py-12 bg-center bg-cover px-4 mt-5"
-        style={{ backgroundImage: "url('/Assets/images/all-img/BackgroundMaillot.png')" }} >
+        style={{ backgroundImage: "url('/assets/images/all-img/BackgroundMaillot.png')" }} >
         <div className="max-w-6xl mx-auto text-center">
           {/* Titre */}
           <h2 className="text-2xl md:text-3xl font-bold mb-10 uppercase font-exo2">

@@ -52,7 +52,7 @@ export default function VisionSection() {
               {/* Main profile image */}
               <div className="relative w-80 h-96 lg:w-96 lg:h-[30rem] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
                 <Image
-                  src={'/Assets/images/all-img/president.png'}
+                  src={'/assets/images/all-img/president.png'}
                   alt="président fondateur"
                   fill
                   className="object-cover"

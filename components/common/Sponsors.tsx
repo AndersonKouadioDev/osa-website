@@ -9,7 +9,7 @@ const Sponsors = () => {
           <Image
             width={72}
             height={72}
-            src={"/Assets/images/nav/sponsor1.png"}
+            src={"/assets/images/nav/sponsor1.png"}
             alt="sponsor 1"
             className="w-16 h-16 md:w-20 md:h-20 object-contain"
           />
@@ -18,7 +18,7 @@ const Sponsors = () => {
           <Image
             width={72}
             height={72}
-            src={"/Assets/images/nav/sponsor2.png"}
+            src={"/assets/images/nav/sponsor2.png"}
             alt="sponsor 2"
             className="w-16 h-16 md:w-20 md:h-20 object-contain"
           />

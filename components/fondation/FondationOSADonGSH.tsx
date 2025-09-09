@@ -9,7 +9,7 @@ export default function FondationOSADonGSH() {
         {/* Left Image - DON OSA GSH Wall */}
         <div className="relative w-full h-48 md:h-64 lg:h-64 rounded-2xl overflow-hidden shadow-md">
           <Image 
-            src="/Assets/images/all-img/fondation5.png" 
+            src="/assets/images/all-img/fondation5.png" 
             alt="Group Photo" 
             fill 
             className="object-cover"
@@ -19,7 +19,7 @@ export default function FondationOSADonGSH() {
         {/* Right Image - Group Photo */}
         <div className="relative w-full h-48 md:h-64 lg:h-64 rounded-2xl overflow-hidden shadow-md">
           <Image 
-            src="/Assets/images/all-img/fondation4.jpg" 
+            src="/assets/images/all-img/fondation4.jpg" 
             alt="Don OSA GSH Wall" 
             fill 
             className="object-cover"

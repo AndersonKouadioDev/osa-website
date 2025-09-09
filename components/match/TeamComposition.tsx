@@ -209,7 +209,7 @@ export default function TeamComposition() {
                   >
                     <div className="relative w-10 h-12">
                       <Image
-                        src="/Assets/images/all-img/maillot1.png"
+                        src="/assets/images/all-img/maillot1.png"
                         alt={`Maillot ${player.name}`}
                         layout="fill"
                         objectFit="contain"
@@ -232,7 +232,7 @@ export default function TeamComposition() {
                     </span>
                   </div>
                   <Image
-                    src="/Assets/images/all-img/maillot2.png"
+                    src="/assets/images/all-img/maillot2.png"
                     alt="Joueur"
                     width={48}
                     height={48}
@@ -248,7 +248,7 @@ export default function TeamComposition() {
                     </span>
                   </div>
                   <Image
-                    src="/Assets/images/all-img/coach.png"
+                    src="/assets/images/all-img/coach.png"
                     alt="Coach"
                     width={60}
                     height={60}

@@ -2,13 +2,13 @@ import Image from "next/image";
 import React from "react";
 
 const TEAM_MEMBERS = [
-  { name: "Ousmane Diomande", age: "21", number: 16, image: "/Assets/Images/pensionnaire/pensionnaire1.png" },
-  { name: "Traoré Lacina", age: "21", number: 1, image: "/Assets/Images/pensionnaire/pensionnaire2.png" },
-  { name: "Diarrassouba Viera", age: "21", number: 30, image: "/Assets/Images/pensionnaire/pensionnaire3.png"  },
+  { name: "Ousmane Diomande", age: "21", number: 16, image: "/assets/Images/pensionnaire/pensionnaire1.png" },
+  { name: "Traoré Lacina", age: "21", number: 1, image: "/assets/Images/pensionnaire/pensionnaire2.png" },
+  { name: "Diarrassouba Viera", age: "21", number: 30, image: "/assets/Images/pensionnaire/pensionnaire3.png"  },
   { 
     name: "Ya Konan Didier",
      age: "21", number: 41,
-     image: "/Assets/Images/pensionnaire/pensionnaire4.png"
+     image: "/assets/Images/pensionnaire/pensionnaire4.png"
       },
       
 ];
@@ -32,7 +32,7 @@ const Penssionaire = () => {
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-2"
           style={{
-            backgroundImage: "url('/Assets/Images/BackgroundEquipe.png')",
+            backgroundImage: "url('/assets/Images/BackgroundEquipe.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -41,7 +41,7 @@ const Penssionaire = () => {
             <div
               key={index}
               className="group relative w-full lg:w-[300px] bg-center bg-cover h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer"
-              style={{ backgroundImage: "url('/Assets/Images/all-img/Link.png')" }}
+              style={{ backgroundImage: "url('/assets/Images/all-img/Link.png')" }}
             >
               {/* Player Image en fond */}
               <Image

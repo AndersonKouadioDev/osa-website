@@ -8,7 +8,7 @@ export default function AppPromoBanner() {
     <div className="px-7">
       <section
       className="bg-cover bg-center rounded-2xl text-white py-10 px-4 md:px-12 mt-10"
-      style={{ backgroundImage: "url('/Assets/images/all-img/fond.png')" }}
+      style={{ backgroundImage: "url('/assets/images/all-img/fond.png')" }}
     >
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-4">
         
@@ -18,7 +18,7 @@ export default function AppPromoBanner() {
           {/* Logo + nom */}
           <div className="flex items-center justify-center md:justify-start mt-8">
             <Image
-              src="/Assets/images/all-img/abobo.png"
+              src="/assets/images/all-img/abobo.png"
               alt="ABOBG+"
               width={200}
               height={150}
@@ -35,7 +35,7 @@ export default function AppPromoBanner() {
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <Link href="#">
               <Image
-                src="/Assets/images/all-img/appstore.png"
+                src="/assets/images/all-img/appstore.png"
                 alt="App Store"
                 width={140}
                 height={40}
@@ -43,7 +43,7 @@ export default function AppPromoBanner() {
             </Link>
             <Link href="#">
               <Image
-                src="/Assets/images/all-img/playstore.png"
+                src="/assets/images/all-img/playstore.png"
                 alt="Google Play"
                 width={140}
                 height={40}
@@ -55,7 +55,7 @@ export default function AppPromoBanner() {
         {/* Image téléphone */}
         <div className="mt-8 md:mt-0 flex justify-center">
           <Image
-            src="/Assets/images/all-img/telephone.png"
+            src="/assets/images/all-img/telephone.png"
             alt="Aperçu application ABOBG+"
             width={350}
             height={650}

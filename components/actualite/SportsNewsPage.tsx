@@ -40,7 +40,7 @@ const SportsNewsPage: React.FC = () => {
       id: 1,
       title:
         "Interview : Elton Zackhéous s'est confié au journal sportif Leaguepaper !",
-      image: "/Assets/images/all-img/news4.jpg",
+      image: "/assets/images/all-img/news4.jpg",
       date: "11 FEB 2025",
       views: "1.2k",
       comments: "45",
@@ -61,7 +61,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 3,
       title: "Interview : Elvis au média sportif",
-      image: "/Assets/images/all-img/news4.jpg",
+      image: "/assets/images/all-img/news4.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -71,7 +71,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 4,
       title: "Ligue 1 LONACI - Grâce à son match nul (1-1) face à Lys",
-      image: "/Assets/images/all-img/news1.jpg",
+      image: "/assets/images/all-img/news1.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -81,7 +81,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 5,
       title: "Les images du match FC OSA 1-3 FC SAN PEDRO",
-      image: "/Assets/images/all-img/news2.jpg",
+      image: "/assets/images/all-img/news2.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -91,7 +91,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 6,
       title: "Ligue 1 LONACI - Le FC OSA s'incline (1-3) face au FC SAN-PEDRO",
-      image: "/Assets/images/all-img/news3.jpg",
+      image: "/assets/images/all-img/news3.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -101,7 +101,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 7,
       title: "J29-LIGUE 1| LYS/FC OSA : Le match du maintien (1-1)",
-      image: "/Assets/images/news/new7.jpg",
+      image: "/assets/images/news/new7.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -111,7 +111,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 8,
       title: "Détection U10 pour le centre de formation ",
-      image: "/Assets/images/news/new6.jpg",
+      image: "/assets/images/news/new6.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -121,7 +121,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 9,
       title: "Puissance 9 pour Zouhoulé Elvis !",
-      image: "/Assets/images/news/new8.jpg",
+      image: "/assets/images/news/new8.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,
@@ -131,7 +131,7 @@ const SportsNewsPage: React.FC = () => {
     {
       id: 10,
       title: "Le FC OSA 13e à 2 journées de la fin !",
-      image: "/Assets/images/news/new5.jpg",
+      image: "/assets/images/news/new5.jpg",
       date: "11/05/2025",
       views: 63,
       comments: 0,

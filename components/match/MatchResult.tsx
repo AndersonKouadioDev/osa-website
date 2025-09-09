@@ -10,7 +10,7 @@ export default function MatchResult() {
    <div className='px-7'>
      <div
       className="min-h-screen  rounded-2xl bg-gradient-to-br p-5 from-purple-700 via-purple-800 to-purple-900 flex lg:bg-cover bg-primary bg-auto bg-center bg-no-repeat lg:bg-center items-center justify-center  relative overflow-hidden"
-      style={{ backgroundImage: "url('/Assets/images/all-img/foot.png')" }}
+      style={{ backgroundImage: "url('/assets/images/all-img/foot.png')" }}
     >
       <div className="w-full max-w-6xl">
         {/* Header */}
@@ -28,7 +28,7 @@ export default function MatchResult() {
           {/* FC OSA Logo */}
           <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 relative">
             <Image
-              src={"/Assets/images/all-img/logoOSA.png"}
+              src={"/assets/images/all-img/logoOSA.png"}
               alt="logo"
               fill
               className="object-contain"
@@ -51,7 +51,7 @@ export default function MatchResult() {
           {/* SOL FC Logo */}
           <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 relative">
             <Image
-              src={"/Assets/images/all-img/sol.png"}
+              src={"/assets/images/all-img/sol.png"}
               alt="logo"
               fill
               className="object-contain"
@@ -75,7 +75,7 @@ export default function MatchResult() {
           <span>
             <div className="w-16 h-10 sm:w-20 sm:h-14 relative">
               <Image
-                src={"/Assets/images/nav/osatv.png"}
+                src={"/assets/images/nav/osatv.png"}
                 alt="logo"
                 fill
                 className="object-contain"

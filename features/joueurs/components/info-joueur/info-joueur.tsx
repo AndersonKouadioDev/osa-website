@@ -128,7 +128,7 @@ export default function PlayerDetails({ params }: playerProps) {
             <div className="w-full px-4 md:px-6 lg:px-8 h-[70vh] sm:h-[70vh] md:h-[65vh]">
                 <div className="relative h-[65vh] rounded-lg bg-primary flex items-center justify-center text-white"
                  style={{
-                    backgroundImage: `url("/Assets/Images/all-img/BackgroundEquipe.png")`,
+                    backgroundImage: `url("/assets/Images/all-img/BackgroundEquipe.png")`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}>

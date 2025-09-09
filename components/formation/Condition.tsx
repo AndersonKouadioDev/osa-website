@@ -26,7 +26,7 @@ const Condition = () => {
         <div className="absolute left-0 bottom-0">
           <div className="relative w-[100px] h-[150px] sm:w-[150px] sm:h-[200px] md:w-[200px] md:h-[250px] lg:w-[250px] lg:h-[300px]">
             <Image
-              src="/Assets/images/all-img/balle-fillet.png"
+              src="/assets/images/all-img/balle-fillet.png"
               alt="ballon"
               fill
               className="object-contain"

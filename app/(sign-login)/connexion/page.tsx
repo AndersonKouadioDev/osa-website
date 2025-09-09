@@ -5,7 +5,7 @@ import React from 'react';
 const Page = () => {
     return (
         <div>
-            <TitleBanner centerImage='/Assets/images/all-img/logoOSA.png' />
+            <TitleBanner centerImage='/assets/images/all-img/logoOSA.png' />
             <LoginForm/>
         </div>
     );

@@ -58,7 +58,7 @@ export default function FondationOSAMission() {
 
       {/* Logo Section */}
       <div className="flex justify-center items-center mt-12">
-        <Image src={"/Assets/images/all-img/fondationlogo.png"} alt='logo' width={190} height={190} />
+        <Image src={"/assets/images/all-img/fondationlogo.png"} alt='logo' width={190} height={190} />
       </div>
 
       {/* Bottom Decorative Elements */}

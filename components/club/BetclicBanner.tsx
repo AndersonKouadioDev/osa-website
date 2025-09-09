@@ -5,7 +5,7 @@ const BetclicBanner = () => {
     <div className="relative w-full   mt-5 overflow-hidden h-64 md:h-44 flex items-center justify-center">
       {/* Image en fond */}
       <Image
-        src="/Assets/Images/all-img/betclic.jpg"
+        src="/assets/Images/all-img/betclic.jpg"
         alt="Bannière Betclic"
         fill
         className="object-cover"

@@ -10,7 +10,7 @@ const HistorySection = () => {
         <div className="w-full p-4 lg:p-8">
           <h2 className="text-4xl font-bold text-[#5D0B9E] mb-6 text-center lg:text-left">HISTORIE</h2>
           <Image
-            src="/Assets/Images/all-img/equipe.jpg"
+            src="/assets/Images/all-img/equipe.jpg"
             alt="FC OSA team celebrating"
             width={500}
             height={400}

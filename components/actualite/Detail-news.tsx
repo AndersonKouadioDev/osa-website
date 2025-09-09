@@ -147,7 +147,7 @@ export default function DetailNews({ params }: DetailNewsProps) {
                 <div
                     className="relative w-full bg-primary h-auto min-h-[400px] sm:min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center rounded-2xl overflow-hidden py-8 sm:py-10 md:py-12"
                     style={{
-                        backgroundImage: `url("/Assets/Images/all-img/BackgroundEquipe.png")`,
+                        backgroundImage: `url("/assets/Images/all-img/BackgroundEquipe.png")`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}

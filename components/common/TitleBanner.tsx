@@ -24,7 +24,7 @@ const TitleBanner: React.FC<TitleBannerProps> = ({
       <div
         className="relative w-full bg-primary h-52 flex flex-col items-center justify-center rounded-2xl overflow-hidden"
         style={{
-          backgroundImage: `url(${backgroundImage || "/Assets/Images/all-img/BackgroundEquipe.png"})`,
+          backgroundImage: `url(${backgroundImage || "/assets/Images/all-img/BackgroundEquipe.png"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

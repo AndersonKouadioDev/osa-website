@@ -13,7 +13,7 @@ const OSAFondationBanner = () => {
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 text-center sm:text-left w-full">
           <div className="flex-shrink-0">
             <Image
-              src="/Assets/images/all-img/logo.png"
+              src="/assets/images/all-img/logo.png"
               alt="Logo FC OSA"
               width={60}
               height={60}

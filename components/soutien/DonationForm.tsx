@@ -394,7 +394,7 @@ export default function DonationForm() {
               {/* KiePay */}
               <div className="flex items-center justify-center border border-gray-300 rounded-lg p-2 shadow-sm bg-white">
                 <Image
-                  src="/Assets/images/all-img/LogoKKi.jpeg"
+                  src="/assets/images/all-img/LogoKKi.jpeg"
                   alt="KiePay"
                   width={60}
                   height={20}
@@ -405,7 +405,7 @@ export default function DonationForm() {
               {/* Visa */}
               <div className="flex items-center justify-center border border-gray-300 rounded-lg p-2 shadow-sm bg-white">
                 <Image
-                  src="/Assets/images/all-img/LogoVisa.jpeg"
+                  src="/assets/images/all-img/LogoVisa.jpeg"
                   alt="Visa"
                   width={80}
                   height={40}
@@ -416,7 +416,7 @@ export default function DonationForm() {
               {/* MasterCard */}
               <div className="flex items-center justify-center border border-gray-300 rounded-lg p-2 shadow-sm bg-white">
                 <Image
-                  src="/Assets/images/all-img/LogoMasterCard.jpeg"
+                  src="/assets/images/all-img/LogoMasterCard.jpeg"
                   alt="MasterCard"
                   width={60}
                   height={40}

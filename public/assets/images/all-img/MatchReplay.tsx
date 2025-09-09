@@ -7,7 +7,7 @@ const MatchReplay = () => (
  <div>
     <h1 className='text-center text-3xl uppercase text-purple-500 my-3 font-bold'> Replay les temps forts </h1>
      <div className="flex flex-col items-center py-3 px-2 sm:py-4 sm:px-3 md:px-6 rounded-2xl mb-5 w-full mx-auto"  
-        style={{ backgroundImage: 'url("/Assets/Images/BackgroundMaillot.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} >
+        style={{ backgroundImage: 'url("/assets/Images/BackgroundMaillot.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} >
  
     <div className="relative w-full rounded p-3 sm:p-3 md:p-6">
       {/* Header avec infos du match */}
@@ -15,7 +15,7 @@ const MatchReplay = () => (
         <div className='flex flex-row items-center gap-2'>
             <div className="flex-shrink-0">
                 <Image 
-                  src={"/Assets/Images/logoL1.jpg"} 
+                  src={"/assets/Images/logoL1.jpg"} 
                   width={25} 
                   height={25}
                   className="sm:w-[30px] sm:h-[30px] md:w-[35px] md:h-[35px]"
@@ -39,7 +39,7 @@ const MatchReplay = () => (
         <div className="flex items-center justify-between w-full max-w-[200px] sm:max-w-xs md:max-w-sm px-4 sm:px-8 md:px-20 mb-1">
           <div className="flex justify-center">
             <Image 
-              src={"/Assets/Images/logoOSA.png"} 
+              src={"/assets/Images/logoOSA.png"} 
               width={35} 
               height={35}
               className="sm:w-[45px] sm:h-[45px] md:w-[60px] md:h-[60px]"
@@ -48,7 +48,7 @@ const MatchReplay = () => (
           </div>
           <div className="flex justify-center">
             <Image 
-              src={"/Assets/Images/logoAdv.png"} 
+              src={"/assets/Images/logoAdv.png"} 
               width={35} 
               height={35}
               className="sm:w-[45px] sm:h-[45px] md:w-[60px] md:h-[60px]"
