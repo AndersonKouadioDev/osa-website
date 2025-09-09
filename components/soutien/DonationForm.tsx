@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
 import { Slot } from "@radix-ui/react-slot";
@@ -14,11 +14,20 @@ import {
   type FieldPath,
   type FieldValues,
 } from "react-hook-form";
-import Image from 'next/image';
+import Image from "next/image";
 
+type DataForSubmit = {
+  nom: string;
+  prenom: string;
+  email: string;
+  dateNaissance: string;
+  adresse: string;
+  ville: string;
+  pays: string;
+};
 // Utility function for className merging
 const cn = (...classes: (string | undefined | null | false)[]) =>
-  classes.filter(Boolean).join(' ');
+  classes.filter(Boolean).join(" ");
 
 // Label component
 const Label = React.forwardRef<
@@ -41,7 +50,7 @@ const Form = FormProvider;
 
 type FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
 > = {
   name: TName;
 };
@@ -52,7 +61,7 @@ const FormFieldContext = React.createContext<FormFieldContextValue>(
 
 const FormField = <
   TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
 >({
   ...props
 }: ControllerProps<TFieldValues, TName>) => {
@@ -126,7 +135,8 @@ function FormLabel({
 }
 
 function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
-  const { error, formItemId, formDescriptionId, formMessageId } = useFormField();
+  const { error, formItemId, formDescriptionId, formMessageId } =
+    useFormField();
 
   return (
     <Slot
@@ -163,30 +173,35 @@ function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
 
 // Main donation form component
 export default function DonationForm() {
-  const [selectedAmount, setSelectedAmount] = useState('');
-  const [customAmount, setCustomAmount] = useState('');
+  const [selectedAmount, setSelectedAmount] = useState("");
+  const [customAmount, setCustomAmount] = useState("");
   const [monthlyDonation, setMonthlyDonation] = useState(false);
   const [acceptConditions, setAcceptConditions] = useState(false);
 
   const form = useForm({
     defaultValues: {
-      nom: '',
-      prenom: '',
-      email: '',
-      dateNaissance: '',
-      adresse: '',
-      ville: '',
+      nom: "",
+      prenom: "",
+      email: "",
+      dateNaissance: "",
+      adresse: "",
+      ville: "",
       pays: "Côte d'Ivoire",
     },
   });
 
-  const predefinedAmounts = ['1 000 FCFA', '5 000 FCFA', '10 000 FCFA', '50 000 FCFA'];
+  const predefinedAmounts = [
+    "1 000 FCFA",
+    "5 000 FCFA",
+    "10 000 FCFA",
+    "50 000 FCFA",
+  ];
 
-  const onSubmit = (data: any) => {
-    console.log('Form data:', data);
-    console.log('Selected amount:', selectedAmount || customAmount);
-    console.log('Monthly donation:', monthlyDonation);
-    console.log('Accept conditions:', acceptConditions);
+  const onSubmit = (data: DataForSubmit) => {
+    console.log("Form data:", data);
+    console.log("Selected amount:", selectedAmount || customAmount);
+    console.log("Monthly donation:", monthlyDonation);
+    console.log("Accept conditions:", acceptConditions);
   };
 
   return (
@@ -209,7 +224,10 @@ export default function DonationForm() {
         {/* Form content */}
         <div className="px-4 py-6 sm:px-8 sm:py-6 lg:px-50 flex flex-col items-center">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 w-full flex flex-col">
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-6 w-full flex flex-col"
+            >
               {/* Montants prédéfinis */}
               <div className="flex flex-wrap gap-3 justify-center md:justify-between mb-4">
                 {predefinedAmounts.map((amount) => (
@@ -218,12 +236,13 @@ export default function DonationForm() {
                     type="button"
                     onClick={() => {
                       setSelectedAmount(amount);
-                      setCustomAmount('');
+                      setCustomAmount("");
                     }}
-                    className={`px-4 py-2 text-sm sm:px-6 sm:py-2 rounded-full border-2 transition-colors text-primary border-primary flex-grow sm:flex-grow-0 ${selectedAmount === amount
-                        ? 'border-purple-500 bg-purple-50 text-purple-600'
-                        : 'border-gray-300 hover:border-purple-300'
-                      }`}
+                    className={`px-4 py-2 text-sm sm:px-6 sm:py-2 rounded-full border-2 transition-colors text-primary border-primary flex-grow sm:flex-grow-0 ${
+                      selectedAmount === amount
+                        ? "border-purple-500 bg-purple-50 text-purple-600"
+                        : "border-gray-300 hover:border-purple-300"
+                    }`}
                   >
                     {amount}
                   </button>
@@ -238,7 +257,7 @@ export default function DonationForm() {
                   value={customAmount}
                   onChange={(e) => {
                     setCustomAmount(e.target.value);
-                    setSelectedAmount('');
+                    setSelectedAmount("");
                   }}
                   className="border border-gray-300 rounded-lg px-4 py-2 w-full sm:w-48 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 />
@@ -250,12 +269,14 @@ export default function DonationForm() {
                 <button
                   type="button"
                   onClick={() => setMonthlyDonation(!monthlyDonation)}
-                  className={`w-12 h-6 rounded-full transition-colors self-end sm:self-center ${monthlyDonation ? 'bg-purple-500' : 'bg-gray-400'
-                    }`}
+                  className={`w-12 h-6 rounded-full transition-colors self-end sm:self-center ${
+                    monthlyDonation ? "bg-purple-500" : "bg-gray-400"
+                  }`}
                 >
                   <div
-                    className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${monthlyDonation ? 'translate-x-6' : 'translate-x-0.5'
-                      }`}
+                    className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
+                      monthlyDonation ? "translate-x-6" : "translate-x-0.5"
+                    }`}
                   />
                 </button>
               </div>
@@ -273,30 +294,44 @@ export default function DonationForm() {
 
               {/* Info */}
               <div className="bg-purple-100 rounded-lg p-4 text-xs sm:text-sm text-gray-700 text-center">
-                Afin de valider votre carte bancaire, votre premier prélèvement sera
+                Afin de valider votre carte bancaire, votre premier prélèvement
+                sera
                 <br className="sm:hidden" />
                 effectué aujourd&apos;hui. Le prochain aura lieu le{" "}
                 <span className="font-semibold text-purple-600">
                   20 juillet 2025
-                </span>.
+                </span>
+                .
               </div>
 
               {/* Champs du formulaire */}
-              {["nom", "prenom", "email", "dateNaissance", "adresse", "ville", "pays"].map((fieldName) => (
+              {[
+                "nom",
+                "prenom",
+                "email",
+                "dateNaissance",
+                "adresse",
+                "ville",
+                "pays",
+              ].map((fieldName) => (
                 <FormField
                   key={fieldName}
                   control={form.control}
-                  name={fieldName as any}
+                  name={fieldName as keyof DataForSubmit}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{fieldName.charAt(0).toUpperCase() + fieldName.slice(1)}</FormLabel>
+                      <FormLabel>
+                        {fieldName.charAt(0).toUpperCase() + fieldName.slice(1)}
+                      </FormLabel>
                       <FormControl>
                         {fieldName === "pays" ? (
                           <select
                             {...field}
                             className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white text-sm"
                           >
-                            <option value="Côte d'Ivoire">Côte d&apos;Ivoire</option>
+                            <option value="Côte d'Ivoire">
+                              Côte d&apos;Ivoire
+                            </option>
                             <option value="France">France</option>
                             <option value="Senegal">Sénégal</option>
                             <option value="Mali">Mali</option>
@@ -305,7 +340,9 @@ export default function DonationForm() {
                           <input
                             {...field}
                             type={fieldName === "email" ? "email" : "text"}
-                            placeholder={fieldName === "dateNaissance" ? "jj/mm/aaaa" : ""}
+                            placeholder={
+                              fieldName === "dateNaissance" ? "jj/mm/aaaa" : ""
+                            }
                             className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm"
                           />
                         )}
@@ -326,9 +363,16 @@ export default function DonationForm() {
                     className="mt-1 w-4 h-4 text-purple-600 rounded focus:ring-purple-500 border-gray-300"
                   />
                   <span>
-                    J&apos;accepte les <span className="font-semibold">Conditions Générales d&apos;Utilisation</span> du service et j&apos;ai lu la
+                    J&apos;accepte les{" "}
+                    <span className="font-semibold">
+                      Conditions Générales d&apos;Utilisation
+                    </span>{" "}
+                    du service et j&apos;ai lu la
                     <br className="sm:hidden" />
-                    <span className="font-semibold">Charte de confidentialité</span>. *
+                    <span className="font-semibold">
+                      Charte de confidentialité
+                    </span>
+                    . *
                   </span>
                 </label>
               </div>
@@ -381,11 +425,8 @@ export default function DonationForm() {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
-
   );
 }

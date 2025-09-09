@@ -14,8 +14,6 @@ import Footer from "@/components/footer/Footer";
 export default function Home() {
   return (
     <div>
-
-
       <Hero />
       <Banner />
       <ClubNewsSection />
@@ -30,9 +28,6 @@ export default function Home() {
 
       <FoundationSection />
       <Footer />
-
-
-
     </div>
   );
 }

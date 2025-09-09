@@ -21,6 +21,20 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
 
+type DataForSumit = {
+  email: string;
+  password: string;
+  confirmPassword: string;
+  nom: string;
+  prenom: string;
+  dateNaissance: string;
+  telephone: string;
+  adresse: string;
+  ville: string;
+  pays: string;
+  newsletter: boolean;
+};
+
 export default function InscriptionForm() {
   const form = useForm({
     defaultValues: {
@@ -38,7 +52,7 @@ export default function InscriptionForm() {
     },
   });
 
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: DataForSumit) => console.log(data);
 
   // Fonction pour rendre une section avec le nouveau format (reverted to 5 arguments)
   const renderSection = (
@@ -81,7 +95,6 @@ export default function InscriptionForm() {
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-12">
-
             {/* --- Compte Section --- */}
             {renderSection(
               1,
@@ -92,9 +105,14 @@ export default function InscriptionForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-sm text-gray-700">Adresse email</FormLabel>
+                    <FormLabel className="text-sm text-gray-700">
+                      Adresse email
+                    </FormLabel>
                     <FormControl>
-                      <Input {...field} className="border-gray-300 rounded-md p-2" />
+                      <Input
+                        {...field}
+                        className="border-gray-300 rounded-md p-2"
+                      />
                     </FormControl>
                   </FormItem>
                 )}
@@ -105,9 +123,15 @@ export default function InscriptionForm() {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Mot de passe</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Mot de passe
+                      </FormLabel>
                       <FormControl>
-                        <Input type="password" {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          type="password"
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -117,9 +141,15 @@ export default function InscriptionForm() {
                   name="confirmPassword"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Confirmer mot de passe</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Confirmer mot de passe
+                      </FormLabel>
                       <FormControl>
-                        <Input type="password" {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          type="password"
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -138,9 +168,14 @@ export default function InscriptionForm() {
                   name="nom"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Nom</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Nom
+                      </FormLabel>
                       <FormControl>
-                        <Input {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -152,9 +187,14 @@ export default function InscriptionForm() {
                   name="prenom"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Prénom</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Prénom
+                      </FormLabel>
                       <FormControl>
-                        <Input {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -164,9 +204,14 @@ export default function InscriptionForm() {
                   name="dateNaissance"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Date de naissance</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Date de naissance
+                      </FormLabel>
                       <FormControl>
-                        <Input {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -185,9 +230,14 @@ export default function InscriptionForm() {
                   name="adresse"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Adresse</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Adresse
+                      </FormLabel>
                       <FormControl>
-                        <Input {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -199,9 +249,14 @@ export default function InscriptionForm() {
                   name="ville"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Ville</FormLabel>
+                      <FormLabel className="text-sm text-gray-700">
+                        Ville
+                      </FormLabel>
                       <FormControl>
-                        <Input {...field} className="border-gray-300 rounded-md p-2" />
+                        <Input
+                          {...field}
+                          className="border-gray-300 rounded-md p-2"
+                        />
                       </FormControl>
                     </FormItem>
                   )}
@@ -211,18 +266,27 @@ export default function InscriptionForm() {
                   name="pays"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm text-gray-700">Pays</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormLabel className="text-sm text-gray-700">
+                        Pays
+                      </FormLabel>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
                         <FormControl>
                           <SelectTrigger className="border-gray-300 rounded-md p-2 cursor-pointer">
                             <SelectValue placeholder="Côte d'Ivoire" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Côte d'Ivoire">Côte d&apos;Ivoire</SelectItem>
+                          <SelectItem value="Côte d'Ivoire">
+                            Côte d&apos;Ivoire
+                          </SelectItem>
                           <SelectItem value="Ghana">Ghana</SelectItem>
                           <SelectItem value="Mali">Mali</SelectItem>
-                          <SelectItem value="Burkina Faso">Burkina Faso</SelectItem>
+                          <SelectItem value="Burkina Faso">
+                            Burkina Faso
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </FormItem>
@@ -239,7 +303,10 @@ export default function InscriptionForm() {
                 render={({ field }) => (
                   <FormItem className="flex flex-row items-center space-x-2 space-y-0">
                     <FormControl>
-                      <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                      <Checkbox
+                        checked={field.value}
+                        onCheckedChange={field.onChange}
+                      />
                     </FormControl>
                     <FormLabel className="text-sm text-gray-600">
                       Je souhaite recevoir l&apos;actualité du club
@@ -258,7 +325,10 @@ export default function InscriptionForm() {
                 S&apos;inscrire
               </Button>
 
-              <Link href="/connexion" className="text-sm text-gray-600 hover:text-gray-800">
+              <Link
+                href="/connexion"
+                className="text-sm text-gray-600 hover:text-gray-800"
+              >
                 <Button
                   type="button"
                   variant="outline"
@@ -267,8 +337,6 @@ export default function InscriptionForm() {
                   Se connecter
                 </Button>
               </Link>
-
-
             </div>
           </form>
         </Form>
