@@ -1,8 +1,11 @@
+'use client';
 import { ChevronRight } from 'lucide-react';
 import React from 'react';
 import DoubleTrait from '../common/doubleTrait';
+import { useRouter } from 'next/navigation';
 
 const NextMatches = () => {
+  const router = useRouter();
   return (
     <div className="px-4 sm:px-6 md:px-8 lg:px-12 mt-10">
       <div className="border border-[#5D0B9E] text-white rounded-2xl flex flex-col items-center justify-center bg-gradient-to-b from-white/5 to-white/10">
@@ -19,7 +22,8 @@ const NextMatches = () => {
 
           <div className="mt-6 sm:mt-8 md:mt-10">
             <button className="bg-yellow-500 text-black font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full shadow-lg flex items-center space-x-2 transition-transform transform hover:scale-105">
-              <span className="text-sm sm:text-base md:text-lg">Voir le calendrier</span>
+              <span className="text-sm sm:text-base md:text-lg" 
+              onClick={ ()=>router.push('/calendrier') } >Voir le calendrier</span>
               <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
             </button>
           </div>
