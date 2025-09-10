@@ -22,18 +22,18 @@ const PresentationOSA = () => {
         {/* Philosophy Text */}
         <div className="text-center text-black mx-auto mb-12 lg:px-16">
           <p className="text-lg  text-center">
-            Créé en 2001, le Centre de Formation Olympique Sport d’Abobo est
-            resté ﬁdèle à sa philosophie depuis toutes ces années qui est de
+            Créé en 2001, le Centre de Formation Olympique Sport d&apos;Abobo
+            est resté ﬁdèle à sa philosophie depuis toutes ces années qui est de
             former, éduquer et aider les jeunes ivoiriens et africains dans le
             but de les détourner des vices et maux qui minent les sociétés
             africaines grâce à une feuille de route en 3 axes.
           </p>
           <p className="text-lg mt-4 text-center">
             De nombreux joueurs passés par le Centre de Formation brillent
-            aujourd’hui en tant que professionnels, aussi bien en équipe senior
-            avant d’entamer une carrière professionnelle dans les clubs d’Europe
-            et du Monde entier. Une preuve du savoir-faire de la
-            formation osalaise.
+            aujourd&apos;hui en tant que professionnels, aussi bien en équipe
+            senior avant d&apos;entamer une carrière professionnelle dans les
+            clubs d&apos;Europe et du Monde entier. Une preuve du savoir-faire
+            de la formation osalaise.
           </p>
         </div>
 
@@ -81,7 +81,8 @@ const PresentationOSA = () => {
               EDUCATION
             </h3>
             <p className="text-gray-600 text-sm">
-              L'éducation scolaire est au coeur de notre programme de formation
+              L&apos;éducation scolaire est au coeur de notre programme de
+              formation
             </p>
           </div>
 
@@ -94,8 +95,8 @@ const PresentationOSA = () => {
               Palmares
             </h3>
             <p className="text-gray-600 text-sm">
-              Plus de 100 trophées tant sur le plan communal qu'a
-              travers tout le pays
+              Plus de 100 trophées tant sur le plan communal qu&apos;a travers
+              tout le pays
             </p>
           </div>
         </div>
