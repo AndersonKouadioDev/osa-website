@@ -19,8 +19,8 @@ const Vision = () => {
                         {/* Contenu textuel */}
                         <div className="flex flex-col justify-between h-full">
                             <div>
-                                <h2 className="text-3xl lg:text-4xl font-bold mb-4 uppercase">
-                                    notre vision est grande
+                                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                                    NOTRE VISION EST GRANDE
                                 </h2>
 
                                 <div className="text-3xl text-yellow-400 font-bold mb-3 leading-none">
@@ -32,7 +32,7 @@ const Vision = () => {
                                         Nous sommes convaincus que la suite sera plus remarquable et plus grandiose. 
                                         Sachez que nous sommes fiers de ce que nous avons fait durant toutes ces années 
                                         tout en espérant avoir un jour nos propres infrastructures avec des terrains 
-                                        d&apos;entraînements, des salles de classes, dortoirs, etc... pour continuer à bien former et 
+                                        d'entraînements, des salles de classes, dortoirs, etc... pour continuer à bien former et 
                                         éduquer les enfants que nous avons au sein de notre club..
                                     </p>
                                 </div>
@@ -50,7 +50,7 @@ const Vision = () => {
                             {/* Image sur mobile juste en dessous du président */}
                             <div className="block lg:hidden mt-4">
                                 <Image
-                                    src={'/assets/images/all-img/president.png'}
+                                    src={'/Assets/images/all-img/president.png'}
                                     alt='Président'
                                     width={250}
                                     height={350}
@@ -64,7 +64,7 @@ const Vision = () => {
                     {/* Image du président sur grand écran */}
                     <div className="hidden lg:block absolute bottom-0 right-0 w-[350px] h-auto transform translate-x-20 translate-y-32">
                         <Image
-                            src={'/assets/images/all-img/president.png'}
+                            src={'/Assets/images/all-img/president.png'}
                             alt='Président'
                             width={350}
                             height={500}
