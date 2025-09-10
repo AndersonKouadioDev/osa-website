@@ -5,7 +5,7 @@ import BoutiqueSection from "@/components/home/BoutiqueSection";
 import FoundationSection from "@/components/home/FoundationSection";
 import MatchReplay from "@/components/home/MatchReplay";
 import NextMatches from "@/components/home/NextMatches";
-import OurTeamSection from "@/components/home/OurTeamSection";
+import OurTeamSection from "@/components/home/teams/OurTeamSection";
 import ClubNewsSection from "@/components/home/ClubNewsSection";
 import AdBanner from "@/components/home/AdBanner";
 import OSAExperienceBanner from "@/components/home/OSAExperienceBanner";
