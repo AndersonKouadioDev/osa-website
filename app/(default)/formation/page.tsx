@@ -9,6 +9,7 @@ const Page = () => {
         <div>
             <TitleBanner   title='Centre de formation' />
             <PresentationOSA />
+            <FCOSACategories/>
             <AcademyInfoPage />
         </div>
     );

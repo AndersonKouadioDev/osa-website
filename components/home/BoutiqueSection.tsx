@@ -12,7 +12,7 @@ export default function BoutiqueSection() {
       id: 1,
       nom: "MAILLOT DOMICILE 24/25 VIP",
       prix: "30.000 CFA",
-      image: "/assets/images/all-img/maillot1.png", // Mets le vrai chemin de ton image
+      image: "/assets/images/all-img/maillot1.png", 
     },
     {
       id: 2,

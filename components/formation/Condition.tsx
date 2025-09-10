@@ -39,13 +39,13 @@ const Condition = () => {
           <div className="max-w-4xl ml-15 sm:mr-32 md:ml-48 lg:mr-0  ">
             {/* Titre principal */}
             <h1 className="text-3xl lg:text-4xl text-center font-bold mb-6 text-yellow-400">
-              COMMENT INTÉGRER L'ACADÉMIE
+              COMMENT INTÉGRER L&apos;ACADÉMIE
             </h1>
 
             {/* Description */}
             <p className="text-base lg:text-lg text-gray-300    mb-8 leading-relaxed text-center max-w-3xl">
-              Le FC OSA a fait le choix de la gratuité afin de faciliter l'accès du plus grand nombre à ce
-              centre de formation qui s'est imposé comme l'un des meilleurs, assurant non
+              Le FC OSA a fait le choix de la gratuité afin de faciliter l&apos;accès du plus grand nombre à ce
+              centre de formation qui s&apos;est imposé comme l&apos;un des meilleurs, assurant non
               seulement la formation sportive, mais également une formation scolaire.
             </p>
 

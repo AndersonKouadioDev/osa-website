@@ -10,7 +10,7 @@ const categories = [
     color: "bg-blue-500",
     textColor: "text-blue-600",
     bgLight: "bg-blue-50",
-    image: "/assets/images/categorie/PUPILLES-U13-1-500x340.jpeg",
+    image: "/Assets/images/categorie/PUPILLES-U13-1-500x340.jpeg",
     level: "U13"
   },
   {
@@ -20,7 +20,7 @@ const categories = [
     color: "bg-green-500",
     textColor: "text-green-600",
     bgLight: "bg-green-50",
-    image: "/assets/images/categorie/MINIMES-U15-1-500x334.jpeg",
+    image: "/Assets/images/categorie/MINIMES-U15-1-500x334.jpeg",
     level: "U15"
   },
   {
@@ -30,7 +30,7 @@ const categories = [
     color: "bg-orange-500",
     textColor: "text-orange-600",
     bgLight: "bg-orange-50",
-    image: "/assets/images/categorie/CADET-6-500x336.jpg",
+    image: "/Assets/images/categorie/CADET-6-500x336.jpg",
     level: "U17"
   },
   {
@@ -40,7 +40,7 @@ const categories = [
     color: "bg-purple-500",
     textColor: "text-purple-600",
     bgLight: "bg-purple-50",
-    image: "/assets/images/categorie/LES-JUNIORS-U20-2-500x334.jpeg",
+    image: "/Assets/images/categorie/LES-JUNIORS-U20-2-500x334.jpeg",
     level: "U20"
   },
 ]
