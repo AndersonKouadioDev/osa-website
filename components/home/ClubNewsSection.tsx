@@ -1,7 +1,7 @@
 // components/ClubNewsSection.js
-"use client"
-import React from "react"
-import { Plus, Eye, MessageCircle } from "lucide-react"
+"use client";
+import React from "react";
+import { Plus, Eye, MessageCircle } from "lucide-react";
 
 const ClubNewsSection = () => {
   const newsData = [
@@ -29,7 +29,7 @@ const ClubNewsSection = () => {
       date: "11/05/2025",
       title:
         "Ligue 1 LONACI - Le FC OSA s'incline (1-3) face au FC SAN-PEDRO pour son dernier match de la saison !",
-       image: "/assets/images/all-img/news3.jpg",
+      image: "/assets/images/all-img/news3.jpg",
       views: 63,
       comments: 0,
       featured: true,
@@ -43,7 +43,7 @@ const ClubNewsSection = () => {
       comments: 0,
       featured: true,
     },
-  ]
+  ];
 
   return (
     <div className="w-full bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
@@ -114,7 +114,7 @@ const ClubNewsSection = () => {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};
 
-export default ClubNewsSection
+export default ClubNewsSection;

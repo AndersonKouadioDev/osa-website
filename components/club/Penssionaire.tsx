@@ -2,15 +2,30 @@ import Image from "next/image";
 import React from "react";
 
 const TEAM_MEMBERS = [
-  { name: "Ousmane Diomande", age: "21", number: 16, image: "/assets/Images/pensionnaire/pensionnaire1.png" },
-  { name: "Traoré Lacina", age: "21", number: 1, image: "/assets/Images/pensionnaire/pensionnaire2.png" },
-  { name: "Diarrassouba Viera", age: "21", number: 30, image: "/assets/Images/pensionnaire/pensionnaire3.png"  },
-  { 
+  {
+    name: "Ousmane Diomande",
+    age: "21",
+    number: 16,
+    image: "/assets/Images/pensionnaire/pensionnaire1.png",
+  },
+  {
+    name: "Traoré Lacina",
+    age: "21",
+    number: 1,
+    image: "/assets/Images/pensionnaire/pensionnaire2.png",
+  },
+  {
+    name: "Diarrassouba Viera",
+    age: "21",
+    number: 30,
+    image: "/assets/Images/pensionnaire/pensionnaire3.png",
+  },
+  {
     name: "Ya Konan Didier",
-     age: "21", number: 41,
-     image: "/assets/Images/pensionnaire/pensionnaire4.png"
-      },
-      
+    age: "21",
+    number: 41,
+    image: "/assets/Images/pensionnaire/pensionnaire4.png",
+  },
 ];
 
 const Penssionaire = () => {
@@ -41,7 +56,9 @@ const Penssionaire = () => {
             <div
               key={index}
               className="group relative w-full lg:w-[300px] bg-center bg-cover h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer"
-              style={{ backgroundImage: "url('/assets/Images/all-img/Link.png')" }}
+              style={{
+                backgroundImage: "url('/assets/Images/all-img/Link.png')",
+              }}
             >
               {/* Player Image en fond */}
               <Image
@@ -61,13 +78,13 @@ const Penssionaire = () => {
                     {member.age} ans
                   </span>
                 </div>
-                <span className="text-5xl font-extrabold text-[#5B21B6] flex-shrink-0">{member.number}</span>
+                <span className="text-5xl font-extrabold text-[#5B21B6] flex-shrink-0">
+                  {member.number}
+                </span>
               </div>
             </div>
           ))}
         </div>
-
-       
       </div>
     </div>
   );

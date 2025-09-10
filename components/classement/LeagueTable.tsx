@@ -5,9 +5,9 @@ interface Team {
   id: number;
   name: string;
   mj: number; // matchs joués
-  v: number;  // victoires
-  n: number;  // nuls
-  d: number;  // défaites
+  v: number; // victoires
+  n: number; // nuls
+  d: number; // défaites
   bp: number; // buts pour
   bc: number; // buts contre
   pts: number;
@@ -15,22 +15,182 @@ interface Team {
 
 const LeagueTable: React.FC = () => {
   const [teams, setTeams] = useState<Team[]>([
-    { id: 1, name: "STADE D'ABIDJAN", mj: 30, v: 19, n: 5, d: 6, bp: 45, bc: 24, pts: 62 },
-    { id: 2, name: "ASEC MIMOSAS", mj: 30, v: 17, n: 8, d: 5, bp: 52, bc: 27, pts: 59 },
-    { id: 3, name: "AFAD PLATEAU", mj: 30, v: 16, n: 7, d: 7, bp: 41, bc: 27, pts: 55 },
-    { id: 4, name: "FC SAN PEDRO", mj: 30, v: 14, n: 3, d: 13, bp: 38, bc: 22, pts: 45 },
-    { id: 5, name: "STELLA CLUB D'ADJAME", mj: 30, v: 10, n: 12, d: 8, bp: 28, bc: 27, pts: 42 },
-    { id: 6, name: "SOA", mj: 30, v: 10, n: 10, d: 10, bp: 30, bc: 30, pts: 40 },
-    { id: 7, name: "BOUAKE FC", mj: 30, v: 9, n: 12, d: 9, bp: 25, bc: 27, pts: 39 },
-    { id: 8, name: "FC MOUNA", mj: 30, v: 9, n: 11, d: 10, bp: 24, bc: 25, pts: 38 },
-    { id: 9, name: "ZOMAN FC", mj: 30, v: 8, n: 13, d: 9, bp: 22, bc: 26, pts: 37 },
-    { id: 10, name: "CO KORHOGO", mj: 30, v: 8, n: 12, d: 10, bp: 21, bc: 27, pts: 36 },
-    { id: 11, name: "ISCA", mj: 30, v: 9, n: 9, d: 12, bp: 24, bc: 32, pts: 36 },
-    { id: 12, name: "RACING CLUB", mj: 30, v: 9, n: 9, d: 12, bp: 23, bc: 32, pts: 36 },
-    { id: 13, name: "SOL FC", mj: 30, v: 9, n: 8, d: 13, bp: 26, bc: 33, pts: 35 },
-    { id: 14, name: "FC OSA", mj: 30, v: 7, n: 12, d: 11, bp: 20, bc: 30, pts: 33 },
-    { id: 15, name: "LYS SASSANDRA FC", mj: 30, v: 6, n: 10, d: 14, bp: 18, bc: 32, pts: 28 },
-    { id: 16, name: "AS DENGUELE", mj: 30, v: 6, n: 7, d: 17, bp: 17, bc: 33, pts: 25 },
+    {
+      id: 1,
+      name: "STADE D'ABIDJAN",
+      mj: 30,
+      v: 19,
+      n: 5,
+      d: 6,
+      bp: 45,
+      bc: 24,
+      pts: 62,
+    },
+    {
+      id: 2,
+      name: "ASEC MIMOSAS",
+      mj: 30,
+      v: 17,
+      n: 8,
+      d: 5,
+      bp: 52,
+      bc: 27,
+      pts: 59,
+    },
+    {
+      id: 3,
+      name: "AFAD PLATEAU",
+      mj: 30,
+      v: 16,
+      n: 7,
+      d: 7,
+      bp: 41,
+      bc: 27,
+      pts: 55,
+    },
+    {
+      id: 4,
+      name: "FC SAN PEDRO",
+      mj: 30,
+      v: 14,
+      n: 3,
+      d: 13,
+      bp: 38,
+      bc: 22,
+      pts: 45,
+    },
+    {
+      id: 5,
+      name: "STELLA CLUB D'ADJAME",
+      mj: 30,
+      v: 10,
+      n: 12,
+      d: 8,
+      bp: 28,
+      bc: 27,
+      pts: 42,
+    },
+    {
+      id: 6,
+      name: "SOA",
+      mj: 30,
+      v: 10,
+      n: 10,
+      d: 10,
+      bp: 30,
+      bc: 30,
+      pts: 40,
+    },
+    {
+      id: 7,
+      name: "BOUAKE FC",
+      mj: 30,
+      v: 9,
+      n: 12,
+      d: 9,
+      bp: 25,
+      bc: 27,
+      pts: 39,
+    },
+    {
+      id: 8,
+      name: "FC MOUNA",
+      mj: 30,
+      v: 9,
+      n: 11,
+      d: 10,
+      bp: 24,
+      bc: 25,
+      pts: 38,
+    },
+    {
+      id: 9,
+      name: "ZOMAN FC",
+      mj: 30,
+      v: 8,
+      n: 13,
+      d: 9,
+      bp: 22,
+      bc: 26,
+      pts: 37,
+    },
+    {
+      id: 10,
+      name: "CO KORHOGO",
+      mj: 30,
+      v: 8,
+      n: 12,
+      d: 10,
+      bp: 21,
+      bc: 27,
+      pts: 36,
+    },
+    {
+      id: 11,
+      name: "ISCA",
+      mj: 30,
+      v: 9,
+      n: 9,
+      d: 12,
+      bp: 24,
+      bc: 32,
+      pts: 36,
+    },
+    {
+      id: 12,
+      name: "RACING CLUB",
+      mj: 30,
+      v: 9,
+      n: 9,
+      d: 12,
+      bp: 23,
+      bc: 32,
+      pts: 36,
+    },
+    {
+      id: 13,
+      name: "SOL FC",
+      mj: 30,
+      v: 9,
+      n: 8,
+      d: 13,
+      bp: 26,
+      bc: 33,
+      pts: 35,
+    },
+    {
+      id: 14,
+      name: "FC OSA",
+      mj: 30,
+      v: 7,
+      n: 12,
+      d: 11,
+      bp: 20,
+      bc: 30,
+      pts: 33,
+    },
+    {
+      id: 15,
+      name: "LYS SASSANDRA FC",
+      mj: 30,
+      v: 6,
+      n: 10,
+      d: 14,
+      bp: 18,
+      bc: 32,
+      pts: 28,
+    },
+    {
+      id: 16,
+      name: "AS DENGUELE",
+      mj: 30,
+      v: 6,
+      n: 7,
+      d: 17,
+      bp: 17,
+      bc: 33,
+      pts: 25,
+    },
   ]);
 
   const [editingTeam, setEditingTeam] = useState<number | null>(null);
@@ -53,11 +213,16 @@ const LeagueTable: React.FC = () => {
 
   const calculatePoints = (v: number, n: number): number => v * 3 + n;
 
-  const updateTeam = (teamId: number, field: keyof Team, value: string | number) => {
-    setTeams(prevTeams =>
-      prevTeams.map(team => {
+  const updateTeam = (
+    teamId: number,
+    field: keyof Team,
+    value: string | number
+  ) => {
+    setTeams((prevTeams) =>
+      prevTeams.map((team) => {
         if (team.id === teamId) {
-          const parsedValue = typeof value === "string" ? parseInt(value) || 0 : value;
+          const parsedValue =
+            typeof value === "string" ? parseInt(value) || 0 : value;
           const updatedTeam: Team = { ...team, [field]: parsedValue };
 
           if (field === "v" || field === "n") {
@@ -79,7 +244,7 @@ const LeagueTable: React.FC = () => {
 
   const addTeam = () => {
     const newTeam: Team = {
-      id: Math.max(...teams.map(t => t.id)) + 1,
+      id: Math.max(...teams.map((t) => t.id)) + 1,
       name: "NOUVELLE EQUIPE",
       mj: 0,
       v: 0,
@@ -93,7 +258,7 @@ const LeagueTable: React.FC = () => {
   };
 
   const deleteTeam = (teamId: number) => {
-    setTeams(teams.filter(team => team.id !== teamId));
+    setTeams(teams.filter((team) => team.id !== teamId));
   };
 
   return (
@@ -145,7 +310,9 @@ const LeagueTable: React.FC = () => {
                   <input
                     type="text"
                     value={team.name}
-                    onChange={(e) => updateTeam(team.id, "name", e.target.value)}
+                    onChange={(e) =>
+                      updateTeam(team.id, "name", e.target.value)
+                    }
                     onBlur={() => setEditingTeam(null)}
                     onKeyDown={(e) => e.key === "Enter" && setEditingTeam(null)}
                     className="w-full px-2 py-1 border rounded"
