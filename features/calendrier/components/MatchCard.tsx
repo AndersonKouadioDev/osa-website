@@ -1,21 +1,8 @@
 // components/MatchCard.tsx
 import Image from 'next/image';
+import { MatchCardProps } from '../types/match';
 
-interface Match {
-  date: string;
-  league: string;
-  team1: string;
-  team2: string;
-  score?: string; // optionnel si le match n'est pas terminé
-  status: 'finished' | 'upcoming';
-  venue: string;
-  team1_image: string;
-  team2_image: string;
-}
 
-interface MatchCardProps {
-  match: Match;
-}
 
 const teamLogos: Record<string, string> = {
   'FC OSA': '/path/to/osa-logo.png',

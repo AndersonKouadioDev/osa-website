@@ -1,5 +1,5 @@
-import TeamCelebration from "@/components/calendrier/TeamCelebration";
-import UpcomingMatchesPage from "@/components/calendrier/UpcomingMatchesPage";
+import TeamCelebration from "@/features/calendrier/components/TeamCelebration";
+import UpcomingMatchesPage from "@/features/calendrier/components/UpcomingMatchesPage";
 import BetclicBanner from "@/components/club/BetclicBanner";
 import Sponsors from "@/components/common/Sponsors";
 import TitleBanner from "@/components/common/TitleBanner";

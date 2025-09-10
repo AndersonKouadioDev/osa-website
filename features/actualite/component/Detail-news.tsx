@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import { newsData } from "./newsData";
+import { newsData } from "../newsData";
 import { useRouter } from "next/navigation";
 import { Play, MessageCircle, Eye } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../../components/ui/carousel";
 import Link from "next/link";
 
 interface DetailNewsProps {
@@ -153,13 +153,13 @@ export default function DetailNews({ params }: DetailNewsProps) {
                     }}
                 >
                     <div className="max-w-4xl w-full px-4 sm:px-6 md:px-8 mx-auto text-center">
-                        <h2 className="text-xl sm:text-2xl md:text-3xl uppercase font-bold text-white mb-6 sm:mb-8 md:mb-10 uppercase font-exo2">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl uppercase font-bold text-white mb-6 sm:mb-8 md:mb-1 font-exo2">
                             Laisser un commentaire
                         </h2>
 
                         <form className="space-y-4 sm:space-y-6">
                             <div>
-                                <label htmlFor="comment" className="block text-sm sm:text-md font-medium text-white flex justify-start px-2 mb-2">
+                                <label htmlFor="comment" className=" text-sm sm:text-md font-medium text-white flex justify-start px-2 mb-2">
                                     Commentaire
                                 </label>
                                 <textarea
@@ -171,7 +171,7 @@ export default function DetailNews({ params }: DetailNewsProps) {
                             </div>
                             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                                 <div className="flex-1">
-                                    <label htmlFor="name" className="block text-sm sm:text-md font-medium text-white flex justify-start px-2 mb-2">
+                                    <label htmlFor="name" className=" text-sm sm:text-md font-medium text-white flex justify-start px-2 mb-2">
                                         Nom
                                     </label>
                                     <input
@@ -182,7 +182,7 @@ export default function DetailNews({ params }: DetailNewsProps) {
                                     />
                                 </div>
                                 <div className="flex-1">
-                                    <label htmlFor="email" className="block text-sm sm:text-md font-medium text-white flex justify-start px-2 mb-2">
+                                    <label htmlFor="email" className=" text-sm sm:text-md font-medium text-white flex justify-start px-2 mb-2">
                                         Email
                                     </label>
                                     <input

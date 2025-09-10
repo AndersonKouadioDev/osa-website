@@ -1,5 +1,5 @@
 
-import SportsNewsPage from '@/components/actualite/SportsNewsPage';
+import SportsNewsPage from '@/features/actualite/component/SportsNewsPage';
 import Sponsors from '@/components/common/Sponsors';
 import TitleBanner from '@/components/common/TitleBanner';
 import React from 'react';
@@ -9,7 +9,7 @@ const Page = () => {
         <div>
              <TitleBanner title='Actualité' />
              <SportsNewsPage/>
-             {/* <CommentForm/> */}
+          
              <Sponsors />
         </div>
     );

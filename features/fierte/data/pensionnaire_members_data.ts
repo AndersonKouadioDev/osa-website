@@ -1,0 +1,198 @@
+import { PenssionaireType } from "../types/pensionnaire";
+
+export const pensionnaire_members:PenssionaireType[] = [
+  {
+    name: "Ousmane Diomande",
+    age: "21",
+    number: 16,
+    image: "/assets/images/pensionnaire/pensionnaire1.png",
+  },
+  {
+    name: "Traoré Lacina",
+    age: "21",
+    number: 1,
+    image: "/assets/images/pensionnaire/pensionnaire2.png",
+  },
+  {
+    name: "Diarrassouba Viera",
+    age: "21",
+    number: 30,
+    image: "/assets/images/pensionnaire/pensionnaire3.png",
+  },
+  {
+    name: "Ya Konan Didier",
+    age: "21",
+    number: 41,
+    image: "/assets/images/pensionnaire/pensionnaire4.png",
+  },
+
+  {
+    name: "Sanogo Sekou Junior",
+    age: "21",
+    number: 35,
+    image: "/assets/images/pensionnaire/penssionnaire-5.jpg",
+  },
+  {
+    name: "Kader Keita",
+    age: "21",
+    number: 28,
+    image: "/assets/images/pensionnaire/penssionnaire-6.png",
+  },
+  {
+    name: "Niango Anderson",
+    age: "21",
+    number: 15,
+    image: "/assets/images/pensionnaire/penssionnaire-7.jpg",
+  },
+  {
+    name: "Diomande ismael",
+    age: "21",
+    number: 7,
+    image: "/assets/images/pensionnaire/penssionnaire-8.png",
+  },
+  {
+    name: "Fofana Adama",
+    age: "21",
+    number: 2,
+    image: "/assets/images/pensionnaire/penssionnaire-9.png",
+  },
+
+  {
+    name: "N'zi Olivier",
+    age: "21",
+    number: 55,
+    image: "/assets/images/pensionnaire/penssionnaire-10.png",
+  },
+  {
+    name: "Sylla Sekou",
+    age: "21",
+    number: 55,
+    image: "/assets/images/pensionnaire/penssionnaire-31.png",
+  },
+  {
+    name: "Kone Mohamed",
+    age: "21",
+    number: 7,
+    image: "/assets/images/pensionnaire/penssionnaire-11.jpg",
+  },
+  {
+    name: "Loue Bayerer",
+    age: "21",
+    number: 22,
+    image: "/assets/images/pensionnaire/penssionnaire-12.jpg",
+  },
+  {
+    name: "Sidibe Salif",
+    age: "21",
+    number: 19,
+    image: "/assets/images/pensionnaire/penssionnaire-13.jpg",
+  },
+  {
+    name: "Sylla Habib",
+    age: "21",
+    number: 52,
+    image: "/assets/images/pensionnaire/penssionnaire-14.jpg",
+  },
+  {
+    name: "Diaby Souleymane ",
+    age: "21",
+    number: 17,
+    image: "/assets/images/pensionnaire/penssionnaire-15.png",
+  },
+  {
+    name: "kouame Constant",
+    age: "21",
+    number: 12,
+    image: "/assets/images/pensionnaire/penssionnaire-16.jpg",
+  },
+  {
+    name: "Gbo Cedric",
+    age: "21",
+    number: 6,
+    image: "/assets/images/pensionnaire/penssionnaire-17.jpg",
+  },
+  {
+    name: "Soumahoro Bangali",
+    age: "21",
+    number: 2,
+    image: "/assets/images/pensionnaire/penssionnaire-18.jpg",
+  },
+  {
+    name: "Bamba Mory",
+    age: "21",
+    number: 7,
+    image: "/assets/images/pensionnaire/penssionnaire-19.jpg",
+  },
+  {
+    name: "Kouame Irene",
+    age: "21",
+    number: 16,
+    image: "/assets/images/pensionnaire/penssionnaire-20.jpg",
+  },
+  {
+    name: "Bamba Aboubacar ",
+    age: "21",
+    number: 1,
+    image: "/assets/images/pensionnaire/penssionnaire-21.jpg",
+  },
+  {
+    name: "Soro Nanga",
+    age: "21",
+    number: 9,
+    image: "/assets/images/pensionnaire/penssionnaire-22.jpg",
+  },
+  {
+    name: "Tia Eric",
+    age: "21",
+    number: 7,
+    image: "/assets/images/pensionnaire/penssionnaire-23.jpg",
+  },
+  {
+    name: "Bakayoko Yaya",
+    age: "21",
+    number: 29,
+    image: "/assets/images/pensionnaire/penssionnaire-24.jpg",
+  },
+  {
+    name: "Mansou Kouakou",
+    age: "21",
+    number: 29,
+    image: "/assets/images/pensionnaire/penssionnaire-25.jpg",
+  },
+  {
+    name: "Gbe Vigori Jaures",
+    age: "21",
+    number: 2,
+    image: "/assets/images/pensionnaire/penssionnaire-26.jpg",
+  },
+  {
+    name: "Tia Konate Mohamed",
+    age: "21",
+    number: 7,
+    image: "/assets/images/pensionnaire/penssionnaire-27.jpg",
+  },
+  {
+    name: "Bakayo Paul",
+    age: "21",
+    number: 12,
+    image: "/assets/images/pensionnaire/penssionnaire-28.jpg",
+  },
+  {
+    name: "Yao Kouassi Martial",
+    age: "21",
+    number: 19,
+    image: "/assets/images/pensionnaire/penssionnaire-29.jpg",
+  },
+  {
+    name: "Me Kouassi Odilon",
+    age: "21",
+    number: 10,
+    image: "/assets/images/pensionnaire/penssionnaire-30.jpg",
+  },
+  {
+    name: "Dje BI Issac",
+    age: "21",
+    number: 9,
+    image: "/assets/images/pensionnaire/penssionnaire-31.jpg",
+  },
+];

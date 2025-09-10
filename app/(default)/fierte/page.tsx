@@ -1,6 +1,6 @@
 import Sponsors from '@/components/common/Sponsors';
 import TitleBanner from '@/components/common/TitleBanner';
-import Fierte from '@/components/fierte/Fierte';
+import Fierte from '@/features/fierte/components/Fierte';
 import React from 'react';
 
 const Page = () => {

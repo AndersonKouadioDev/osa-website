@@ -32,7 +32,7 @@ const Vision = () => {
                                         Nous sommes convaincus que la suite sera plus remarquable et plus grandiose. 
                                         Sachez que nous sommes fiers de ce que nous avons fait durant toutes ces années 
                                         tout en espérant avoir un jour nos propres infrastructures avec des terrains 
-                                        d'entraînements, des salles de classes, dortoirs, etc... pour continuer à bien former et 
+                                        d&apos;entraînements, des salles de classes, dortoirs, etc... pour continuer à bien former et 
                                         éduquer les enfants que nous avons au sein de notre club..
                                     </p>
                                 </div>

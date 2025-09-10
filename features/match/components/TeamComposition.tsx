@@ -1,97 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
+import { players } from "../data/players";
+
+
+
 export default function TeamComposition() {
-  const players = [
-    {
-      position: "GARDIENS",
-      name: "Koffi Jean Yves",
-      isStarter: true,
-      number: 1,
-      x: 50,
-      y: 85,
-    },
-    {
-      position: "DÉFENSEURS",
-      name: "Cheick Oumar",
-      isStarter: true,
-      number: 2,
-      x: 15,
-      y: 65,
-    },
-    {
-      position: "DÉFENSEURS",
-      name: "Bakayoko Yaya",
-      isStarter: true,
-      number: 3,
-      x: 35,
-      y: 70,
-    },
-    {
-      position: "DÉFENSEURS",
-      name: "Hinde Thierry",
-      isStarter: true,
-      number: 4,
-      x: 65,
-      y: 70,
-    },
-    {
-      position: "DÉFENSEURS",
-      name: "",
-      isStarter: true,
-      number: 13,
-      x: 85,
-      y: 65,
-    },
-    {
-      position: "MILIEUX",
-      name: "Kone Ali Djinan",
-      isStarter: true,
-      number: 7,
-      x: 25,
-      y: 45,
-    },
-    {
-      position: "MILIEUX",
-      name: "Dia Dylan",
-      isStarter: true,
-      number: 12,
-      x: 50,
-      y: 35,
-    },
-    {
-      position: "MILIEUX",
-      name: "Soro Inza",
-      isStarter: true,
-      number: 11,
-      x: 75,
-      y: 45,
-    },
-    {
-      position: "ATTAQUANTS",
-      name: "Conde Ali",
-      isStarter: true,
-      number: 21,
-      x: 35,
-      y: 15,
-    },
-    {
-      position: "ATTAQUANTS",
-      name: "Touré Abakar",
-      isStarter: true,
-      number: 9,
-      x: 50,
-      y: 25,
-    },
-    {
-      position: "ATTAQUANTS",
-      name: "Fofana Inza",
-      isStarter: true,
-      number: 10,
-      x: 65,
-      y: 15,
-    },
-  ];
+ 
 
 
   return (

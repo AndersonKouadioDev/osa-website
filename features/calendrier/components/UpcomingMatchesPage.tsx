@@ -2,9 +2,10 @@
 'use client';
 
 import { useState } from 'react';
-import MatchCard from './MatchCard';
+
 import NoMatchCard from './NoMatchCard';
-import DoubleTrait from '../common/doubleTrait';
+import DoubleTrait from '../../../components/common/doubleTrait';
+import MatchCard from './MatchCard';
 
 interface Match {
   id: number;
@@ -94,7 +95,7 @@ export default function UpcomingMatchesPage() {
               <select
                 value={selectedMonth}
                 onChange={(e) => setSelectedMonth(e.target.value)}
-                className="appearance-none bg-[#7E22CE] text-white px-6 py-3 rounded-full font-semibold cursor-pointer w-full text-center"
+                className="appearance-none bg-primary text-white px-9 py-3 rounded-2xl font-semibold cursor-pointer w-full text-center"
               >
                 {months.map((month) => (
                   <option key={month} value={month}>

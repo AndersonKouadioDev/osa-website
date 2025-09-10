@@ -1,4 +1,4 @@
-import DetailNews from "@/components/actualite/Detail-news";
+import DetailNews from "@/features/actualite/component/Detail-news";
 import Sponsors from "@/components/common/Sponsors";
 
 

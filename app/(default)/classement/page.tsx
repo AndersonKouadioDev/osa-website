@@ -1,10 +1,11 @@
-import LeagueTable from '@/components/classement/LeagueTable';
+
+import TitleBanner from '@/components/common/TitleBanner';
 import React from 'react';
 
 const Page = () => {
     return (
         <div>
-            <LeagueTable/>
+            <TitleBanner   title='Classement' />
         </div>
     );
 }

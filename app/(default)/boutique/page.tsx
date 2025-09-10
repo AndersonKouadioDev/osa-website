@@ -1,4 +1,4 @@
-import Boutique from "@/components/boutique/boutique";
+import Boutique from "@/features/boutique/components/boutique";
 import BetclicBanner from "@/components/club/BetclicBanner";
 import TitleBanner from "@/components/common/TitleBanner";
 import AppPromoBanner from "@/components/home/AppPromoBanner";

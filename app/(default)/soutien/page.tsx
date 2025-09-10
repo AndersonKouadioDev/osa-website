@@ -1,6 +1,6 @@
 import TitleBanner from '@/components/common/TitleBanner';
 import DonationBanner from '@/components/soutien/DonationBanner';
-import DonationForm from '@/components/soutien/DonationForm';
+import DonationForm from '@/features/soutien/components/DonationForm';
 import SupportInfo from '@/components/soutien/SupportInfo';
 import React from 'react';
 

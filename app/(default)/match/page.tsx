@@ -1,10 +1,10 @@
 import Sponsors from "@/components/common/Sponsors";
 import AdBanner from "@/components/home/AdBanner";
-import LastConfrontations from "@/components/match/LastConfrontations";
-import MatchOverview from "@/components/match/MatchOverview";
-import MatchResult from "@/components/match/MatchResult";
-import MatchWithHighlights from "@/components/match/MatchWithHighlights";
-import TeamComposition from "@/components/match/TeamComposition";
+import LastConfrontations from "@/features/match/components/LastConfrontations";
+import MatchOverview from "@/features/match/components/MatchOverview";
+import MatchResult from "@/features/match/components/MatchResult";
+import MatchWithHighlights from "@/features/match/components/MatchWithHighlights";
+import TeamComposition from "@/features/match/components/TeamComposition";
 import React from "react";
 
 const Page = () => {

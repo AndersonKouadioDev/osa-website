@@ -9,136 +9,15 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { newsData } from "../newsData";
+import { NewsType } from "../type/news-type";
 
-type NewsType =
-  | "interview"
-  | "video"
-  | "match"
-  | "gallery"
-  | "analysis"
-  | "news"
-  | "player";
 
-interface NewsArticle {
-  id: number;
-  title: string;
-  image: string; // peut être image ou vidéo
-  date: string;
-  views: string | number;
-  comments: string | number;
-  featured: boolean;
-  type: NewsType;
-  hasVideo?: boolean;
-}
+
 
 const SportsNewsPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const articlesPerPage = 12;
-
-  const newsData: NewsArticle[] = [
-    {
-      id: 1,
-      title:
-        "Interview : Elton Zackhéous s'est confié au journal sportif Leaguepaper !",
-      image: "/assets/images/all-img/news4.jpg",
-      date: "11 FEB 2025",
-      views: "1.2k",
-      comments: "45",
-      featured: true,
-      type: "interview",
-    },
-    {
-      id: 2,
-      title: "J26-LIGUE 1 FC OSA/KORHOGO Le match du match",
-      image: "https://youtu.be/pYg7Yd-ZhuI?si=x6mUbyqhbF6MzHHw",
-      date: "10 FEB 2025",
-      views: "890",
-      comments: "23",
-      featured: false,
-      type: "video",
-      hasVideo: true,
-    },
-    {
-      id: 3,
-      title: "Interview : Elvis au média sportif",
-      image: "/assets/images/all-img/news4.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "interview",
-    },
-    {
-      id: 4,
-      title: "Ligue 1 LONACI - Grâce à son match nul (1-1) face à Lys",
-      image: "/assets/images/all-img/news1.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "match",
-    },
-    {
-      id: 5,
-      title: "Les images du match FC OSA 1-3 FC SAN PEDRO",
-      image: "/assets/images/all-img/news2.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "gallery",
-    },
-    {
-      id: 6,
-      title: "Ligue 1 LONACI - Le FC OSA s'incline (1-3) face au FC SAN-PEDRO",
-      image: "/assets/images/all-img/news3.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "match",
-    },
-    {
-      id: 7,
-      title: "J29-LIGUE 1| LYS/FC OSA : Le match du maintien (1-1)",
-      image: "/assets/images/news/new7.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "match",
-    },
-    {
-      id: 8,
-      title: "Détection U10 pour le centre de formation ",
-      image: "/assets/images/news/new6.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "match",
-    },
-    {
-      id: 9,
-      title: "Puissance 9 pour Zouhoulé Elvis !",
-      image: "/assets/images/news/new8.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "match",
-    },
-    {
-      id: 10,
-      title: "Le FC OSA 13e à 2 journées de la fin !",
-      image: "/assets/images/news/new5.jpg",
-      date: "11/05/2025",
-      views: 63,
-      comments: 0,
-      featured: true,
-      type: "match",
-    },
-  ];
 
   const totalPages = Math.ceil(newsData.length / articlesPerPage);
   const startIndex = (currentPage - 1) * articlesPerPage;
@@ -235,10 +114,10 @@ const SportsNewsPage: React.FC = () => {
                   {/* Type badge */}
                   <div
                     className={`absolute top-2 left-2 ${getTypeColor(
-                      article.type
+                    article.type as NewsType
                     )} text-white px-2 py-0.5 rounded-full text-[10px] font-bold uppercase`}
                   >
-                    {getTypeLabel(article.type)}
+                    {getTypeLabel(article.type as NewsType)}
                   </div>
 
                   {/* Featured badge */}

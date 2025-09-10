@@ -14,7 +14,7 @@ const MatchReplay = () => (
           <div className='flex flex-row items-center gap-2'>
             <div className="flex-shrink-0">
               <Image
-                src={"/assets/Images/all-img/logoL1.jpg"}
+                src={"/assets/images/all-img/logoL1.jpg"}
                 width={25}
                 height={25}
                 className="sm:w-[30px] sm:h-[30px] md:w-[35px] md:h-[35px]"
@@ -38,7 +38,7 @@ const MatchReplay = () => (
           <div className="flex items-center justify-between w-full max-w-[200px] sm:max-w-xs md:max-w-sm px-4 sm:px-8 md:px-20 mb-1">
             <div className="flex justify-center">
               <Image
-                src={"/assets/Images/all-img/logoOSA.png"}
+                src={"/assets/images/all-img/logoOSA.png"}
                 width={35}
                 height={35}
                 className="sm:w-[45px] sm:h-[45px] md:w-[60px] md:h-[60px]"
@@ -47,7 +47,7 @@ const MatchReplay = () => (
             </div>
             <div className="flex justify-center">
               <Image
-                src={"/assets/Images/all-img/logoAdv.png"}
+                src={"/assets/images/all-img/logoAdv.png"}
                 width={35}
                 height={35}
                 className="sm:w-[45px] sm:h-[45px] md:w-[60px] md:h-[60px]"
