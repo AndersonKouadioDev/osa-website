@@ -196,7 +196,7 @@ const SportsNewsPage: React.FC = () => {
           {currentArticles.map((article) => (
             <div
               key={article.id}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer max-w-[380px] mx-auto"
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer "
             >
               {/* Image ou vidéo */}
               <Link
@@ -226,6 +226,8 @@ const SportsNewsPage: React.FC = () => {
                     <Image
                       src={article.image}
                       alt={article.title}
+                      width={400}
+                      height={225}
                       className="w-full h-full object-cover"
                     />
                   )}
