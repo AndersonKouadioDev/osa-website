@@ -11,14 +11,14 @@ const Banner = () => {
           className="relative py-16 md:py-20 flex items-center bg-center bg-cover bg-[#062c31] justify-center"
           style={{
             backgroundImage:
-              "url('/assets/images/all-img/BackgroundEquipe.png')",
+              "url('/assets/images/all-img/backgroundequipe.png')",
           }}
         >
           <div className="relative text-center">
             <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white flex items-center justify-center gap-2 mb-4">
               <div className="text-white">
                 <Image
-                  src={"/assets/Images/all-img/Fc OSA.png"}
+                  src={"/assets/images/all-img/fcosa.png"}
                   alt="Fond FC OSA"
                   objectFit="cover"
                   className=" h-15 w-40"

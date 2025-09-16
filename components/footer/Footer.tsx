@@ -77,10 +77,10 @@ export default function Footer() {
       {/* Contenu principal du pied de page avec copyright intégré */}
       <div className="relative py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div
-          className="absolute inset-0 bg-center bg-cover bg-center opacity-30"
+          className="absolute inset-0  bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url('/assets/images/all-img/BackgroundFooter.png')",
+              "url('/assets/images/all-img/backgroundfooter.png')",
           }}
         />
 

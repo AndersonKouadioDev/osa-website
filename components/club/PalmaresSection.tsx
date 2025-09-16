@@ -21,7 +21,7 @@ const PalmaresSection = () => {
           <div className="text-center w-40 relative">
             <div className="relative w-full h-48 mb-2 z-10">
               <Image
-                src="/assets/Images/coupes/coupe1.png"
+                src="/assets/images/coupes/coupe1.png"
                 alt="Championnat Cadet trophy"
                 layout="fill"
                 objectFit="contain"
@@ -37,7 +37,7 @@ const PalmaresSection = () => {
           <div className="text-center w-40 relative">
             <div className="relative w-full h-48 mb-2 z-10">
               <Image
-                src="/assets/Images/coupes/coupe2.png"
+                src="/assets/images/coupes/coupe2.png"
                 alt="Division 3 trophy"
                 layout="fill"
                 objectFit="contain"
@@ -51,7 +51,7 @@ const PalmaresSection = () => {
           <div className="text-center w-40 relative">
             <div className="relative w-full h-48 mb-2 z-10">
               <Image
-                src="/assets/Images/coupes/coupe3.png"
+                src="/assets/images/coupes/coupe3.png"
                 alt="Trophées Communaux"
                 layout="fill"
                 objectFit="contain"
@@ -65,7 +65,7 @@ const PalmaresSection = () => {
           <div className="text-center w-40 relative">
             <div className="relative w-full h-48 mb-2 z-10">
               <Image
-                src="/assets/Images/coupes/coupe4.png"
+                src="/assets/images/coupes/coupe4.png"
                 alt="Coupe Nationale trophy"
                 layout="fill"
                 objectFit="contain"
@@ -79,7 +79,7 @@ const PalmaresSection = () => {
           <div className="text-center w-40 relative">
             <div className="relative w-full h-48 mb-2 z-10">
               <Image
-                src="/assets/Images/coupes/coupe5.png"
+                src="/assets/images/coupes/coupe5.png"
                 alt="Ligue 2 trophy"
                 layout="fill"
                 objectFit="contain"

@@ -34,7 +34,7 @@ export default function OurTeamSection() {
             <div
               key={index}
               className="snap-start flex-shrink-0 w-64 bg-center bg-cover"
-              style={{ backgroundImage: "url('/Assets/images/all-img/Link.pg')" }}
+              style={{ backgroundImage: "url('/assets/images/all-img/Link.pg')" }}
               
             >
               <div className="group relative w-64 h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer  "  >
