@@ -16,7 +16,7 @@ export default function Boutique() {
           Notre Équipe
         </h2>
      <section className=" text-white py-12 bg-center bg-cover px-4 mt-5" 
-    style={{ backgroundImage: "url('/assets/images/all-img/BackgroundMaillot.png')" }} >
+    style={{ backgroundImage: "url('/assets/images/all-img/backgroundmaillot.png')" }} >
       <div className="max-w-6xl mx-auto text-center">
         {/* Titre */}
         <h2 className="text-2xl md:text-3xl font-bold mb-10">
