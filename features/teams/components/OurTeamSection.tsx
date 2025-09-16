@@ -5,7 +5,6 @@ import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { team_members } from "../data/teamsData";
 
-
 export default function OurTeamSection() {
   const birthdayPlayer = "Zouhoule Elvis M.";
   const birthdayAge = 22;
@@ -28,17 +27,20 @@ export default function OurTeamSection() {
         </h2>
 
         {/* Scroll horizontal libre */}
-        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover 
-         " style={{ backgroundImage: "url('/assets/images/all-img/backgroundequipe.png')" }}
+        <div
+          className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover 
+         "
+          style={{
+            backgroundImage:
+              "url('/assets/images/all-img/backgroundequipe.png')",
+          }}
         >
           {team_members.map((member, index) => (
             <div
               key={index}
               className="snap-start flex-shrink-0 w-64 bg-center bg-cover"
-             
-              
             >
-              <div className="group relative w-64 h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer  "  >
+              <div className="group relative w-64 h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer  ">
                 {/* Image joueur */}
                 <Image
                   src={member.image}
@@ -91,22 +93,14 @@ export default function OurTeamSection() {
 
         {/* Bouton "Voir toute l'équipe" */}
         <div className="flex justify-center mt-6">
-          <button className="flex items-center px-6 py-3 bg-white text-[#5B21B6] rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg cursor-pointer"  onClick={()=>router.push('/effectif') } >
+          <button
+            className="flex items-center px-6 py-3 bg-white text-[#5B21B6] rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg cursor-pointer"
+            onClick={() => router.push("/effectif")}
+          >
             Voir toute l&apos;équipe <ChevronRight size={18} className="ml-2" />
           </button>
         </div>
       </div>
-
-      {/* Masquer la scrollbar */}
-      <style jsx global>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </div>
   );
 }
