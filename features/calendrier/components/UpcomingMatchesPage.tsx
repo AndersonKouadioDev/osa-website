@@ -66,13 +66,13 @@ export default function UpcomingMatchesPage() {
       {
         id: 4,
         league: 'COUPE NATIONALE',
-        team1: 'AFRICA SPORTS',
+        team1: 'FC OSA',
         team2: 'ASEC MIMOSAS',
         date: 'SAMEDI 10/05/2025',
         venue: 'Stade Félix Houphouët-Boigny',
         status: 'upcoming',
-        team1_image: '',
-        team2_image: '',
+      team1_image: '/assets/images/all-img/logo.png',
+        team2_image: '/assets/images/all-img/asec.png',
       },
     ],
   };
