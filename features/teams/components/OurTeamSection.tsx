@@ -29,7 +29,7 @@ export default function OurTeamSection() {
 
         {/* Scroll horizontal libre */}
         <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover 
-         " style={{ backgroundImage: "url('/assets/images/all-img/backgroundequipe.png')" }}
+         " style={{ backgroundImage: "url('/assets/images/all-img/footer-bg.png')" }}
         >
           {team_members.map((member, index) => (
             <div
@@ -97,16 +97,7 @@ export default function OurTeamSection() {
         </div>
       </div>
 
-      {/* Masquer la scrollbar */}
-      <style jsx global>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
+     
     </div>
   );
 }
