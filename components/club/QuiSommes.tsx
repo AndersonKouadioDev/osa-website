@@ -24,7 +24,7 @@ const QuiSommes = () => {
         {/* Image Section */}
         <div className="flex-1">
           <Image
-            src="/assets/Images/all-img/nous.png"
+            src="/assets/images/all-img/nous.png"
             alt="An image of a football team in a huddle"
             width={600}
             height={400}

@@ -3,18 +3,15 @@ import React from "react";
 
 import { players } from "../data/players";
 
-
-
 export default function TeamComposition() {
- 
-
-
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
         <div className="bg-primary text-white flex justify-between items-center py-4 px-8 rounded-t-lg">
-          <h1 className="text-2xl font-semibold">Composition de l&apos;équipe</h1>
+          <h1 className="text-2xl font-semibold">
+            Composition de l&apos;équipe
+          </h1>
           <h1 className="text-2xl font-semibold">Formation du jeu</h1>
         </div>
 
