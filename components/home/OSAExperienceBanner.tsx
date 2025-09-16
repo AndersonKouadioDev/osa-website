@@ -4,7 +4,7 @@ import React from 'react';
 const OSAExperienceBanner = () => {
   return (
    <div className='px-7 mt-5'>
-     <div className="w-full bg-[#5d0b9e] rounded-xl mb-10 px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6">
+     <div className="w-full bg-primary rounded-xl mb-10 px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
         {/* Contenu textuel */}
         <div className="flex-1">

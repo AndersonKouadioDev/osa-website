@@ -50,7 +50,7 @@ const Vision = () => {
                             {/* Image sur mobile juste en dessous du président */}
                             <div className="block lg:hidden mt-4">
                                 <Image
-                                    src={'/Assets/images/all-img/president.png'}
+                                    src={'/assets/images/all-img/president.png'}
                                     alt='Président'
                                     width={250}
                                     height={350}
@@ -64,7 +64,7 @@ const Vision = () => {
                     {/* Image du président sur grand écran */}
                     <div className="hidden lg:block absolute bottom-0 right-0 w-[350px] h-auto transform translate-x-20 translate-y-32">
                         <Image
-                            src={'/Assets/images/all-img/president.png'}
+                            src={'/assets/images/all-img/president.png'}
                             alt='Président'
                             width={350}
                             height={500}
