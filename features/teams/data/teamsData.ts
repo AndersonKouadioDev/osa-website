@@ -3,7 +3,7 @@ export const team_members = [
   { name: "Diamoutene Mahamadou", position: "GB", number: 16, image: "/assets/images/joueurs/gardiens/gardien_16.png" },
   { name: "Kanté Zié Aboubacar", position: "GB", number: 1, image: "/assets/images/joueurs/gardiens/gardien_1.png" },
   { name: "Koffi Jean Yves", position: "GB", number: 30, image: "/assets/images/joueurs/gardiens/gardien_30.png" },
-  { name: "Diarrassouba Mohamed", position: "GB", number: 41, image: "/assets/Images/joueurs/gardiens/gardien_41.png" },
+  { name: "Diarrassouba Mohamed", position: "GB", number: 41, image: "/assets/images/joueurs/gardiens/gardien_41.png" },
 
   // Défenseurs (DEF)
   { name: "Cheick Oumar", position: "DEF", number: 17, image: "/assets/images/joueurs/defenseurs/def_17.png" },

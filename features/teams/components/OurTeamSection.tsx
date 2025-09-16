@@ -81,7 +81,7 @@ export default function OurTeamSection() {
               {birthdayAge} ANS
             </span>
             <Image
-              src="/assets/Images/all-img/cake.png"
+              src="/assets/images/all-img/cake.png"
               alt="Cake"
               width={30}
               height={30}

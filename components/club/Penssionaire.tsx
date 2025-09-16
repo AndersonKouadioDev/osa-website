@@ -47,7 +47,7 @@ const Penssionaire = () => {
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-2"
           style={{
-            backgroundImage: "url('/assets/Images/BackgroundEquipe.png')",
+            backgroundImage: "url('/assets/images/BackgroundEquipe.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -57,7 +57,7 @@ const Penssionaire = () => {
               key={index}
               className="group relative w-full lg:w-[300px] bg-center bg-cover h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer"
               style={{
-                backgroundImage: "url('/assets/Images/all-img/Link.png')",
+                backgroundImage: "url('/assets/images/all-img/Link.png')",
               }}
             >
               {/* Player Image en fond */}

@@ -32,7 +32,7 @@ const Fierte = () => {
               key={index}
               className="group relative bg-center bg-cover h-84 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer"
               style={{
-                backgroundImage: "url('/assets/Images/all-img/Link.png')",
+                backgroundImage: "url('/assets/images/all-img/Link.png')",
               }}
             >
               {/* Player Image en fond */}
