@@ -81,6 +81,7 @@ export default function Footer() {
           style={{
             backgroundImage:
               "url('/assets/images/all-img/backgroundfooter.png')",
+              
           }}
         />
 

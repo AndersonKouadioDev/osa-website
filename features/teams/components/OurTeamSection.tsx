@@ -28,13 +28,14 @@ export default function OurTeamSection() {
         </h2>
 
         {/* Scroll horizontal libre */}
-        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover  " style={{ backgroundImage: "url('/Assets/images/all-img/BackgroundEquipe.png')" }}
+        <div className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover 
+         " style={{ backgroundImage: "url('/assets/images/all-img/backgroundequipe.png')" }}
         >
           {team_members.map((member, index) => (
             <div
               key={index}
               className="snap-start flex-shrink-0 w-64 bg-center bg-cover"
-              style={{ backgroundImage: "url('/assets/images/all-img/Link.pg')" }}
+             
               
             >
               <div className="group relative w-64 h-96 rounded-[2rem] shadow-xl overflow-hidden cursor-pointer  "  >
