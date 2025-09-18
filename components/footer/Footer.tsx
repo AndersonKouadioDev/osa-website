@@ -80,8 +80,8 @@ export default function Footer() {
           className="absolute inset-0  bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url('/assets/images/all-img/backgroundfooter.png')",
-              
+              "url('/assets/images/all-img/footer-bg.png')",
+
           }}
         />
 

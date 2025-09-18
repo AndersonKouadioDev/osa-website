@@ -5,8 +5,8 @@ import React from 'react';
 
 const MatchReplay = () => (
   <div className='px-7 mt-20'>
-    <h2 className='text-center text-4xl uppercase text-[#5D0B9E] my-3 font-bold mb-10 font-exo2'> Replay les temps forts </h2>     <div className="flex flex-col items-center py-3 px-2 sm:py-4 sm:px-3 md:px-6 rounded-2xl mb-5 w-full mx-auto"
-      style={{ backgroundImage: 'url("/assets/images/all-img/backgroundmaillot.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} >
+    <h2 className='text-center text-4xl uppercase text-[#5D0B9E] my-3 bg-cover bg-center font-bold mb-10 font-exo2'> Replay les temps forts </h2>     <div className="flex flex-col items-center py-3 px-2 sm:py-4 sm:px-3 md:px-6 rounded-2xl mb-5 w-full mx-auto"
+      style={{ backgroundImage: 'url("/assets/images/all-img/backgroundmaillot.png")'}} >
 
       <div className="relative w-full rounded p-3 sm:p-3 md:p-6">
         {/* Header avec infos du match */}

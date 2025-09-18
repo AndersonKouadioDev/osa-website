@@ -31,8 +31,7 @@ export default function OurTeamSection() {
           className="hide-scrollbar flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth bg-center bg-cover 
          "
           style={{
-            backgroundImage:
-              "url('/assets/images/all-img/backgroundequipe.png')",
+            backgroundImage: "url('/assets/images/all-img/footer-bg.png')",
           }}
         >
           {team_members.map((member, index) => (
